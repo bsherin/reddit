@@ -1,0 +1,7 @@
+{
+  "snapshot_folder": "/projects/p32275/bikewrench/snapshots/bikewrench_vocab500_k1byuper",
+  "text_df_file": "/projects/p32275/bikewrench/bikewrench_toplevel_urls_only_prep_pc7c9ke7_pf_sent_tokenized_df_true.pkl",
+  "score_df_file": "/projects/p32275/bikewrench/bikewrench_score.parquet",
+  "overwrite_score_df": true,
+  "new_score_file_name": "score.parquet"
+}

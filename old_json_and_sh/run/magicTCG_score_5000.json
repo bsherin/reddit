@@ -1,0 +1,7 @@
+{
+  "snapshot_folder": "/projects/p32275/magicTCG/snapshots/magicTCG5000_xe1mwi81",
+  "text_df_file": "/projects/p32275/magicTCG/magicTCG_toplevel_prep_608izs85_pf_sent_tokenized_df_true.parquet",
+  "score_df_file": "/projects/p32275/magicTCG/magicTCG_score.parquet",
+  "overwrite_score_df": true,
+  "new_score_file_name": "score.parquet"
+}

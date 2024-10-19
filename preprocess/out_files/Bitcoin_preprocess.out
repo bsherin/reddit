@@ -1,0 +1,352 @@
+Python 3.11.7
+starting zsts_to_post_csv
+done with globals
+starting
+Reading submissions
+
+read all lines
+Reading comments
+
+read all lines
+starting zsts_to_user_data.py
+done with globals
+starting
+Reading submissions
+read all lines
+Reading comments
+read all lines
+Writing file
+starting clean_and_add_seconds.py
+done with globals
+starting
+Getting CSV size
+CSV has 66 total chunks. Reading
+cleaning
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 6 of 67
+cleaned chunk 9 of 67
+cleaned chunk 11 of 67
+cleaned chunk 13 of 67
+cleaned chunk 25 of 67
+cleaned chunk 28 of 67
+cleaned chunk 32 of 67
+cleaned chunk 36 of 67
+cleaned chunk 46 of 67
+cleaned chunk 49 of 67
+cleaned chunk 51 of 67
+cleaned chunk 55 of 67
+cleaned chunk 12 of 67
+cleaned chunk 15 of 67
+cleaned chunk 18 of 67
+cleaned chunk 21 of 67
+cleaned chunk 29 of 67
+cleaned chunk 31 of 67
+cleaned chunk 35 of 67
+cleaned chunk 39 of 67
+cleaned chunk 50 of 67
+cleaned chunk 52 of 67
+cleaned chunk 56 of 67
+cleaned chunk 59 of 67
+/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+Converting date column to datetime
+Getting min date
+Filling seconds column
+filling seconds chunk 4 of 51
+filling seconds chunk 8 of 51
+filling seconds chunk 12 of 51
+filling seconds chunk 21 of 51
+filling seconds chunk 23 of 51
+filling seconds chunk 25 of 51
+filling seconds chunk 36 of 51
+filling seconds chunk 38 of 51
+filling seconds chunk 41 of 51
+filling seconds chunk 7 of 51
+filling seconds chunk 11 of 51
+filling seconds chunk 14 of 51
+filling seconds chunk 24 of 51
+filling seconds chunk 27 of 51
+filling seconds chunk 30 of 51
+filling seconds chunk 39 of 51
+filling seconds chunk 42 of 51
+filling seconds chunk 45 of 51
+filling seconds chunk 1 of 51
+filling seconds chunk 3 of 51
+filling seconds chunk 6 of 51
+filling seconds chunk 15 of 51
+filling seconds chunk 17 of 51
+filling seconds chunk 19 of 51
+filling seconds chunk 29 of 51
+filling seconds chunk 31 of 51
+filling seconds chunk 34 of 51
+filling seconds chunk 43 of 51
+filling seconds chunk 46 of 51
+filling seconds chunk 49 of 51
+filling seconds chunk 2 of 51
+filling seconds chunk 5 of 51
+filling seconds chunk 10 of 51
+filling seconds chunk 18 of 51
+filling seconds chunk 20 of 51
+filling seconds chunk 22 of 51
+filling seconds chunk 33 of 51
+filling seconds chunk 35 of 51
+filling seconds chunk 37 of 51
+filling seconds chunk 47 of 51
+filling seconds chunk 50 of 51
+filling seconds chunk 51 of 51
+/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+Adding user seconds: writing user seconds
+Got user seconds chunk 4 of 51
+Got user seconds chunk 9 of 51
+Got user seconds chunk 14 of 51
+Got user seconds chunk 18 of 51
+Got user seconds chunk 23 of 51
+Got user seconds chunk 28 of 51
+Got user seconds chunk 33 of 51
+Got user seconds chunk 38 of 51
+Got user seconds chunk 43 of 51
+Got user seconds chunk 5 of 51
+Got user seconds chunk 10 of 51
+Got user seconds chunk 15 of 51
+Got user seconds chunk 22 of 51
+Got user seconds chunk 27 of 51
+Got user seconds chunk 31 of 51
+Got user seconds chunk 37 of 51
+Got user seconds chunk 42 of 51
+Got user seconds chunk 46 of 51
+Got user seconds chunk 3 of 51
+Got user seconds chunk 8 of 51
+Got user seconds chunk 13 of 51
+Got user seconds chunk 20 of 51
+Got user seconds chunk 25 of 51
+Got user seconds chunk 29 of 51
+Got user seconds chunk 35 of 51
+Got user seconds chunk 40 of 51
+Got user seconds chunk 44 of 51
+Got user seconds chunk 2 of 51
+Got user seconds chunk 7 of 51
+Got user seconds chunk 12 of 51
+Got user seconds chunk 16 of 51
+Got user seconds chunk 19 of 51
+Got user seconds chunk 24 of 51
+Got user seconds chunk 30 of 51
+Got user seconds chunk 34 of 51
+Got user seconds chunk 39 of 51
+Got user seconds chunk 45 of 51
+Got user seconds chunk 48 of 51
+Got user seconds chunk 50 of 51
+Got user seconds chunk 1 of 51
+Got user seconds chunk 6 of 51
+Got user seconds chunk 11 of 51
+Got user seconds chunk 17 of 51
+Got user seconds chunk 21 of 51
+Got user seconds chunk 26 of 51
+Got user seconds chunk 32 of 51
+Got user seconds chunk 36 of 51
+Got user seconds chunk 41 of 51
+Got user seconds chunk 47 of 51
+Got user seconds chunk 49 of 51
+Got user seconds chunk 51 of 51
+saving to CSV
+starting tokenize_cleaned_csv.py
+done with globals
+starting
+reading csv
+got funky row 228645
+{'post_id': 'g32k2z', 'kind': 'submission', 'author': 'ninja_15th_century', 'title': 'title', 'text': 'Anyone want to explain bitcoin mining to me. I know nothing about this.', 'parent_id': '', 'num_comments': '4', 'seconds': '297786056', 'user_seconds': '0'}
+Creating csv file
+tokenizing
+Wrote chunk 4 of 51
+Wrote chunk 8 of 51
+Wrote chunk 13 of 51
+Wrote chunk 19 of 51
+Wrote chunk 22 of 51
+Wrote chunk 27 of 51
+Wrote chunk 36 of 51
+Wrote chunk 40 of 51
+Wrote chunk 44 of 51
+Wrote chunk 3 of 51
+Wrote chunk 7 of 51
+Wrote chunk 12 of 51
+Wrote chunk 16 of 51
+Wrote chunk 20 of 51
+Wrote chunk 24 of 51
+Wrote chunk 29 of 51
+Wrote chunk 33 of 51
+Wrote chunk 38 of 51
+Wrote chunk 43 of 51
+Wrote chunk 47 of 51
+Wrote chunk 50 of 51
+Got results
+writing
+writing chunk 0 of 51
+writing chunk 1 of 51
+writing chunk 2 of 51
+writing chunk 3 of 51
+writing chunk 4 of 51
+writing chunk 5 of 51
+writing chunk 6 of 51
+writing chunk 7 of 51
+writing chunk 8 of 51
+writing chunk 9 of 51
+writing chunk 10 of 51
+writing chunk 11 of 51
+writing chunk 12 of 51
+writing chunk 13 of 51
+writing chunk 14 of 51
+writing chunk 15 of 51
+writing chunk 16 of 51
+writing chunk 17 of 51
+writing chunk 18 of 51
+writing chunk 19 of 51
+writing chunk 20 of 51
+writing chunk 21 of 51
+writing chunk 22 of 51
+writing chunk 23 of 51
+writing chunk 24 of 51
+writing chunk 25 of 51
+writing chunk 26 of 51
+writing chunk 27 of 51
+writing chunk 28 of 51
+writing chunk 29 of 51
+writing chunk 30 of 51
+writing chunk 31 of 51
+writing chunk 32 of 51
+writing chunk 33 of 51
+writing chunk 34 of 51
+writing chunk 35 of 51
+writing chunk 36 of 51
+writing chunk 37 of 51
+writing chunk 38 of 51
+writing chunk 39 of 51
+writing chunk 40 of 51
+writing chunk 41 of 51
+writing chunk 42 of 51
+writing chunk 43 of 51
+writing chunk 44 of 51
+writing chunk 45 of 51
+writing chunk 46 of 51
+writing chunk 47 of 51
+writing chunk 48 of 51
+writing chunk 49 of 51
+writing chunk 50 of 51
+Time to tokenize: 487.77996587753296 seconds
+starting eval_and_convert_to_parquet.py
+done with globals
+starting
+reading csv
+eval-ing
+converting to a dataframe
+fixing other column types
+wrote file
+starting add_true_date_info.py
+done with globals
+starting
+reading
+adding total user posts
+adding post numbers
+getting first date
+labeling with true dates
+writing

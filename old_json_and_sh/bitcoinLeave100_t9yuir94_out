@@ -1,0 +1,110 @@
+Python 3.11.7
+/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py:380: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  param_df = pd.read_csv(f"{self.snapshot_folder}/parameters.txt", sep=":\t", names=["key", "value"], index_col="key")
+/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py:436: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[5.61478948 5.5301896  4.75743399 ... 5.5478094  6.54356709 5.38690645]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  score_df.loc[results.index, self.uid] = results
+starting
+done with globals
+starting
+Getting snapshot params
+Reading text df
+Removing text_df duplicates
+Reading score df
+Removing score_df duplicates
+Processing year 2014 month 1
+Processing year 2014 month 2
+Processing year 2014 month 3
+Processing year 2014 month 4
+Processing year 2014 month 5
+Processing year 2014 month 6
+Processing year 2014 month 7
+Processing year 2014 month 8
+Processing year 2014 month 9
+Processing year 2014 month 10
+Processing year 2014 month 11
+Processing year 2014 month 12
+Processing year 2015 month 1
+Processing year 2015 month 2
+Processing year 2015 month 3
+Processing year 2015 month 4
+Processing year 2015 month 5
+Processing year 2015 month 6
+Processing year 2015 month 7
+Processing year 2015 month 8
+Processing year 2015 month 9
+Processing year 2015 month 10
+Processing year 2015 month 11
+Processing year 2015 month 12
+Processing year 2016 month 1
+Processing year 2016 month 2
+Processing year 2016 month 3
+Processing year 2016 month 4
+Processing year 2016 month 5
+Processing year 2016 month 6
+Processing year 2016 month 7
+Processing year 2016 month 8
+Processing year 2016 month 9
+Processing year 2016 month 10
+Processing year 2016 month 11
+Processing year 2016 month 12
+Processing year 2017 month 1
+Processing year 2017 month 2
+Processing year 2017 month 3
+Processing year 2017 month 4
+Processing year 2017 month 5
+Processing year 2017 month 6
+Processing year 2017 month 7
+Processing year 2017 month 8
+Processing year 2017 month 9
+Processing year 2017 month 10
+Processing year 2017 month 11
+Processing year 2017 month 12
+Processing year 2018 month 1
+Processing year 2018 month 2
+Processing year 2018 month 3
+Processing year 2018 month 4
+Processing year 2018 month 5
+Processing year 2018 month 6
+Processing year 2018 month 7
+Processing year 2018 month 8
+Processing year 2018 month 9
+Processing year 2018 month 10
+Processing year 2018 month 11
+Processing year 2018 month 12
+Processing year 2019 month 1
+Processing year 2019 month 2
+Processing year 2019 month 3
+Processing year 2019 month 4
+Processing year 2019 month 5
+Processing year 2019 month 6
+Processing year 2019 month 7
+Processing year 2019 month 8
+Processing year 2019 month 9
+Processing year 2019 month 10
+Processing year 2019 month 11
+Processing year 2019 month 12
+Processing year 2020 month 1
+Processing year 2020 month 2
+Processing year 2020 month 3
+Processing year 2020 month 4
+Processing year 2020 month 5
+Processing year 2020 month 6
+Processing year 2020 month 7
+Processing year 2020 month 8
+Processing year 2020 month 9
+Processing year 2020 month 10
+Processing year 2020 month 11
+Processing year 2020 month 12
+Processing year 2021 month 1
+Processing year 2021 month 2
+Processing year 2021 month 3
+Processing year 2021 month 4
+Processing year 2021 month 5
+Processing year 2021 month 6
+Processing year 2021 month 7
+Processing year 2021 month 8
+Processing year 2021 month 9
+Processing year 2021 month 10
+Processing year 2021 month 11
+Processing year 2021 month 12
+writing the file

@@ -1,0 +1,8 @@
+{
+   "top_level_only": true,
+   "clean_text": "urls_only",
+   "chunk_size": 100000,
+   "number_of_workers": 5,
+   "sent_tokenize": true,
+   "pad_and_flatten": true
+  }

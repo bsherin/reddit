@@ -1,0 +1,8 @@
+{
+  "snapshot_folder": null,
+  "text_df_file": null,
+  "score_df_file": null,
+  "overwrite_score_df": false,
+  "new_score_file_name": "score.parquet",
+  "output_file": "output.pkl"
+}

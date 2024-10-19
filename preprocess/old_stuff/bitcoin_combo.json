@@ -1,0 +1,21 @@
+{
+    "submissions_zst_path": "/projects/p32275/bitcoin/Bitcoin_submissions.zst",
+    "comments_zst_path": "/projects/p32275/bitcoin/Bitcoin_comments.zst",
+    "top_level_only": true,
+    "max_lines_to_process": 99999999999999999,
+    "base_path": "/projects/p32275/bitcoin/bitcoin_toplevel",
+    "user_data_pkl": "/projects/p32275/bitcoin/bitcoin_user_df.parquet",
+    "clean_text": "urls_only",
+    "csv_chunks_to_process": 999,
+    "csv_chunk_size": 100000,
+    "chunk_size": 100000,
+    "max_lines": 9999999999999,
+    "sent_tokenize": true,
+    "pad_and_flatten": true,
+    "eval_text_column": true,
+    "rows_to_display": 10,
+    "drop_title": true,
+    "add_uid": false,
+    "number_of_workers": 5,
+    "output_file": "none"
+  }

@@ -1,0 +1,11 @@
+{
+  "csv_path": "/projects/p32275/magicTCG/magicTCG_toplevel.csv",
+  "user_data_pkl": "/projects/p32275/magicTCG/magicTCG_user_df.pkl",
+  "clean_text": "urls_only",
+  "csv_chunks_to_process": 99,
+  "csv_chunk_size": 100000,
+  "rows_to_display": 10,
+  "add_uid": true,
+  "number_of_workers": 5,
+  "output_file": "pre_magic_output.pkl"
+}

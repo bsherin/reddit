@@ -1,0 +1,12 @@
+{
+   "working_directory": "/projects/p32275/bikewrench/preprocess",
+   "subreddit_name": "bikewrench",
+   "seed": 1,
+   "users_per_month": 500,
+   "posts_per_user": 2,
+   "start_buffer": 12,
+   "end_buffer": 12,
+   "min_user_posts": 1,
+   "leave_unknown": 100,
+   "max_discount": 0.9
+  }

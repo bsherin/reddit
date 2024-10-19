@@ -1,0 +1,12 @@
+{
+   "seed": 1,
+   "users_per_month": 500,
+   "posts_per_user": 2,
+   "start_buffer": 0,
+   "end_buffer": 0,
+   "min_user_posts": 1,
+   "leave_unknown": 100,
+   "max_discount": 0.9,
+   "truncate_text": false,
+   "max_len": 9999
+  }

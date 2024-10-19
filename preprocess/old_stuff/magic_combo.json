@@ -1,0 +1,17 @@
+{
+    "base_path": "/projects/p32275/magicTCG/magicTCG_toplevel",
+    "user_data_pkl": "/projects/p32275/magicTCG/magicTCG_user_df.pkl",
+    "clean_text": "urls_only",
+    "csv_chunks_to_process": 999,
+    "csv_chunk_size": 100000,
+    "chunk_size": 100000,
+    "max_lines": 9999999999999,
+    "sent_tokenize": true,
+    "pad_and_flatten": true,
+    "eval_text_column": true,
+    "rows_to_display": 10,
+    "drop_title": true,
+    "add_uid": false,
+    "number_of_workers": 5,
+    "output_file": "none"
+  }

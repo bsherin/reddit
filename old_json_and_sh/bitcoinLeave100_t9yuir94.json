@@ -1,0 +1,7 @@
+{
+    "snapshot_folder": "/projects/p32275/bitcoin/snapshots/bitcoinLeave100_t9yuir94",
+    "text_df_file": "/projects/p32275/bitcoin/bitcoin_toplevel_df_true.parquet",
+    "score_df_file": "/projects/p32275/bitcoin/bitcoin_score_new.parquet",
+    "overwrite_score_df": false,
+    "new_score_file_name": "bitcoinLeave100_t9yuir94_score.parquet"
+}

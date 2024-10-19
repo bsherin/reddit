@@ -1,0 +1,12 @@
+{
+  "remove_exp_duplicates": false,
+  "num_phases": 20,
+  "post_bin_size": 10,
+  "period_in_weeks": 4,
+  "min_instances": 50,
+  "experience_bin_size": 28,
+  "ntokens_bin_size": 5,
+  "minimum_user_posts": 50,
+  "min_posts": 2000,
+  "marker_size": 8
+}

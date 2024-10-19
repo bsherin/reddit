@@ -1,0 +1,57 @@
+Python 3.11.7
+/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py:380: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  param_df = pd.read_csv(f"{self.snapshot_folder}/parameters.txt", sep=":\t", names=["key", "value"], index_col="key")
+starting
+done with globals
+starting
+Getting snapshot params
+Reading text df
+Removing text_df duplicates
+Reading score df
+Removing score_df duplicates
+Processing year 2012 month 1
+Traceback (most recent call last):
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 290, in score
+    return self.alphas[self.unk_token(bg[0])] * self.unigram_lm.score(self.unk_token(bg[1]))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '<UNK>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 470, in <module>
+    Tile.render_content()
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 435, in render_content
+    results = month_df['text'].apply(score_function)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/pandas/core/series.py", line 4904, in apply
+    ).apply()
+      ^^^^^^^
+  File "/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 22, in score_function
+    return kb_model.entropy(list(bigrams(txt)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 300, in entropy
+    raw_ent = self.raw_entropy(bg_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 306, in raw_entropy
+    return -1 * sum([math.log(self.score(bg), 2) for bg in bg_list])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 306, in <listcomp>
+    return -1 * sum([math.log(self.score(bg), 2) for bg in bg_list])
+                              ^^^^^^^^^^^^^^
+  File "/home/bls910/reddit/scripts/ScorePostsFromSnapshots_script.py", line 295, in score
+    raise RuntimeError(f"{str(self.unk_token(bg[0]))} is not in self.alphas, bg[0] was {bg[0]}")
+RuntimeError: <UNK> is not in self.alphas, bg[0] was van

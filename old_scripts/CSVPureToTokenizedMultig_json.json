@@ -1,0 +1,11 @@
+{
+  "csv_path": null,
+  "max_lines": 100000,
+  "sent_tokenize": false,
+  "pad_and_flatten": false,
+  "tokenizer": null,
+  "add_uid": false,
+  "chunk_size": 100000,
+  "number_of_workers": 6,
+  "output_file": "output.pkl"
+}

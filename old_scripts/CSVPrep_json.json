@@ -1,0 +1,11 @@
+{
+  "csv_path": null,
+  "user_data_pkl": null,
+  "clean_text": "full",
+  "csv_chunks_to_process": 10,
+  "csv_chunk_size": 100000,
+  "rows_to_display": 10,
+  "add_uid": false,
+  "number_of_workers": 5,
+  "output_file": "output.pkl"
+}

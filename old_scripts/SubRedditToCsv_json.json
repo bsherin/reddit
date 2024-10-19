@@ -1,0 +1,9 @@
+{
+  "submissions_zst_path": null,
+  "comments_zst_path": null,
+  "output_directory": null,
+  "output_file_name": null,
+  "max_lines_to_process": 1000,
+  "top_level_only": false,
+  "output_file": "output.pkl"
+}

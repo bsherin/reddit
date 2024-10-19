@@ -1,0 +1,5900 @@
+Python 3.11.7
+starting zsts_to_post_csv
+done with globals
+starting
+Reading submissions
+
+read all lines
+Reading comments
+
+read all lines
+starting zsts_to_user_data.py
+done with globals
+starting
+Reading submissions
+read all lines
+Reading comments
+read all lines
+Writing file
+starting clean_and_add_seconds.py
+done with globals
+starting
+Getting CSV size
+CSV has 978 total chunks. Reading
+cleaning
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 1 of 979
+cleaned chunk 2 of 979
+cleaned chunk 3 of 979
+cleaned chunk 4 of 979
+cleaned chunk 5 of 979
+cleaned chunk 6 of 979
+cleaned chunk 7 of 979
+cleaned chunk 8 of 979
+cleaned chunk 9 of 979
+cleaned chunk 10 of 979
+cleaned chunk 11 of 979
+cleaned chunk 12 of 979
+cleaned chunk 13 of 979
+cleaned chunk 14 of 979
+cleaned chunk 15 of 979
+cleaned chunk 16 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 17 of 979
+cleaned chunk 18 of 979
+cleaned chunk 19 of 979
+cleaned chunk 20 of 979
+cleaned chunk 21 of 979
+cleaned chunk 22 of 979
+cleaned chunk 23 of 979
+cleaned chunk 24 of 979
+cleaned chunk 25 of 979
+cleaned chunk 26 of 979
+cleaned chunk 27 of 979
+cleaned chunk 28 of 979
+cleaned chunk 29 of 979
+cleaned chunk 30 of 979
+cleaned chunk 31 of 979
+cleaned chunk 32 of 979
+cleaned chunk 33 of 979
+cleaned chunk 34 of 979
+cleaned chunk 35 of 979
+cleaned chunk 36 of 979
+cleaned chunk 37 of 979
+cleaned chunk 38 of 979
+cleaned chunk 39 of 979
+cleaned chunk 40 of 979
+cleaned chunk 41 of 979
+cleaned chunk 42 of 979
+cleaned chunk 43 of 979
+cleaned chunk 44 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 45 of 979
+cleaned chunk 46 of 979
+cleaned chunk 47 of 979
+cleaned chunk 48 of 979
+cleaned chunk 49 of 979
+cleaned chunk 50 of 979
+cleaned chunk 51 of 979
+cleaned chunk 52 of 979
+cleaned chunk 53 of 979
+cleaned chunk 54 of 979
+cleaned chunk 55 of 979
+cleaned chunk 56 of 979
+cleaned chunk 57 of 979
+cleaned chunk 58 of 979
+cleaned chunk 59 of 979
+cleaned chunk 60 of 979
+cleaned chunk 61 of 979
+cleaned chunk 62 of 979
+cleaned chunk 63 of 979
+cleaned chunk 64 of 979
+cleaned chunk 65 of 979
+cleaned chunk 66 of 979
+cleaned chunk 67 of 979
+cleaned chunk 68 of 979
+cleaned chunk 69 of 979
+cleaned chunk 70 of 979
+cleaned chunk 71 of 979
+cleaned chunk 72 of 979
+cleaned chunk 73 of 979
+cleaned chunk 74 of 979
+cleaned chunk 75 of 979
+cleaned chunk 76 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 77 of 979
+cleaned chunk 78 of 979
+cleaned chunk 79 of 979
+cleaned chunk 80 of 979
+cleaned chunk 81 of 979
+cleaned chunk 82 of 979
+cleaned chunk 83 of 979
+cleaned chunk 84 of 979
+cleaned chunk 85 of 979
+cleaned chunk 86 of 979
+cleaned chunk 87 of 979
+cleaned chunk 88 of 979
+cleaned chunk 89 of 979
+cleaned chunk 90 of 979
+cleaned chunk 91 of 979
+cleaned chunk 92 of 979
+cleaned chunk 93 of 979
+cleaned chunk 94 of 979
+cleaned chunk 95 of 979
+cleaned chunk 96 of 979
+cleaned chunk 97 of 979
+cleaned chunk 98 of 979
+cleaned chunk 99 of 979
+cleaned chunk 100 of 979
+cleaned chunk 101 of 979
+cleaned chunk 102 of 979
+cleaned chunk 103 of 979
+cleaned chunk 104 of 979
+cleaned chunk 105 of 979
+cleaned chunk 106 of 979
+cleaned chunk 107 of 979
+cleaned chunk 108 of 979
+cleaned chunk 109 of 979
+cleaned chunk 110 of 979
+cleaned chunk 111 of 979
+cleaned chunk 112 of 979
+cleaned chunk 113 of 979
+cleaned chunk 114 of 979
+cleaned chunk 115 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 116 of 979
+cleaned chunk 117 of 979
+cleaned chunk 118 of 979
+cleaned chunk 119 of 979
+cleaned chunk 120 of 979
+cleaned chunk 121 of 979
+cleaned chunk 122 of 979
+cleaned chunk 123 of 979
+cleaned chunk 124 of 979
+cleaned chunk 125 of 979
+cleaned chunk 126 of 979
+cleaned chunk 127 of 979
+cleaned chunk 128 of 979
+cleaned chunk 129 of 979
+cleaned chunk 130 of 979
+cleaned chunk 131 of 979
+cleaned chunk 132 of 979
+cleaned chunk 133 of 979
+cleaned chunk 134 of 979
+cleaned chunk 135 of 979
+cleaned chunk 136 of 979
+cleaned chunk 137 of 979
+cleaned chunk 138 of 979
+cleaned chunk 139 of 979
+cleaned chunk 140 of 979
+cleaned chunk 141 of 979
+cleaned chunk 142 of 979
+cleaned chunk 143 of 979
+cleaned chunk 144 of 979
+cleaned chunk 145 of 979
+cleaned chunk 146 of 979
+cleaned chunk 147 of 979
+cleaned chunk 148 of 979
+cleaned chunk 149 of 979
+cleaned chunk 150 of 979
+cleaned chunk 151 of 979
+cleaned chunk 152 of 979
+cleaned chunk 153 of 979
+cleaned chunk 154 of 979
+cleaned chunk 155 of 979
+cleaned chunk 156 of 979
+cleaned chunk 157 of 979
+cleaned chunk 158 of 979
+cleaned chunk 159 of 979
+cleaned chunk 160 of 979
+cleaned chunk 161 of 979
+cleaned chunk 162 of 979
+cleaned chunk 163 of 979
+cleaned chunk 164 of 979
+cleaned chunk 165 of 979
+cleaned chunk 166 of 979
+cleaned chunk 167 of 979
+cleaned chunk 168 of 979
+cleaned chunk 169 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 170 of 979
+cleaned chunk 171 of 979
+cleaned chunk 172 of 979
+cleaned chunk 173 of 979
+cleaned chunk 174 of 979
+cleaned chunk 175 of 979
+cleaned chunk 176 of 979
+cleaned chunk 177 of 979
+cleaned chunk 178 of 979
+cleaned chunk 179 of 979
+cleaned chunk 180 of 979
+cleaned chunk 181 of 979
+cleaned chunk 182 of 979
+cleaned chunk 183 of 979
+cleaned chunk 184 of 979
+cleaned chunk 185 of 979
+cleaned chunk 186 of 979
+cleaned chunk 187 of 979
+cleaned chunk 188 of 979
+cleaned chunk 189 of 979
+cleaned chunk 190 of 979
+cleaned chunk 191 of 979
+cleaned chunk 192 of 979
+cleaned chunk 193 of 979
+cleaned chunk 194 of 979
+cleaned chunk 195 of 979
+cleaned chunk 196 of 979
+cleaned chunk 197 of 979
+cleaned chunk 198 of 979
+cleaned chunk 199 of 979
+cleaned chunk 200 of 979
+cleaned chunk 201 of 979
+cleaned chunk 202 of 979
+cleaned chunk 203 of 979
+cleaned chunk 204 of 979
+cleaned chunk 205 of 979
+cleaned chunk 206 of 979
+cleaned chunk 207 of 979
+cleaned chunk 208 of 979
+cleaned chunk 209 of 979
+cleaned chunk 210 of 979
+cleaned chunk 211 of 979
+cleaned chunk 212 of 979
+cleaned chunk 213 of 979
+cleaned chunk 214 of 979
+cleaned chunk 215 of 979
+cleaned chunk 216 of 979
+cleaned chunk 217 of 979
+cleaned chunk 218 of 979
+cleaned chunk 219 of 979
+cleaned chunk 220 of 979
+cleaned chunk 221 of 979
+cleaned chunk 222 of 979
+cleaned chunk 223 of 979
+cleaned chunk 224 of 979
+cleaned chunk 225 of 979
+cleaned chunk 226 of 979
+cleaned chunk 227 of 979
+cleaned chunk 228 of 979
+cleaned chunk 229 of 979
+cleaned chunk 230 of 979
+cleaned chunk 231 of 979
+cleaned chunk 232 of 979
+cleaned chunk 233 of 979
+cleaned chunk 234 of 979
+cleaned chunk 235 of 979
+cleaned chunk 236 of 979
+cleaned chunk 237 of 979
+cleaned chunk 238 of 979
+cleaned chunk 239 of 979
+cleaned chunk 240 of 979
+cleaned chunk 241 of 979
+cleaned chunk 242 of 979
+cleaned chunk 243 of 979
+cleaned chunk 244 of 979
+cleaned chunk 245 of 979
+cleaned chunk 246 of 979
+cleaned chunk 247 of 979
+cleaned chunk 248 of 979
+cleaned chunk 249 of 979
+cleaned chunk 250 of 979
+cleaned chunk 251 of 979
+cleaned chunk 252 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 253 of 979
+cleaned chunk 254 of 979
+cleaned chunk 255 of 979
+cleaned chunk 256 of 979
+cleaned chunk 257 of 979
+cleaned chunk 258 of 979
+cleaned chunk 259 of 979
+cleaned chunk 260 of 979
+cleaned chunk 261 of 979
+cleaned chunk 262 of 979
+cleaned chunk 263 of 979
+cleaned chunk 264 of 979
+cleaned chunk 265 of 979
+cleaned chunk 266 of 979
+cleaned chunk 267 of 979
+cleaned chunk 268 of 979
+cleaned chunk 269 of 979
+cleaned chunk 270 of 979
+cleaned chunk 271 of 979
+cleaned chunk 272 of 979
+cleaned chunk 273 of 979
+cleaned chunk 274 of 979
+cleaned chunk 275 of 979
+cleaned chunk 276 of 979
+cleaned chunk 277 of 979
+cleaned chunk 278 of 979
+cleaned chunk 279 of 979
+cleaned chunk 280 of 979
+cleaned chunk 281 of 979
+cleaned chunk 282 of 979
+cleaned chunk 283 of 979
+cleaned chunk 284 of 979
+cleaned chunk 285 of 979
+cleaned chunk 286 of 979
+cleaned chunk 287 of 979
+cleaned chunk 288 of 979
+cleaned chunk 289 of 979
+cleaned chunk 290 of 979
+cleaned chunk 291 of 979
+cleaned chunk 292 of 979
+cleaned chunk 293 of 979
+cleaned chunk 294 of 979
+cleaned chunk 295 of 979
+cleaned chunk 296 of 979
+cleaned chunk 297 of 979
+cleaned chunk 298 of 979
+cleaned chunk 299 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 300 of 979
+cleaned chunk 301 of 979
+cleaned chunk 302 of 979
+cleaned chunk 303 of 979
+cleaned chunk 304 of 979
+cleaned chunk 305 of 979
+cleaned chunk 306 of 979
+cleaned chunk 307 of 979
+cleaned chunk 308 of 979
+cleaned chunk 309 of 979
+cleaned chunk 310 of 979
+cleaned chunk 311 of 979
+cleaned chunk 312 of 979
+cleaned chunk 313 of 979
+cleaned chunk 314 of 979
+cleaned chunk 315 of 979
+cleaned chunk 316 of 979
+cleaned chunk 317 of 979
+cleaned chunk 318 of 979
+cleaned chunk 319 of 979
+cleaned chunk 320 of 979
+cleaned chunk 321 of 979
+cleaned chunk 322 of 979
+cleaned chunk 323 of 979
+cleaned chunk 324 of 979
+cleaned chunk 325 of 979
+cleaned chunk 326 of 979
+cleaned chunk 327 of 979
+cleaned chunk 328 of 979
+cleaned chunk 329 of 979
+cleaned chunk 330 of 979
+cleaned chunk 331 of 979
+cleaned chunk 332 of 979
+cleaned chunk 333 of 979
+cleaned chunk 334 of 979
+cleaned chunk 335 of 979
+cleaned chunk 336 of 979
+cleaned chunk 337 of 979
+cleaned chunk 338 of 979
+cleaned chunk 339 of 979
+cleaned chunk 340 of 979
+cleaned chunk 341 of 979
+cleaned chunk 342 of 979
+cleaned chunk 343 of 979
+cleaned chunk 344 of 979
+cleaned chunk 345 of 979
+cleaned chunk 346 of 979
+cleaned chunk 347 of 979
+cleaned chunk 348 of 979
+cleaned chunk 349 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 350 of 979
+cleaned chunk 351 of 979
+cleaned chunk 352 of 979
+cleaned chunk 353 of 979
+cleaned chunk 354 of 979
+cleaned chunk 355 of 979
+cleaned chunk 356 of 979
+cleaned chunk 357 of 979
+cleaned chunk 358 of 979
+cleaned chunk 359 of 979
+cleaned chunk 360 of 979
+cleaned chunk 361 of 979
+cleaned chunk 362 of 979
+cleaned chunk 363 of 979
+cleaned chunk 364 of 979
+cleaned chunk 365 of 979
+cleaned chunk 366 of 979
+cleaned chunk 367 of 979
+cleaned chunk 368 of 979
+cleaned chunk 369 of 979
+cleaned chunk 370 of 979
+cleaned chunk 371 of 979
+cleaned chunk 372 of 979
+cleaned chunk 373 of 979
+cleaned chunk 374 of 979
+cleaned chunk 375 of 979
+cleaned chunk 376 of 979
+cleaned chunk 377 of 979
+cleaned chunk 378 of 979
+cleaned chunk 379 of 979
+cleaned chunk 380 of 979
+cleaned chunk 381 of 979
+cleaned chunk 382 of 979
+cleaned chunk 383 of 979
+cleaned chunk 384 of 979
+cleaned chunk 385 of 979
+cleaned chunk 386 of 979
+cleaned chunk 387 of 979
+cleaned chunk 388 of 979
+cleaned chunk 389 of 979
+cleaned chunk 390 of 979
+cleaned chunk 391 of 979
+cleaned chunk 392 of 979
+cleaned chunk 393 of 979
+cleaned chunk 394 of 979
+cleaned chunk 395 of 979
+cleaned chunk 396 of 979
+cleaned chunk 397 of 979
+cleaned chunk 398 of 979
+cleaned chunk 399 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 400 of 979
+cleaned chunk 401 of 979
+cleaned chunk 402 of 979
+cleaned chunk 403 of 979
+cleaned chunk 404 of 979
+cleaned chunk 405 of 979
+cleaned chunk 406 of 979
+cleaned chunk 407 of 979
+cleaned chunk 408 of 979
+cleaned chunk 409 of 979
+cleaned chunk 410 of 979
+cleaned chunk 411 of 979
+cleaned chunk 412 of 979
+cleaned chunk 413 of 979
+cleaned chunk 414 of 979
+cleaned chunk 415 of 979
+cleaned chunk 416 of 979
+cleaned chunk 417 of 979
+cleaned chunk 418 of 979
+cleaned chunk 419 of 979
+cleaned chunk 420 of 979
+cleaned chunk 421 of 979
+cleaned chunk 422 of 979
+cleaned chunk 423 of 979
+cleaned chunk 424 of 979
+cleaned chunk 425 of 979
+cleaned chunk 426 of 979
+cleaned chunk 427 of 979
+cleaned chunk 428 of 979
+cleaned chunk 429 of 979
+cleaned chunk 430 of 979
+cleaned chunk 431 of 979
+cleaned chunk 432 of 979
+cleaned chunk 433 of 979
+cleaned chunk 434 of 979
+cleaned chunk 435 of 979
+cleaned chunk 436 of 979
+cleaned chunk 437 of 979
+cleaned chunk 438 of 979
+cleaned chunk 439 of 979
+cleaned chunk 440 of 979
+cleaned chunk 441 of 979
+cleaned chunk 442 of 979
+cleaned chunk 443 of 979
+cleaned chunk 444 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 445 of 979
+cleaned chunk 446 of 979
+cleaned chunk 447 of 979
+cleaned chunk 448 of 979
+cleaned chunk 449 of 979
+cleaned chunk 450 of 979
+cleaned chunk 451 of 979
+cleaned chunk 452 of 979
+cleaned chunk 453 of 979
+cleaned chunk 454 of 979
+cleaned chunk 455 of 979
+cleaned chunk 456 of 979
+cleaned chunk 457 of 979
+cleaned chunk 458 of 979
+cleaned chunk 459 of 979
+cleaned chunk 460 of 979
+cleaned chunk 461 of 979
+cleaned chunk 462 of 979
+cleaned chunk 463 of 979
+cleaned chunk 464 of 979
+cleaned chunk 465 of 979
+cleaned chunk 466 of 979
+cleaned chunk 467 of 979
+cleaned chunk 468 of 979
+cleaned chunk 469 of 979
+cleaned chunk 470 of 979
+cleaned chunk 471 of 979
+cleaned chunk 472 of 979
+cleaned chunk 473 of 979
+cleaned chunk 474 of 979
+cleaned chunk 475 of 979
+cleaned chunk 476 of 979
+cleaned chunk 477 of 979
+cleaned chunk 478 of 979
+cleaned chunk 479 of 979
+cleaned chunk 480 of 979
+cleaned chunk 481 of 979
+cleaned chunk 482 of 979
+cleaned chunk 483 of 979
+cleaned chunk 484 of 979
+cleaned chunk 485 of 979
+cleaned chunk 486 of 979
+cleaned chunk 487 of 979
+cleaned chunk 488 of 979
+cleaned chunk 489 of 979
+cleaned chunk 490 of 979
+cleaned chunk 491 of 979
+cleaned chunk 492 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 493 of 979
+cleaned chunk 494 of 979
+cleaned chunk 495 of 979
+cleaned chunk 496 of 979
+cleaned chunk 497 of 979
+cleaned chunk 498 of 979
+cleaned chunk 499 of 979
+cleaned chunk 500 of 979
+cleaned chunk 501 of 979
+cleaned chunk 502 of 979
+cleaned chunk 503 of 979
+cleaned chunk 504 of 979
+cleaned chunk 505 of 979
+cleaned chunk 506 of 979
+cleaned chunk 507 of 979
+cleaned chunk 508 of 979
+cleaned chunk 509 of 979
+cleaned chunk 510 of 979
+cleaned chunk 511 of 979
+cleaned chunk 512 of 979
+cleaned chunk 513 of 979
+cleaned chunk 514 of 979
+cleaned chunk 515 of 979
+cleaned chunk 516 of 979
+cleaned chunk 517 of 979
+cleaned chunk 518 of 979
+cleaned chunk 519 of 979
+cleaned chunk 520 of 979
+cleaned chunk 521 of 979
+cleaned chunk 522 of 979
+cleaned chunk 523 of 979
+cleaned chunk 524 of 979
+cleaned chunk 525 of 979
+cleaned chunk 526 of 979
+cleaned chunk 527 of 979
+cleaned chunk 528 of 979
+cleaned chunk 529 of 979
+cleaned chunk 530 of 979
+cleaned chunk 531 of 979
+cleaned chunk 532 of 979
+cleaned chunk 533 of 979
+cleaned chunk 534 of 979
+cleaned chunk 535 of 979
+cleaned chunk 536 of 979
+cleaned chunk 537 of 979
+cleaned chunk 538 of 979
+cleaned chunk 539 of 979
+cleaned chunk 540 of 979
+cleaned chunk 541 of 979
+cleaned chunk 542 of 979
+cleaned chunk 543 of 979
+cleaned chunk 544 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 545 of 979
+cleaned chunk 546 of 979
+cleaned chunk 547 of 979
+cleaned chunk 548 of 979
+cleaned chunk 549 of 979
+cleaned chunk 550 of 979
+cleaned chunk 551 of 979
+cleaned chunk 552 of 979
+cleaned chunk 553 of 979
+cleaned chunk 554 of 979
+cleaned chunk 555 of 979
+cleaned chunk 556 of 979
+cleaned chunk 557 of 979
+cleaned chunk 558 of 979
+cleaned chunk 559 of 979
+cleaned chunk 560 of 979
+cleaned chunk 561 of 979
+cleaned chunk 562 of 979
+cleaned chunk 563 of 979
+cleaned chunk 564 of 979
+cleaned chunk 565 of 979
+cleaned chunk 566 of 979
+cleaned chunk 567 of 979
+cleaned chunk 568 of 979
+cleaned chunk 569 of 979
+cleaned chunk 570 of 979
+cleaned chunk 571 of 979
+cleaned chunk 572 of 979
+cleaned chunk 573 of 979
+cleaned chunk 574 of 979
+cleaned chunk 575 of 979
+cleaned chunk 576 of 979
+cleaned chunk 577 of 979
+cleaned chunk 578 of 979
+cleaned chunk 579 of 979
+cleaned chunk 580 of 979
+cleaned chunk 581 of 979
+cleaned chunk 582 of 979
+cleaned chunk 583 of 979
+cleaned chunk 584 of 979
+cleaned chunk 585 of 979
+cleaned chunk 586 of 979
+cleaned chunk 587 of 979
+cleaned chunk 588 of 979
+cleaned chunk 589 of 979
+cleaned chunk 590 of 979
+cleaned chunk 591 of 979
+cleaned chunk 592 of 979
+cleaned chunk 593 of 979
+cleaned chunk 594 of 979
+cleaned chunk 595 of 979
+cleaned chunk 596 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 597 of 979
+cleaned chunk 598 of 979
+cleaned chunk 599 of 979
+cleaned chunk 600 of 979
+cleaned chunk 601 of 979
+cleaned chunk 602 of 979
+cleaned chunk 603 of 979
+cleaned chunk 604 of 979
+cleaned chunk 605 of 979
+cleaned chunk 606 of 979
+cleaned chunk 607 of 979
+cleaned chunk 608 of 979
+cleaned chunk 609 of 979
+cleaned chunk 610 of 979
+cleaned chunk 611 of 979
+cleaned chunk 612 of 979
+cleaned chunk 613 of 979
+cleaned chunk 614 of 979
+cleaned chunk 615 of 979
+cleaned chunk 616 of 979
+cleaned chunk 617 of 979
+cleaned chunk 618 of 979
+cleaned chunk 619 of 979
+cleaned chunk 620 of 979
+cleaned chunk 621 of 979
+cleaned chunk 622 of 979
+cleaned chunk 623 of 979
+cleaned chunk 624 of 979
+cleaned chunk 625 of 979
+cleaned chunk 626 of 979
+cleaned chunk 627 of 979
+cleaned chunk 628 of 979
+cleaned chunk 629 of 979
+cleaned chunk 630 of 979
+cleaned chunk 631 of 979
+cleaned chunk 632 of 979
+cleaned chunk 633 of 979
+cleaned chunk 634 of 979
+cleaned chunk 635 of 979
+cleaned chunk 636 of 979
+cleaned chunk 637 of 979
+cleaned chunk 638 of 979
+cleaned chunk 639 of 979
+cleaned chunk 640 of 979
+cleaned chunk 641 of 979
+cleaned chunk 642 of 979
+cleaned chunk 643 of 979
+cleaned chunk 644 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 645 of 979
+cleaned chunk 646 of 979
+cleaned chunk 647 of 979
+cleaned chunk 648 of 979
+cleaned chunk 649 of 979
+cleaned chunk 650 of 979
+cleaned chunk 651 of 979
+cleaned chunk 652 of 979
+cleaned chunk 653 of 979
+cleaned chunk 654 of 979
+cleaned chunk 655 of 979
+cleaned chunk 656 of 979
+cleaned chunk 657 of 979
+cleaned chunk 658 of 979
+cleaned chunk 659 of 979
+cleaned chunk 660 of 979
+cleaned chunk 661 of 979
+cleaned chunk 662 of 979
+cleaned chunk 663 of 979
+cleaned chunk 664 of 979
+cleaned chunk 665 of 979
+cleaned chunk 666 of 979
+cleaned chunk 667 of 979
+cleaned chunk 668 of 979
+cleaned chunk 669 of 979
+cleaned chunk 670 of 979
+cleaned chunk 671 of 979
+cleaned chunk 672 of 979
+cleaned chunk 673 of 979
+cleaned chunk 674 of 979
+cleaned chunk 675 of 979
+cleaned chunk 676 of 979
+cleaned chunk 677 of 979
+cleaned chunk 678 of 979
+cleaned chunk 679 of 979
+cleaned chunk 680 of 979
+cleaned chunk 681 of 979
+cleaned chunk 682 of 979
+cleaned chunk 683 of 979
+cleaned chunk 684 of 979
+cleaned chunk 685 of 979
+cleaned chunk 686 of 979
+cleaned chunk 687 of 979
+cleaned chunk 688 of 979
+cleaned chunk 689 of 979
+cleaned chunk 690 of 979
+cleaned chunk 691 of 979
+cleaned chunk 692 of 979
+cleaned chunk 693 of 979
+cleaned chunk 694 of 979
+cleaned chunk 695 of 979
+cleaned chunk 696 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 697 of 979
+cleaned chunk 698 of 979
+cleaned chunk 699 of 979
+cleaned chunk 700 of 979
+cleaned chunk 701 of 979
+cleaned chunk 702 of 979
+cleaned chunk 703 of 979
+cleaned chunk 704 of 979
+cleaned chunk 705 of 979
+cleaned chunk 706 of 979
+cleaned chunk 707 of 979
+cleaned chunk 708 of 979
+cleaned chunk 709 of 979
+cleaned chunk 710 of 979
+cleaned chunk 711 of 979
+cleaned chunk 712 of 979
+cleaned chunk 713 of 979
+cleaned chunk 714 of 979
+cleaned chunk 715 of 979
+cleaned chunk 716 of 979
+cleaned chunk 717 of 979
+cleaned chunk 718 of 979
+cleaned chunk 719 of 979
+cleaned chunk 720 of 979
+cleaned chunk 721 of 979
+cleaned chunk 722 of 979
+cleaned chunk 723 of 979
+cleaned chunk 724 of 979
+cleaned chunk 725 of 979
+cleaned chunk 726 of 979
+cleaned chunk 727 of 979
+cleaned chunk 728 of 979
+cleaned chunk 729 of 979
+cleaned chunk 730 of 979
+cleaned chunk 731 of 979
+cleaned chunk 732 of 979
+cleaned chunk 733 of 979
+cleaned chunk 734 of 979
+cleaned chunk 735 of 979
+cleaned chunk 736 of 979
+cleaned chunk 737 of 979
+cleaned chunk 738 of 979
+cleaned chunk 739 of 979
+cleaned chunk 740 of 979
+cleaned chunk 741 of 979
+cleaned chunk 742 of 979
+cleaned chunk 743 of 979
+cleaned chunk 744 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 745 of 979
+cleaned chunk 746 of 979
+cleaned chunk 747 of 979
+cleaned chunk 748 of 979
+cleaned chunk 749 of 979
+cleaned chunk 750 of 979
+cleaned chunk 751 of 979
+cleaned chunk 752 of 979
+cleaned chunk 753 of 979
+cleaned chunk 754 of 979
+cleaned chunk 755 of 979
+cleaned chunk 756 of 979
+cleaned chunk 757 of 979
+cleaned chunk 758 of 979
+cleaned chunk 759 of 979
+cleaned chunk 760 of 979
+cleaned chunk 761 of 979
+cleaned chunk 762 of 979
+cleaned chunk 763 of 979
+cleaned chunk 764 of 979
+cleaned chunk 765 of 979
+cleaned chunk 766 of 979
+cleaned chunk 767 of 979
+cleaned chunk 768 of 979
+cleaned chunk 769 of 979
+cleaned chunk 770 of 979
+cleaned chunk 771 of 979
+cleaned chunk 772 of 979
+cleaned chunk 773 of 979
+cleaned chunk 774 of 979
+cleaned chunk 775 of 979
+cleaned chunk 776 of 979
+cleaned chunk 777 of 979
+cleaned chunk 778 of 979
+cleaned chunk 779 of 979
+cleaned chunk 780 of 979
+cleaned chunk 781 of 979
+cleaned chunk 782 of 979
+cleaned chunk 783 of 979
+cleaned chunk 784 of 979
+cleaned chunk 785 of 979
+cleaned chunk 786 of 979
+cleaned chunk 787 of 979
+cleaned chunk 788 of 979
+cleaned chunk 789 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 790 of 979
+cleaned chunk 791 of 979
+cleaned chunk 792 of 979
+cleaned chunk 793 of 979
+cleaned chunk 794 of 979
+cleaned chunk 795 of 979
+cleaned chunk 796 of 979
+cleaned chunk 797 of 979
+cleaned chunk 798 of 979
+cleaned chunk 799 of 979
+cleaned chunk 800 of 979
+cleaned chunk 801 of 979
+cleaned chunk 802 of 979
+cleaned chunk 803 of 979
+cleaned chunk 804 of 979
+cleaned chunk 805 of 979
+cleaned chunk 806 of 979
+cleaned chunk 807 of 979
+cleaned chunk 808 of 979
+cleaned chunk 809 of 979
+cleaned chunk 810 of 979
+cleaned chunk 811 of 979
+cleaned chunk 812 of 979
+cleaned chunk 813 of 979
+cleaned chunk 814 of 979
+cleaned chunk 815 of 979
+cleaned chunk 816 of 979
+cleaned chunk 817 of 979
+cleaned chunk 818 of 979
+cleaned chunk 819 of 979
+cleaned chunk 820 of 979
+cleaned chunk 821 of 979
+cleaned chunk 822 of 979
+cleaned chunk 823 of 979
+cleaned chunk 824 of 979
+cleaned chunk 825 of 979
+cleaned chunk 826 of 979
+cleaned chunk 827 of 979
+cleaned chunk 828 of 979
+cleaned chunk 829 of 979
+cleaned chunk 830 of 979
+cleaned chunk 831 of 979
+cleaned chunk 832 of 979
+cleaned chunk 833 of 979
+cleaned chunk 834 of 979
+cleaned chunk 835 of 979
+cleaned chunk 836 of 979
+cleaned chunk 837 of 979
+cleaned chunk 838 of 979
+cleaned chunk 839 of 979
+cleaned chunk 840 of 979
+cleaned chunk 841 of 979
+cleaned chunk 842 of 979
+cleaned chunk 843 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 844 of 979
+cleaned chunk 845 of 979
+cleaned chunk 846 of 979
+cleaned chunk 847 of 979
+cleaned chunk 848 of 979
+cleaned chunk 849 of 979
+cleaned chunk 850 of 979
+cleaned chunk 851 of 979
+cleaned chunk 852 of 979
+cleaned chunk 853 of 979
+cleaned chunk 854 of 979
+cleaned chunk 855 of 979
+cleaned chunk 856 of 979
+cleaned chunk 857 of 979
+cleaned chunk 858 of 979
+cleaned chunk 859 of 979
+cleaned chunk 860 of 979
+cleaned chunk 861 of 979
+cleaned chunk 862 of 979
+cleaned chunk 863 of 979
+cleaned chunk 864 of 979
+cleaned chunk 865 of 979
+cleaned chunk 866 of 979
+cleaned chunk 867 of 979
+cleaned chunk 868 of 979
+cleaned chunk 869 of 979
+cleaned chunk 870 of 979
+cleaned chunk 871 of 979
+cleaned chunk 872 of 979
+cleaned chunk 873 of 979
+cleaned chunk 874 of 979
+cleaned chunk 875 of 979
+cleaned chunk 876 of 979
+cleaned chunk 877 of 979
+cleaned chunk 878 of 979
+cleaned chunk 879 of 979
+cleaned chunk 880 of 979
+cleaned chunk 881 of 979
+cleaned chunk 882 of 979
+cleaned chunk 883 of 979
+cleaned chunk 884 of 979
+cleaned chunk 885 of 979
+cleaned chunk 886 of 979
+cleaned chunk 887 of 979
+cleaned chunk 888 of 979
+cleaned chunk 889 of 979
+/home/bls910/reddit/preprocess/clean_and_add_seconds.py:34: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  chunk["text"] = chunk.apply(lambda row: url_clean(row["text"]), 1)
+cleaned chunk 890 of 979
+cleaned chunk 891 of 979
+cleaned chunk 892 of 979
+cleaned chunk 893 of 979
+cleaned chunk 894 of 979
+cleaned chunk 895 of 979
+cleaned chunk 896 of 979
+cleaned chunk 897 of 979
+cleaned chunk 898 of 979
+cleaned chunk 899 of 979
+cleaned chunk 900 of 979
+cleaned chunk 901 of 979
+cleaned chunk 902 of 979
+cleaned chunk 903 of 979
+cleaned chunk 904 of 979
+cleaned chunk 905 of 979
+cleaned chunk 906 of 979
+cleaned chunk 907 of 979
+cleaned chunk 908 of 979
+cleaned chunk 909 of 979
+cleaned chunk 910 of 979
+cleaned chunk 911 of 979
+cleaned chunk 912 of 979
+cleaned chunk 913 of 979
+cleaned chunk 914 of 979
+cleaned chunk 915 of 979
+cleaned chunk 916 of 979
+cleaned chunk 917 of 979
+cleaned chunk 918 of 979
+cleaned chunk 919 of 979
+cleaned chunk 920 of 979
+cleaned chunk 921 of 979
+cleaned chunk 922 of 979
+cleaned chunk 923 of 979
+cleaned chunk 924 of 979
+cleaned chunk 925 of 979
+cleaned chunk 926 of 979
+cleaned chunk 927 of 979
+cleaned chunk 928 of 979
+cleaned chunk 929 of 979
+cleaned chunk 930 of 979
+cleaned chunk 931 of 979
+cleaned chunk 932 of 979
+cleaned chunk 933 of 979
+cleaned chunk 934 of 979
+cleaned chunk 935 of 979
+cleaned chunk 936 of 979
+cleaned chunk 937 of 979
+cleaned chunk 938 of 979
+cleaned chunk 939 of 979
+cleaned chunk 940 of 979
+cleaned chunk 941 of 979
+cleaned chunk 942 of 979
+cleaned chunk 943 of 979
+cleaned chunk 944 of 979
+cleaned chunk 945 of 979
+cleaned chunk 946 of 979
+cleaned chunk 947 of 979
+cleaned chunk 948 of 979
+cleaned chunk 949 of 979
+cleaned chunk 950 of 979
+cleaned chunk 951 of 979
+cleaned chunk 952 of 979
+cleaned chunk 953 of 979
+cleaned chunk 954 of 979
+cleaned chunk 955 of 979
+cleaned chunk 956 of 979
+cleaned chunk 957 of 979
+cleaned chunk 958 of 979
+cleaned chunk 959 of 979
+cleaned chunk 960 of 979
+cleaned chunk 961 of 979
+cleaned chunk 962 of 979
+cleaned chunk 963 of 979
+cleaned chunk 964 of 979
+cleaned chunk 965 of 979
+cleaned chunk 966 of 979
+cleaned chunk 967 of 979
+cleaned chunk 968 of 979
+cleaned chunk 969 of 979
+cleaned chunk 970 of 979
+cleaned chunk 971 of 979
+cleaned chunk 972 of 979
+cleaned chunk 973 of 979
+cleaned chunk 974 of 979
+cleaned chunk 975 of 979
+cleaned chunk 976 of 979
+cleaned chunk 977 of 979
+cleaned chunk 978 of 979
+cleaned chunk 979 of 979
+Converting date column to datetime
+Getting min date
+Filling seconds column
+/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+filling seconds chunk 1 of 868
+filling seconds chunk 2 of 868
+filling seconds chunk 3 of 868
+filling seconds chunk 4 of 868
+filling seconds chunk 5 of 868
+filling seconds chunk 6 of 868
+filling seconds chunk 7 of 868
+filling seconds chunk 8 of 868
+filling seconds chunk 9 of 868
+filling seconds chunk 10 of 868
+filling seconds chunk 11 of 868
+filling seconds chunk 12 of 868
+filling seconds chunk 13 of 868
+filling seconds chunk 14 of 868
+filling seconds chunk 15 of 868
+filling seconds chunk 16 of 868
+filling seconds chunk 17 of 868
+filling seconds chunk 18 of 868
+filling seconds chunk 19 of 868
+filling seconds chunk 20 of 868
+filling seconds chunk 21 of 868
+filling seconds chunk 22 of 868
+filling seconds chunk 23 of 868
+filling seconds chunk 24 of 868
+filling seconds chunk 25 of 868
+filling seconds chunk 26 of 868
+filling seconds chunk 27 of 868
+filling seconds chunk 28 of 868
+filling seconds chunk 29 of 868
+filling seconds chunk 30 of 868
+filling seconds chunk 31 of 868
+filling seconds chunk 32 of 868
+filling seconds chunk 33 of 868
+filling seconds chunk 34 of 868
+filling seconds chunk 35 of 868
+filling seconds chunk 36 of 868
+filling seconds chunk 37 of 868
+filling seconds chunk 38 of 868
+filling seconds chunk 39 of 868
+filling seconds chunk 40 of 868
+filling seconds chunk 41 of 868
+filling seconds chunk 42 of 868
+filling seconds chunk 43 of 868
+filling seconds chunk 44 of 868
+filling seconds chunk 45 of 868
+filling seconds chunk 46 of 868
+filling seconds chunk 47 of 868
+filling seconds chunk 48 of 868
+filling seconds chunk 49 of 868
+filling seconds chunk 50 of 868
+filling seconds chunk 51 of 868
+filling seconds chunk 52 of 868
+filling seconds chunk 53 of 868
+filling seconds chunk 54 of 868
+filling seconds chunk 55 of 868
+filling seconds chunk 56 of 868
+filling seconds chunk 57 of 868
+filling seconds chunk 58 of 868
+filling seconds chunk 59 of 868
+filling seconds chunk 60 of 868
+filling seconds chunk 61 of 868
+filling seconds chunk 62 of 868
+filling seconds chunk 63 of 868
+filling seconds chunk 64 of 868
+filling seconds chunk 65 of 868
+filling seconds chunk 66 of 868
+filling seconds chunk 67 of 868
+filling seconds chunk 68 of 868
+filling seconds chunk 69 of 868
+filling seconds chunk 70 of 868
+filling seconds chunk 71 of 868
+filling seconds chunk 72 of 868
+filling seconds chunk 73 of 868
+filling seconds chunk 74 of 868
+filling seconds chunk 75 of 868
+filling seconds chunk 76 of 868
+filling seconds chunk 77 of 868
+filling seconds chunk 78 of 868
+filling seconds chunk 79 of 868
+filling seconds chunk 80 of 868
+filling seconds chunk 81 of 868
+filling seconds chunk 82 of 868
+filling seconds chunk 83 of 868
+filling seconds chunk 84 of 868
+filling seconds chunk 85 of 868
+filling seconds chunk 86 of 868
+filling seconds chunk 87 of 868
+filling seconds chunk 88 of 868
+filling seconds chunk 89 of 868
+filling seconds chunk 90 of 868
+filling seconds chunk 91 of 868
+filling seconds chunk 92 of 868
+filling seconds chunk 93 of 868
+filling seconds chunk 94 of 868
+filling seconds chunk 95 of 868
+filling seconds chunk 96 of 868
+filling seconds chunk 97 of 868
+filling seconds chunk 98 of 868
+filling seconds chunk 99 of 868
+filling seconds chunk 100 of 868
+filling seconds chunk 101 of 868
+filling seconds chunk 102 of 868
+filling seconds chunk 103 of 868
+filling seconds chunk 104 of 868
+filling seconds chunk 105 of 868
+filling seconds chunk 106 of 868
+filling seconds chunk 107 of 868
+filling seconds chunk 108 of 868
+filling seconds chunk 109 of 868
+filling seconds chunk 110 of 868
+filling seconds chunk 111 of 868
+filling seconds chunk 112 of 868
+filling seconds chunk 113 of 868
+filling seconds chunk 114 of 868
+filling seconds chunk 115 of 868
+filling seconds chunk 116 of 868
+filling seconds chunk 117 of 868
+filling seconds chunk 118 of 868
+filling seconds chunk 119 of 868
+filling seconds chunk 120 of 868
+filling seconds chunk 121 of 868
+filling seconds chunk 122 of 868
+filling seconds chunk 123 of 868
+filling seconds chunk 124 of 868
+filling seconds chunk 125 of 868
+filling seconds chunk 126 of 868
+filling seconds chunk 127 of 868
+filling seconds chunk 128 of 868
+filling seconds chunk 129 of 868
+filling seconds chunk 130 of 868
+filling seconds chunk 131 of 868
+filling seconds chunk 132 of 868
+filling seconds chunk 133 of 868
+filling seconds chunk 134 of 868
+filling seconds chunk 135 of 868
+filling seconds chunk 136 of 868
+filling seconds chunk 137 of 868
+filling seconds chunk 138 of 868
+filling seconds chunk 139 of 868
+filling seconds chunk 140 of 868
+filling seconds chunk 141 of 868
+filling seconds chunk 142 of 868
+filling seconds chunk 143 of 868
+filling seconds chunk 144 of 868
+filling seconds chunk 145 of 868
+filling seconds chunk 146 of 868
+filling seconds chunk 147 of 868
+filling seconds chunk 148 of 868
+filling seconds chunk 149 of 868
+filling seconds chunk 150 of 868
+filling seconds chunk 151 of 868
+filling seconds chunk 152 of 868
+filling seconds chunk 153 of 868
+filling seconds chunk 154 of 868
+filling seconds chunk 155 of 868
+filling seconds chunk 156 of 868
+filling seconds chunk 157 of 868
+filling seconds chunk 158 of 868
+filling seconds chunk 159 of 868
+filling seconds chunk 160 of 868
+filling seconds chunk 161 of 868
+filling seconds chunk 162 of 868
+filling seconds chunk 163 of 868
+filling seconds chunk 164 of 868
+filling seconds chunk 165 of 868
+filling seconds chunk 166 of 868
+filling seconds chunk 167 of 868
+filling seconds chunk 168 of 868
+filling seconds chunk 169 of 868
+filling seconds chunk 170 of 868
+filling seconds chunk 171 of 868
+filling seconds chunk 172 of 868
+filling seconds chunk 173 of 868
+filling seconds chunk 174 of 868
+filling seconds chunk 175 of 868
+filling seconds chunk 176 of 868
+filling seconds chunk 177 of 868
+filling seconds chunk 178 of 868
+filling seconds chunk 179 of 868
+filling seconds chunk 180 of 868
+filling seconds chunk 181 of 868
+filling seconds chunk 182 of 868
+filling seconds chunk 183 of 868
+filling seconds chunk 184 of 868
+filling seconds chunk 185 of 868
+filling seconds chunk 186 of 868
+filling seconds chunk 187 of 868
+filling seconds chunk 188 of 868
+filling seconds chunk 189 of 868
+filling seconds chunk 190 of 868
+filling seconds chunk 191 of 868
+filling seconds chunk 192 of 868
+filling seconds chunk 193 of 868
+filling seconds chunk 194 of 868
+filling seconds chunk 195 of 868
+filling seconds chunk 196 of 868
+filling seconds chunk 197 of 868
+filling seconds chunk 198 of 868
+filling seconds chunk 199 of 868
+filling seconds chunk 200 of 868
+filling seconds chunk 201 of 868
+filling seconds chunk 202 of 868
+filling seconds chunk 203 of 868
+filling seconds chunk 204 of 868
+filling seconds chunk 205 of 868
+filling seconds chunk 206 of 868
+filling seconds chunk 207 of 868
+filling seconds chunk 208 of 868
+filling seconds chunk 209 of 868
+filling seconds chunk 210 of 868
+filling seconds chunk 211 of 868
+filling seconds chunk 212 of 868
+filling seconds chunk 213 of 868
+filling seconds chunk 214 of 868
+filling seconds chunk 215 of 868
+filling seconds chunk 216 of 868
+filling seconds chunk 217 of 868
+filling seconds chunk 218 of 868
+filling seconds chunk 219 of 868
+filling seconds chunk 220 of 868
+filling seconds chunk 221 of 868
+filling seconds chunk 222 of 868
+filling seconds chunk 223 of 868
+filling seconds chunk 224 of 868
+filling seconds chunk 225 of 868
+filling seconds chunk 226 of 868
+filling seconds chunk 227 of 868
+filling seconds chunk 228 of 868
+filling seconds chunk 229 of 868
+filling seconds chunk 230 of 868
+filling seconds chunk 231 of 868
+filling seconds chunk 232 of 868
+filling seconds chunk 233 of 868
+filling seconds chunk 234 of 868
+filling seconds chunk 235 of 868
+filling seconds chunk 236 of 868
+filling seconds chunk 237 of 868
+filling seconds chunk 238 of 868
+filling seconds chunk 239 of 868
+filling seconds chunk 240 of 868
+filling seconds chunk 241 of 868
+filling seconds chunk 242 of 868
+filling seconds chunk 243 of 868
+filling seconds chunk 244 of 868
+filling seconds chunk 245 of 868
+filling seconds chunk 246 of 868
+filling seconds chunk 247 of 868
+filling seconds chunk 248 of 868
+filling seconds chunk 249 of 868
+filling seconds chunk 250 of 868
+filling seconds chunk 251 of 868
+filling seconds chunk 252 of 868
+filling seconds chunk 253 of 868
+filling seconds chunk 254 of 868
+filling seconds chunk 255 of 868
+filling seconds chunk 256 of 868
+filling seconds chunk 257 of 868
+filling seconds chunk 258 of 868
+filling seconds chunk 259 of 868
+filling seconds chunk 260 of 868
+filling seconds chunk 261 of 868
+filling seconds chunk 262 of 868
+filling seconds chunk 263 of 868
+filling seconds chunk 264 of 868
+filling seconds chunk 265 of 868
+filling seconds chunk 266 of 868
+filling seconds chunk 267 of 868
+filling seconds chunk 268 of 868
+filling seconds chunk 269 of 868
+filling seconds chunk 270 of 868
+filling seconds chunk 271 of 868
+filling seconds chunk 272 of 868
+filling seconds chunk 273 of 868
+filling seconds chunk 274 of 868
+filling seconds chunk 275 of 868
+filling seconds chunk 276 of 868
+filling seconds chunk 277 of 868
+filling seconds chunk 278 of 868
+filling seconds chunk 279 of 868
+filling seconds chunk 280 of 868
+filling seconds chunk 281 of 868
+filling seconds chunk 282 of 868
+filling seconds chunk 283 of 868
+filling seconds chunk 284 of 868
+filling seconds chunk 285 of 868
+filling seconds chunk 286 of 868
+filling seconds chunk 287 of 868
+filling seconds chunk 288 of 868
+filling seconds chunk 289 of 868
+filling seconds chunk 290 of 868
+filling seconds chunk 291 of 868
+filling seconds chunk 292 of 868
+filling seconds chunk 293 of 868
+filling seconds chunk 294 of 868
+filling seconds chunk 295 of 868
+filling seconds chunk 296 of 868
+filling seconds chunk 297 of 868
+filling seconds chunk 298 of 868
+filling seconds chunk 299 of 868
+filling seconds chunk 300 of 868
+filling seconds chunk 301 of 868
+filling seconds chunk 302 of 868
+filling seconds chunk 303 of 868
+filling seconds chunk 304 of 868
+filling seconds chunk 305 of 868
+filling seconds chunk 306 of 868
+filling seconds chunk 307 of 868
+filling seconds chunk 308 of 868
+filling seconds chunk 309 of 868
+filling seconds chunk 310 of 868
+filling seconds chunk 311 of 868
+filling seconds chunk 312 of 868
+filling seconds chunk 313 of 868
+filling seconds chunk 314 of 868
+filling seconds chunk 315 of 868
+filling seconds chunk 316 of 868
+filling seconds chunk 317 of 868
+filling seconds chunk 318 of 868
+filling seconds chunk 319 of 868
+filling seconds chunk 320 of 868
+filling seconds chunk 321 of 868
+filling seconds chunk 322 of 868
+filling seconds chunk 323 of 868
+filling seconds chunk 324 of 868
+filling seconds chunk 325 of 868
+filling seconds chunk 326 of 868
+filling seconds chunk 327 of 868
+filling seconds chunk 328 of 868
+filling seconds chunk 329 of 868
+filling seconds chunk 330 of 868
+filling seconds chunk 331 of 868
+filling seconds chunk 332 of 868
+filling seconds chunk 333 of 868
+filling seconds chunk 334 of 868
+filling seconds chunk 335 of 868
+filling seconds chunk 336 of 868
+filling seconds chunk 337 of 868
+filling seconds chunk 338 of 868
+filling seconds chunk 339 of 868
+filling seconds chunk 340 of 868
+filling seconds chunk 341 of 868
+filling seconds chunk 342 of 868
+filling seconds chunk 343 of 868
+filling seconds chunk 344 of 868
+filling seconds chunk 345 of 868
+filling seconds chunk 346 of 868
+filling seconds chunk 347 of 868
+filling seconds chunk 348 of 868
+filling seconds chunk 349 of 868
+filling seconds chunk 350 of 868
+filling seconds chunk 351 of 868
+filling seconds chunk 352 of 868
+filling seconds chunk 353 of 868
+filling seconds chunk 354 of 868
+filling seconds chunk 355 of 868
+filling seconds chunk 356 of 868
+filling seconds chunk 357 of 868
+filling seconds chunk 358 of 868
+filling seconds chunk 359 of 868
+filling seconds chunk 360 of 868
+filling seconds chunk 361 of 868
+filling seconds chunk 362 of 868
+filling seconds chunk 363 of 868
+filling seconds chunk 364 of 868
+filling seconds chunk 365 of 868
+filling seconds chunk 366 of 868
+filling seconds chunk 367 of 868
+filling seconds chunk 368 of 868
+filling seconds chunk 369 of 868
+filling seconds chunk 370 of 868
+filling seconds chunk 371 of 868
+filling seconds chunk 372 of 868
+filling seconds chunk 373 of 868
+filling seconds chunk 374 of 868
+filling seconds chunk 375 of 868
+filling seconds chunk 376 of 868
+filling seconds chunk 377 of 868
+filling seconds chunk 378 of 868
+filling seconds chunk 379 of 868
+filling seconds chunk 380 of 868
+filling seconds chunk 381 of 868
+filling seconds chunk 382 of 868
+filling seconds chunk 383 of 868
+filling seconds chunk 384 of 868
+filling seconds chunk 385 of 868
+filling seconds chunk 386 of 868
+filling seconds chunk 387 of 868
+filling seconds chunk 388 of 868
+filling seconds chunk 389 of 868
+filling seconds chunk 390 of 868
+filling seconds chunk 391 of 868
+filling seconds chunk 392 of 868
+filling seconds chunk 393 of 868
+filling seconds chunk 394 of 868
+filling seconds chunk 395 of 868
+filling seconds chunk 396 of 868
+filling seconds chunk 397 of 868
+filling seconds chunk 398 of 868
+filling seconds chunk 399 of 868
+filling seconds chunk 400 of 868
+filling seconds chunk 401 of 868
+filling seconds chunk 402 of 868
+filling seconds chunk 403 of 868
+filling seconds chunk 404 of 868
+filling seconds chunk 405 of 868
+filling seconds chunk 406 of 868
+filling seconds chunk 407 of 868
+filling seconds chunk 408 of 868
+filling seconds chunk 409 of 868
+filling seconds chunk 410 of 868
+filling seconds chunk 411 of 868
+filling seconds chunk 412 of 868
+filling seconds chunk 413 of 868
+filling seconds chunk 414 of 868
+filling seconds chunk 415 of 868
+filling seconds chunk 416 of 868
+filling seconds chunk 417 of 868
+filling seconds chunk 418 of 868
+filling seconds chunk 419 of 868
+filling seconds chunk 420 of 868
+filling seconds chunk 421 of 868
+filling seconds chunk 422 of 868
+filling seconds chunk 423 of 868
+filling seconds chunk 424 of 868
+filling seconds chunk 425 of 868
+filling seconds chunk 426 of 868
+filling seconds chunk 427 of 868
+filling seconds chunk 428 of 868
+filling seconds chunk 429 of 868
+filling seconds chunk 430 of 868
+filling seconds chunk 431 of 868
+filling seconds chunk 432 of 868
+filling seconds chunk 433 of 868
+filling seconds chunk 434 of 868
+filling seconds chunk 435 of 868
+filling seconds chunk 436 of 868
+filling seconds chunk 437 of 868
+filling seconds chunk 438 of 868
+filling seconds chunk 439 of 868
+filling seconds chunk 440 of 868
+filling seconds chunk 441 of 868
+filling seconds chunk 442 of 868
+filling seconds chunk 443 of 868
+filling seconds chunk 444 of 868
+filling seconds chunk 445 of 868
+filling seconds chunk 446 of 868
+filling seconds chunk 447 of 868
+filling seconds chunk 448 of 868
+filling seconds chunk 449 of 868
+filling seconds chunk 450 of 868
+filling seconds chunk 451 of 868
+filling seconds chunk 452 of 868
+filling seconds chunk 453 of 868
+filling seconds chunk 454 of 868
+filling seconds chunk 455 of 868
+filling seconds chunk 456 of 868
+filling seconds chunk 457 of 868
+filling seconds chunk 458 of 868
+filling seconds chunk 459 of 868
+filling seconds chunk 460 of 868
+filling seconds chunk 461 of 868
+filling seconds chunk 462 of 868
+filling seconds chunk 463 of 868
+filling seconds chunk 464 of 868
+filling seconds chunk 465 of 868
+filling seconds chunk 466 of 868
+filling seconds chunk 467 of 868
+filling seconds chunk 468 of 868
+filling seconds chunk 469 of 868
+filling seconds chunk 470 of 868
+filling seconds chunk 471 of 868
+filling seconds chunk 472 of 868
+filling seconds chunk 473 of 868
+filling seconds chunk 474 of 868
+filling seconds chunk 475 of 868
+filling seconds chunk 476 of 868
+filling seconds chunk 477 of 868
+filling seconds chunk 478 of 868
+filling seconds chunk 479 of 868
+filling seconds chunk 480 of 868
+filling seconds chunk 481 of 868
+filling seconds chunk 482 of 868
+filling seconds chunk 483 of 868
+filling seconds chunk 484 of 868
+filling seconds chunk 485 of 868
+filling seconds chunk 486 of 868
+filling seconds chunk 487 of 868
+filling seconds chunk 488 of 868
+filling seconds chunk 489 of 868
+filling seconds chunk 490 of 868
+filling seconds chunk 491 of 868
+filling seconds chunk 492 of 868
+filling seconds chunk 493 of 868
+filling seconds chunk 494 of 868
+filling seconds chunk 495 of 868
+filling seconds chunk 496 of 868
+filling seconds chunk 497 of 868
+filling seconds chunk 498 of 868
+filling seconds chunk 499 of 868
+filling seconds chunk 500 of 868
+filling seconds chunk 501 of 868
+filling seconds chunk 502 of 868
+filling seconds chunk 503 of 868
+filling seconds chunk 504 of 868
+filling seconds chunk 505 of 868
+filling seconds chunk 506 of 868
+filling seconds chunk 507 of 868
+filling seconds chunk 508 of 868
+filling seconds chunk 509 of 868
+filling seconds chunk 510 of 868
+filling seconds chunk 511 of 868
+filling seconds chunk 512 of 868
+filling seconds chunk 513 of 868
+filling seconds chunk 514 of 868
+filling seconds chunk 515 of 868
+filling seconds chunk 516 of 868
+filling seconds chunk 517 of 868
+filling seconds chunk 518 of 868
+filling seconds chunk 519 of 868
+filling seconds chunk 520 of 868
+filling seconds chunk 521 of 868
+filling seconds chunk 522 of 868
+filling seconds chunk 523 of 868
+filling seconds chunk 524 of 868
+filling seconds chunk 525 of 868
+filling seconds chunk 526 of 868
+filling seconds chunk 527 of 868
+filling seconds chunk 528 of 868
+filling seconds chunk 529 of 868
+filling seconds chunk 530 of 868
+filling seconds chunk 531 of 868
+filling seconds chunk 532 of 868
+filling seconds chunk 533 of 868
+filling seconds chunk 534 of 868
+filling seconds chunk 535 of 868
+filling seconds chunk 536 of 868
+filling seconds chunk 537 of 868
+filling seconds chunk 538 of 868
+filling seconds chunk 539 of 868
+filling seconds chunk 540 of 868
+filling seconds chunk 541 of 868
+filling seconds chunk 542 of 868
+filling seconds chunk 543 of 868
+filling seconds chunk 544 of 868
+filling seconds chunk 545 of 868
+filling seconds chunk 546 of 868
+filling seconds chunk 547 of 868
+filling seconds chunk 548 of 868
+filling seconds chunk 549 of 868
+filling seconds chunk 550 of 868
+filling seconds chunk 551 of 868
+filling seconds chunk 552 of 868
+filling seconds chunk 553 of 868
+filling seconds chunk 554 of 868
+filling seconds chunk 555 of 868
+filling seconds chunk 556 of 868
+filling seconds chunk 557 of 868
+filling seconds chunk 558 of 868
+filling seconds chunk 559 of 868
+filling seconds chunk 560 of 868
+filling seconds chunk 561 of 868
+filling seconds chunk 562 of 868
+filling seconds chunk 563 of 868
+filling seconds chunk 564 of 868
+filling seconds chunk 565 of 868
+filling seconds chunk 566 of 868
+filling seconds chunk 567 of 868
+filling seconds chunk 568 of 868
+filling seconds chunk 569 of 868
+filling seconds chunk 570 of 868
+filling seconds chunk 571 of 868
+filling seconds chunk 572 of 868
+filling seconds chunk 573 of 868
+filling seconds chunk 574 of 868
+filling seconds chunk 575 of 868
+filling seconds chunk 576 of 868
+filling seconds chunk 577 of 868
+filling seconds chunk 578 of 868
+filling seconds chunk 579 of 868
+filling seconds chunk 580 of 868
+filling seconds chunk 581 of 868
+filling seconds chunk 582 of 868
+filling seconds chunk 583 of 868
+filling seconds chunk 584 of 868
+filling seconds chunk 585 of 868
+filling seconds chunk 586 of 868
+filling seconds chunk 587 of 868
+filling seconds chunk 588 of 868
+filling seconds chunk 589 of 868
+filling seconds chunk 590 of 868
+filling seconds chunk 591 of 868
+filling seconds chunk 592 of 868
+filling seconds chunk 593 of 868
+filling seconds chunk 594 of 868
+filling seconds chunk 595 of 868
+filling seconds chunk 596 of 868
+filling seconds chunk 597 of 868
+filling seconds chunk 598 of 868
+filling seconds chunk 599 of 868
+filling seconds chunk 600 of 868
+filling seconds chunk 601 of 868
+filling seconds chunk 602 of 868
+filling seconds chunk 603 of 868
+filling seconds chunk 604 of 868
+filling seconds chunk 605 of 868
+filling seconds chunk 606 of 868
+filling seconds chunk 607 of 868
+filling seconds chunk 608 of 868
+filling seconds chunk 609 of 868
+filling seconds chunk 610 of 868
+filling seconds chunk 611 of 868
+filling seconds chunk 612 of 868
+filling seconds chunk 613 of 868
+filling seconds chunk 614 of 868
+filling seconds chunk 615 of 868
+filling seconds chunk 616 of 868
+filling seconds chunk 617 of 868
+filling seconds chunk 618 of 868
+filling seconds chunk 619 of 868
+filling seconds chunk 620 of 868
+filling seconds chunk 621 of 868
+filling seconds chunk 622 of 868
+filling seconds chunk 623 of 868
+filling seconds chunk 624 of 868
+filling seconds chunk 625 of 868
+filling seconds chunk 626 of 868
+filling seconds chunk 627 of 868
+filling seconds chunk 628 of 868
+filling seconds chunk 629 of 868
+filling seconds chunk 630 of 868
+filling seconds chunk 631 of 868
+filling seconds chunk 632 of 868
+filling seconds chunk 633 of 868
+filling seconds chunk 634 of 868
+filling seconds chunk 635 of 868
+filling seconds chunk 636 of 868
+filling seconds chunk 637 of 868
+filling seconds chunk 638 of 868
+filling seconds chunk 639 of 868
+filling seconds chunk 640 of 868
+filling seconds chunk 641 of 868
+filling seconds chunk 642 of 868
+filling seconds chunk 643 of 868
+filling seconds chunk 644 of 868
+filling seconds chunk 645 of 868
+filling seconds chunk 646 of 868
+filling seconds chunk 647 of 868
+filling seconds chunk 648 of 868
+filling seconds chunk 649 of 868
+filling seconds chunk 650 of 868
+filling seconds chunk 651 of 868
+filling seconds chunk 652 of 868
+filling seconds chunk 653 of 868
+filling seconds chunk 654 of 868
+filling seconds chunk 655 of 868
+filling seconds chunk 656 of 868
+filling seconds chunk 657 of 868
+filling seconds chunk 658 of 868
+filling seconds chunk 659 of 868
+filling seconds chunk 660 of 868
+filling seconds chunk 661 of 868
+filling seconds chunk 662 of 868
+filling seconds chunk 663 of 868
+filling seconds chunk 664 of 868
+filling seconds chunk 665 of 868
+filling seconds chunk 666 of 868
+filling seconds chunk 667 of 868
+filling seconds chunk 668 of 868
+filling seconds chunk 669 of 868
+filling seconds chunk 670 of 868
+filling seconds chunk 671 of 868
+filling seconds chunk 672 of 868
+filling seconds chunk 673 of 868
+filling seconds chunk 674 of 868
+filling seconds chunk 675 of 868
+filling seconds chunk 676 of 868
+filling seconds chunk 677 of 868
+filling seconds chunk 678 of 868
+filling seconds chunk 679 of 868
+filling seconds chunk 680 of 868
+filling seconds chunk 681 of 868
+filling seconds chunk 682 of 868
+filling seconds chunk 683 of 868
+filling seconds chunk 684 of 868
+filling seconds chunk 685 of 868
+filling seconds chunk 686 of 868
+filling seconds chunk 687 of 868
+filling seconds chunk 688 of 868
+filling seconds chunk 689 of 868
+filling seconds chunk 690 of 868
+filling seconds chunk 691 of 868
+filling seconds chunk 692 of 868
+filling seconds chunk 693 of 868
+filling seconds chunk 694 of 868
+filling seconds chunk 695 of 868
+filling seconds chunk 696 of 868
+filling seconds chunk 697 of 868
+filling seconds chunk 698 of 868
+filling seconds chunk 699 of 868
+filling seconds chunk 700 of 868
+filling seconds chunk 701 of 868
+filling seconds chunk 702 of 868
+filling seconds chunk 703 of 868
+filling seconds chunk 704 of 868
+filling seconds chunk 705 of 868
+filling seconds chunk 706 of 868
+filling seconds chunk 707 of 868
+filling seconds chunk 708 of 868
+filling seconds chunk 709 of 868
+filling seconds chunk 710 of 868
+filling seconds chunk 711 of 868
+filling seconds chunk 712 of 868
+filling seconds chunk 713 of 868
+filling seconds chunk 714 of 868
+filling seconds chunk 715 of 868
+filling seconds chunk 716 of 868
+filling seconds chunk 717 of 868
+filling seconds chunk 718 of 868
+filling seconds chunk 719 of 868
+filling seconds chunk 720 of 868
+filling seconds chunk 721 of 868
+filling seconds chunk 722 of 868
+filling seconds chunk 723 of 868
+filling seconds chunk 724 of 868
+filling seconds chunk 725 of 868
+filling seconds chunk 726 of 868
+filling seconds chunk 727 of 868
+filling seconds chunk 728 of 868
+filling seconds chunk 729 of 868
+filling seconds chunk 730 of 868
+filling seconds chunk 731 of 868
+filling seconds chunk 732 of 868
+filling seconds chunk 733 of 868
+filling seconds chunk 734 of 868
+filling seconds chunk 735 of 868
+filling seconds chunk 736 of 868
+filling seconds chunk 737 of 868
+filling seconds chunk 738 of 868
+filling seconds chunk 739 of 868
+filling seconds chunk 740 of 868
+filling seconds chunk 741 of 868
+filling seconds chunk 742 of 868
+filling seconds chunk 743 of 868
+filling seconds chunk 744 of 868
+filling seconds chunk 745 of 868
+filling seconds chunk 746 of 868
+filling seconds chunk 747 of 868
+filling seconds chunk 748 of 868
+filling seconds chunk 749 of 868
+filling seconds chunk 750 of 868
+filling seconds chunk 751 of 868
+filling seconds chunk 752 of 868
+filling seconds chunk 753 of 868
+filling seconds chunk 754 of 868
+filling seconds chunk 755 of 868
+filling seconds chunk 756 of 868
+filling seconds chunk 757 of 868
+filling seconds chunk 758 of 868
+filling seconds chunk 759 of 868
+filling seconds chunk 760 of 868
+filling seconds chunk 761 of 868
+filling seconds chunk 762 of 868
+filling seconds chunk 763 of 868
+filling seconds chunk 764 of 868
+filling seconds chunk 765 of 868
+filling seconds chunk 766 of 868
+filling seconds chunk 767 of 868
+filling seconds chunk 768 of 868
+filling seconds chunk 769 of 868
+filling seconds chunk 770 of 868
+filling seconds chunk 771 of 868
+filling seconds chunk 772 of 868
+filling seconds chunk 773 of 868
+filling seconds chunk 774 of 868
+filling seconds chunk 775 of 868
+filling seconds chunk 776 of 868
+filling seconds chunk 777 of 868
+filling seconds chunk 778 of 868
+filling seconds chunk 779 of 868
+filling seconds chunk 780 of 868
+filling seconds chunk 781 of 868
+filling seconds chunk 782 of 868
+filling seconds chunk 783 of 868
+filling seconds chunk 784 of 868
+filling seconds chunk 785 of 868
+filling seconds chunk 786 of 868
+filling seconds chunk 787 of 868
+filling seconds chunk 788 of 868
+filling seconds chunk 789 of 868
+filling seconds chunk 790 of 868
+filling seconds chunk 791 of 868
+filling seconds chunk 792 of 868
+filling seconds chunk 793 of 868
+filling seconds chunk 794 of 868
+filling seconds chunk 795 of 868
+filling seconds chunk 796 of 868
+filling seconds chunk 797 of 868
+filling seconds chunk 798 of 868
+filling seconds chunk 799 of 868
+filling seconds chunk 800 of 868
+filling seconds chunk 801 of 868
+filling seconds chunk 802 of 868
+filling seconds chunk 803 of 868
+filling seconds chunk 804 of 868
+filling seconds chunk 805 of 868
+filling seconds chunk 806 of 868
+filling seconds chunk 807 of 868
+filling seconds chunk 808 of 868
+filling seconds chunk 809 of 868
+filling seconds chunk 810 of 868
+filling seconds chunk 811 of 868
+filling seconds chunk 812 of 868
+filling seconds chunk 813 of 868
+filling seconds chunk 814 of 868
+filling seconds chunk 815 of 868
+filling seconds chunk 816 of 868
+filling seconds chunk 817 of 868
+filling seconds chunk 818 of 868
+filling seconds chunk 819 of 868
+filling seconds chunk 820 of 868
+filling seconds chunk 821 of 868
+filling seconds chunk 822 of 868
+filling seconds chunk 823 of 868
+filling seconds chunk 824 of 868
+filling seconds chunk 825 of 868
+filling seconds chunk 826 of 868
+filling seconds chunk 827 of 868
+filling seconds chunk 828 of 868
+filling seconds chunk 829 of 868
+filling seconds chunk 830 of 868
+filling seconds chunk 831 of 868
+filling seconds chunk 832 of 868
+filling seconds chunk 833 of 868
+filling seconds chunk 834 of 868
+filling seconds chunk 835 of 868
+filling seconds chunk 836 of 868
+filling seconds chunk 837 of 868
+filling seconds chunk 838 of 868
+filling seconds chunk 839 of 868
+filling seconds chunk 840 of 868
+filling seconds chunk 841 of 868
+filling seconds chunk 842 of 868
+filling seconds chunk 843 of 868
+filling seconds chunk 844 of 868
+filling seconds chunk 845 of 868
+filling seconds chunk 846 of 868
+filling seconds chunk 847 of 868
+filling seconds chunk 848 of 868
+filling seconds chunk 849 of 868
+filling seconds chunk 850 of 868
+filling seconds chunk 851 of 868
+filling seconds chunk 852 of 868
+filling seconds chunk 853 of 868
+filling seconds chunk 854 of 868
+filling seconds chunk 855 of 868
+filling seconds chunk 856 of 868
+filling seconds chunk 857 of 868
+filling seconds chunk 858 of 868
+filling seconds chunk 859 of 868
+filling seconds chunk 860 of 868
+filling seconds chunk 861 of 868
+filling seconds chunk 862 of 868
+filling seconds chunk 863 of 868
+filling seconds chunk 864 of 868
+filling seconds chunk 865 of 868
+filling seconds chunk 866 of 868
+filling seconds chunk 867 of 868
+filling seconds chunk 868 of 868
+Adding user seconds: writing user seconds
+/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+Got user seconds chunk 1 of 868
+Got user seconds chunk 2 of 868
+Got user seconds chunk 3 of 868
+Got user seconds chunk 4 of 868
+Got user seconds chunk 5 of 868
+Got user seconds chunk 6 of 868
+Got user seconds chunk 7 of 868
+Got user seconds chunk 8 of 868
+Got user seconds chunk 9 of 868
+Got user seconds chunk 10 of 868
+Got user seconds chunk 11 of 868
+Got user seconds chunk 12 of 868
+Got user seconds chunk 13 of 868
+Got user seconds chunk 14 of 868
+Got user seconds chunk 15 of 868
+Got user seconds chunk 16 of 868
+Got user seconds chunk 17 of 868
+Got user seconds chunk 18 of 868
+Got user seconds chunk 19 of 868
+Got user seconds chunk 20 of 868
+Got user seconds chunk 21 of 868
+Got user seconds chunk 22 of 868
+Got user seconds chunk 23 of 868
+Got user seconds chunk 24 of 868
+Got user seconds chunk 25 of 868
+Got user seconds chunk 26 of 868
+Got user seconds chunk 27 of 868
+Got user seconds chunk 28 of 868
+Got user seconds chunk 29 of 868
+Got user seconds chunk 30 of 868
+Got user seconds chunk 31 of 868
+Got user seconds chunk 32 of 868
+Got user seconds chunk 33 of 868
+Got user seconds chunk 34 of 868
+Got user seconds chunk 35 of 868
+Got user seconds chunk 36 of 868
+Got user seconds chunk 37 of 868
+Got user seconds chunk 38 of 868
+Got user seconds chunk 39 of 868
+Got user seconds chunk 40 of 868
+Got user seconds chunk 41 of 868
+Got user seconds chunk 42 of 868
+Got user seconds chunk 43 of 868
+Got user seconds chunk 44 of 868
+Got user seconds chunk 45 of 868
+Got user seconds chunk 46 of 868
+Got user seconds chunk 47 of 868
+Got user seconds chunk 48 of 868
+Got user seconds chunk 49 of 868
+Got user seconds chunk 50 of 868
+Got user seconds chunk 51 of 868
+Got user seconds chunk 52 of 868
+Got user seconds chunk 53 of 868
+Got user seconds chunk 54 of 868
+Got user seconds chunk 55 of 868
+Got user seconds chunk 56 of 868
+Got user seconds chunk 57 of 868
+Got user seconds chunk 58 of 868
+Got user seconds chunk 59 of 868
+Got user seconds chunk 60 of 868
+Got user seconds chunk 61 of 868
+Got user seconds chunk 62 of 868
+Got user seconds chunk 63 of 868
+Got user seconds chunk 64 of 868
+Got user seconds chunk 65 of 868
+Got user seconds chunk 66 of 868
+Got user seconds chunk 67 of 868
+Got user seconds chunk 68 of 868
+Got user seconds chunk 69 of 868
+Got user seconds chunk 70 of 868
+Got user seconds chunk 71 of 868
+Got user seconds chunk 72 of 868
+Got user seconds chunk 73 of 868
+Got user seconds chunk 74 of 868
+Got user seconds chunk 75 of 868
+Got user seconds chunk 76 of 868
+Got user seconds chunk 77 of 868
+Got user seconds chunk 78 of 868
+Got user seconds chunk 79 of 868
+Got user seconds chunk 80 of 868
+Got user seconds chunk 81 of 868
+Got user seconds chunk 82 of 868
+Got user seconds chunk 83 of 868
+Got user seconds chunk 84 of 868
+Got user seconds chunk 85 of 868
+Got user seconds chunk 86 of 868
+Got user seconds chunk 87 of 868
+Got user seconds chunk 88 of 868
+Got user seconds chunk 89 of 868
+Got user seconds chunk 90 of 868
+Got user seconds chunk 91 of 868
+Got user seconds chunk 92 of 868
+Got user seconds chunk 93 of 868
+Got user seconds chunk 94 of 868
+Got user seconds chunk 95 of 868
+Got user seconds chunk 96 of 868
+Got user seconds chunk 97 of 868
+Got user seconds chunk 98 of 868
+Got user seconds chunk 99 of 868
+Got user seconds chunk 100 of 868
+Got user seconds chunk 101 of 868
+Got user seconds chunk 102 of 868
+Got user seconds chunk 103 of 868
+Got user seconds chunk 104 of 868
+Got user seconds chunk 105 of 868
+Got user seconds chunk 106 of 868
+Got user seconds chunk 107 of 868
+Got user seconds chunk 108 of 868
+Got user seconds chunk 109 of 868
+Got user seconds chunk 110 of 868
+Got user seconds chunk 111 of 868
+Got user seconds chunk 112 of 868
+Got user seconds chunk 113 of 868
+Got user seconds chunk 114 of 868
+Got user seconds chunk 115 of 868
+Got user seconds chunk 116 of 868
+Got user seconds chunk 117 of 868
+Got user seconds chunk 118 of 868
+Got user seconds chunk 119 of 868
+Got user seconds chunk 120 of 868
+Got user seconds chunk 121 of 868
+Got user seconds chunk 122 of 868
+Got user seconds chunk 123 of 868
+Got user seconds chunk 124 of 868
+Got user seconds chunk 125 of 868
+Got user seconds chunk 126 of 868
+Got user seconds chunk 127 of 868
+Got user seconds chunk 128 of 868
+Got user seconds chunk 129 of 868
+Got user seconds chunk 130 of 868
+Got user seconds chunk 131 of 868
+Got user seconds chunk 132 of 868
+Got user seconds chunk 133 of 868
+Got user seconds chunk 134 of 868
+Got user seconds chunk 135 of 868
+Got user seconds chunk 136 of 868
+Got user seconds chunk 137 of 868
+Got user seconds chunk 138 of 868
+Got user seconds chunk 139 of 868
+Got user seconds chunk 140 of 868
+Got user seconds chunk 141 of 868
+Got user seconds chunk 142 of 868
+Got user seconds chunk 143 of 868
+Got user seconds chunk 144 of 868
+Got user seconds chunk 145 of 868
+Got user seconds chunk 146 of 868
+Got user seconds chunk 147 of 868
+Got user seconds chunk 148 of 868
+Got user seconds chunk 149 of 868
+Got user seconds chunk 150 of 868
+Got user seconds chunk 151 of 868
+Got user seconds chunk 152 of 868
+Got user seconds chunk 153 of 868
+Got user seconds chunk 154 of 868
+Got user seconds chunk 155 of 868
+Got user seconds chunk 156 of 868
+Got user seconds chunk 157 of 868
+Got user seconds chunk 158 of 868
+Got user seconds chunk 159 of 868
+Got user seconds chunk 160 of 868
+Got user seconds chunk 161 of 868
+Got user seconds chunk 162 of 868
+Got user seconds chunk 163 of 868
+Got user seconds chunk 164 of 868
+Got user seconds chunk 165 of 868
+Got user seconds chunk 166 of 868
+Got user seconds chunk 167 of 868
+Got user seconds chunk 168 of 868
+Got user seconds chunk 169 of 868
+Got user seconds chunk 170 of 868
+Got user seconds chunk 171 of 868
+Got user seconds chunk 172 of 868
+Got user seconds chunk 173 of 868
+Got user seconds chunk 174 of 868
+Got user seconds chunk 175 of 868
+Got user seconds chunk 176 of 868
+Got user seconds chunk 177 of 868
+Got user seconds chunk 178 of 868
+Got user seconds chunk 179 of 868
+Got user seconds chunk 180 of 868
+Got user seconds chunk 181 of 868
+Got user seconds chunk 182 of 868
+Got user seconds chunk 183 of 868
+Got user seconds chunk 184 of 868
+Got user seconds chunk 185 of 868
+Got user seconds chunk 186 of 868
+Got user seconds chunk 187 of 868
+Got user seconds chunk 188 of 868
+Got user seconds chunk 189 of 868
+Got user seconds chunk 190 of 868
+Got user seconds chunk 191 of 868
+Got user seconds chunk 192 of 868
+Got user seconds chunk 193 of 868
+Got user seconds chunk 194 of 868
+Got user seconds chunk 195 of 868
+Got user seconds chunk 196 of 868
+Got user seconds chunk 197 of 868
+Got user seconds chunk 198 of 868
+Got user seconds chunk 199 of 868
+Got user seconds chunk 200 of 868
+Got user seconds chunk 201 of 868
+Got user seconds chunk 202 of 868
+Got user seconds chunk 203 of 868
+Got user seconds chunk 204 of 868
+Got user seconds chunk 205 of 868
+Got user seconds chunk 206 of 868
+Got user seconds chunk 207 of 868
+Got user seconds chunk 208 of 868
+Got user seconds chunk 209 of 868
+Got user seconds chunk 210 of 868
+Got user seconds chunk 211 of 868
+Got user seconds chunk 212 of 868
+Got user seconds chunk 213 of 868
+Got user seconds chunk 214 of 868
+Got user seconds chunk 215 of 868
+Got user seconds chunk 216 of 868
+Got user seconds chunk 217 of 868
+Got user seconds chunk 218 of 868
+Got user seconds chunk 219 of 868
+Got user seconds chunk 220 of 868
+Got user seconds chunk 221 of 868
+Got user seconds chunk 222 of 868
+Got user seconds chunk 223 of 868
+Got user seconds chunk 224 of 868
+Got user seconds chunk 225 of 868
+Got user seconds chunk 226 of 868
+Got user seconds chunk 227 of 868
+Got user seconds chunk 228 of 868
+Got user seconds chunk 229 of 868
+Got user seconds chunk 230 of 868
+Got user seconds chunk 231 of 868
+Got user seconds chunk 232 of 868
+Got user seconds chunk 233 of 868
+Got user seconds chunk 234 of 868
+Got user seconds chunk 235 of 868
+Got user seconds chunk 236 of 868
+Got user seconds chunk 237 of 868
+Got user seconds chunk 238 of 868
+Got user seconds chunk 239 of 868
+Got user seconds chunk 240 of 868
+Got user seconds chunk 241 of 868
+Got user seconds chunk 242 of 868
+Got user seconds chunk 243 of 868
+Got user seconds chunk 244 of 868
+Got user seconds chunk 245 of 868
+Got user seconds chunk 246 of 868
+Got user seconds chunk 247 of 868
+Got user seconds chunk 248 of 868
+Got user seconds chunk 249 of 868
+Got user seconds chunk 250 of 868
+Got user seconds chunk 251 of 868
+Got user seconds chunk 252 of 868
+Got user seconds chunk 253 of 868
+Got user seconds chunk 254 of 868
+Got user seconds chunk 255 of 868
+Got user seconds chunk 256 of 868
+Got user seconds chunk 257 of 868
+Got user seconds chunk 258 of 868
+Got user seconds chunk 259 of 868
+Got user seconds chunk 260 of 868
+Got user seconds chunk 261 of 868
+Got user seconds chunk 262 of 868
+Got user seconds chunk 263 of 868
+Got user seconds chunk 264 of 868
+Got user seconds chunk 265 of 868
+Got user seconds chunk 266 of 868
+Got user seconds chunk 267 of 868
+Got user seconds chunk 268 of 868
+Got user seconds chunk 269 of 868
+Got user seconds chunk 270 of 868
+Got user seconds chunk 271 of 868
+Got user seconds chunk 272 of 868
+Got user seconds chunk 273 of 868
+Got user seconds chunk 274 of 868
+Got user seconds chunk 275 of 868
+Got user seconds chunk 276 of 868
+Got user seconds chunk 277 of 868
+Got user seconds chunk 278 of 868
+Got user seconds chunk 279 of 868
+Got user seconds chunk 280 of 868
+Got user seconds chunk 281 of 868
+Got user seconds chunk 282 of 868
+Got user seconds chunk 283 of 868
+Got user seconds chunk 284 of 868
+Got user seconds chunk 285 of 868
+Got user seconds chunk 286 of 868
+Got user seconds chunk 287 of 868
+Got user seconds chunk 288 of 868
+Got user seconds chunk 289 of 868
+Got user seconds chunk 290 of 868
+Got user seconds chunk 291 of 868
+Got user seconds chunk 292 of 868
+Got user seconds chunk 293 of 868
+Got user seconds chunk 294 of 868
+Got user seconds chunk 295 of 868
+Got user seconds chunk 296 of 868
+Got user seconds chunk 297 of 868
+Got user seconds chunk 298 of 868
+Got user seconds chunk 299 of 868
+Got user seconds chunk 300 of 868
+Got user seconds chunk 301 of 868
+Got user seconds chunk 302 of 868
+Got user seconds chunk 303 of 868
+Got user seconds chunk 304 of 868
+Got user seconds chunk 305 of 868
+Got user seconds chunk 306 of 868
+Got user seconds chunk 307 of 868
+Got user seconds chunk 308 of 868
+Got user seconds chunk 309 of 868
+Got user seconds chunk 310 of 868
+Got user seconds chunk 311 of 868
+Got user seconds chunk 312 of 868
+Got user seconds chunk 313 of 868
+Got user seconds chunk 314 of 868
+Got user seconds chunk 315 of 868
+Got user seconds chunk 316 of 868
+Got user seconds chunk 317 of 868
+Got user seconds chunk 318 of 868
+Got user seconds chunk 319 of 868
+Got user seconds chunk 320 of 868
+Got user seconds chunk 321 of 868
+Got user seconds chunk 322 of 868
+Got user seconds chunk 323 of 868
+Got user seconds chunk 324 of 868
+Got user seconds chunk 325 of 868
+Got user seconds chunk 326 of 868
+Got user seconds chunk 327 of 868
+Got user seconds chunk 328 of 868
+Got user seconds chunk 329 of 868
+Got user seconds chunk 330 of 868
+Got user seconds chunk 331 of 868
+Got user seconds chunk 332 of 868
+Got user seconds chunk 333 of 868
+Got user seconds chunk 334 of 868
+Got user seconds chunk 335 of 868
+Got user seconds chunk 336 of 868
+Got user seconds chunk 337 of 868
+Got user seconds chunk 338 of 868
+Got user seconds chunk 339 of 868
+Got user seconds chunk 340 of 868
+Got user seconds chunk 341 of 868
+Got user seconds chunk 342 of 868
+Got user seconds chunk 343 of 868
+Got user seconds chunk 344 of 868
+Got user seconds chunk 345 of 868
+Got user seconds chunk 346 of 868
+Got user seconds chunk 347 of 868
+Got user seconds chunk 348 of 868
+Got user seconds chunk 349 of 868
+Got user seconds chunk 350 of 868
+Got user seconds chunk 351 of 868
+Got user seconds chunk 352 of 868
+Got user seconds chunk 353 of 868
+Got user seconds chunk 354 of 868
+Got user seconds chunk 355 of 868
+Got user seconds chunk 356 of 868
+Got user seconds chunk 357 of 868
+Got user seconds chunk 358 of 868
+Got user seconds chunk 359 of 868
+Got user seconds chunk 360 of 868
+Got user seconds chunk 361 of 868
+Got user seconds chunk 362 of 868
+Got user seconds chunk 363 of 868
+Got user seconds chunk 364 of 868
+Got user seconds chunk 365 of 868
+Got user seconds chunk 366 of 868
+Got user seconds chunk 367 of 868
+Got user seconds chunk 368 of 868
+Got user seconds chunk 369 of 868
+Got user seconds chunk 370 of 868
+Got user seconds chunk 371 of 868
+Got user seconds chunk 372 of 868
+Got user seconds chunk 373 of 868
+Got user seconds chunk 374 of 868
+Got user seconds chunk 375 of 868
+Got user seconds chunk 376 of 868
+Got user seconds chunk 377 of 868
+Got user seconds chunk 378 of 868
+Got user seconds chunk 379 of 868
+Got user seconds chunk 380 of 868
+Got user seconds chunk 381 of 868
+Got user seconds chunk 382 of 868
+Got user seconds chunk 383 of 868
+Got user seconds chunk 384 of 868
+Got user seconds chunk 385 of 868
+Got user seconds chunk 386 of 868
+Got user seconds chunk 387 of 868
+Got user seconds chunk 388 of 868
+Got user seconds chunk 389 of 868
+Got user seconds chunk 390 of 868
+Got user seconds chunk 391 of 868
+Got user seconds chunk 392 of 868
+Got user seconds chunk 393 of 868
+Got user seconds chunk 394 of 868
+Got user seconds chunk 395 of 868
+Got user seconds chunk 396 of 868
+Got user seconds chunk 397 of 868
+Got user seconds chunk 398 of 868
+Got user seconds chunk 399 of 868
+Got user seconds chunk 400 of 868
+Got user seconds chunk 401 of 868
+Got user seconds chunk 402 of 868
+Got user seconds chunk 403 of 868
+Got user seconds chunk 404 of 868
+Got user seconds chunk 405 of 868
+Got user seconds chunk 406 of 868
+Got user seconds chunk 407 of 868
+Got user seconds chunk 408 of 868
+Got user seconds chunk 409 of 868
+Got user seconds chunk 410 of 868
+Got user seconds chunk 411 of 868
+Got user seconds chunk 412 of 868
+Got user seconds chunk 413 of 868
+Got user seconds chunk 414 of 868
+Got user seconds chunk 415 of 868
+Got user seconds chunk 416 of 868
+Got user seconds chunk 417 of 868
+Got user seconds chunk 418 of 868
+Got user seconds chunk 419 of 868
+Got user seconds chunk 420 of 868
+Got user seconds chunk 421 of 868
+Got user seconds chunk 422 of 868
+Got user seconds chunk 423 of 868
+Got user seconds chunk 424 of 868
+Got user seconds chunk 425 of 868
+Got user seconds chunk 426 of 868
+Got user seconds chunk 427 of 868
+Got user seconds chunk 428 of 868
+Got user seconds chunk 429 of 868
+Got user seconds chunk 430 of 868
+Got user seconds chunk 431 of 868
+Got user seconds chunk 432 of 868
+Got user seconds chunk 433 of 868
+Got user seconds chunk 434 of 868
+Got user seconds chunk 435 of 868
+Got user seconds chunk 436 of 868
+Got user seconds chunk 437 of 868
+Got user seconds chunk 438 of 868
+Got user seconds chunk 439 of 868
+Got user seconds chunk 440 of 868
+Got user seconds chunk 441 of 868
+Got user seconds chunk 442 of 868
+Got user seconds chunk 443 of 868
+Got user seconds chunk 444 of 868
+Got user seconds chunk 445 of 868
+Got user seconds chunk 446 of 868
+Got user seconds chunk 447 of 868
+Got user seconds chunk 448 of 868
+Got user seconds chunk 449 of 868
+Got user seconds chunk 450 of 868
+Got user seconds chunk 451 of 868
+Got user seconds chunk 452 of 868
+Got user seconds chunk 453 of 868
+Got user seconds chunk 454 of 868
+Got user seconds chunk 455 of 868
+Got user seconds chunk 456 of 868
+Got user seconds chunk 457 of 868
+Got user seconds chunk 458 of 868
+Got user seconds chunk 459 of 868
+Got user seconds chunk 460 of 868
+Got user seconds chunk 461 of 868
+Got user seconds chunk 462 of 868
+Got user seconds chunk 463 of 868
+Got user seconds chunk 464 of 868
+Got user seconds chunk 465 of 868
+Got user seconds chunk 466 of 868
+Got user seconds chunk 467 of 868
+Got user seconds chunk 468 of 868
+Got user seconds chunk 469 of 868
+Got user seconds chunk 470 of 868
+Got user seconds chunk 471 of 868
+Got user seconds chunk 472 of 868
+Got user seconds chunk 473 of 868
+Got user seconds chunk 474 of 868
+Got user seconds chunk 475 of 868
+Got user seconds chunk 476 of 868
+Got user seconds chunk 477 of 868
+Got user seconds chunk 478 of 868
+Got user seconds chunk 479 of 868
+Got user seconds chunk 480 of 868
+Got user seconds chunk 481 of 868
+Got user seconds chunk 482 of 868
+Got user seconds chunk 483 of 868
+Got user seconds chunk 484 of 868
+Got user seconds chunk 485 of 868
+Got user seconds chunk 486 of 868
+Got user seconds chunk 487 of 868
+Got user seconds chunk 488 of 868
+Got user seconds chunk 489 of 868
+Got user seconds chunk 490 of 868
+Got user seconds chunk 491 of 868
+Got user seconds chunk 492 of 868
+Got user seconds chunk 493 of 868
+Got user seconds chunk 494 of 868
+Got user seconds chunk 495 of 868
+Got user seconds chunk 496 of 868
+Got user seconds chunk 497 of 868
+Got user seconds chunk 498 of 868
+Got user seconds chunk 499 of 868
+Got user seconds chunk 500 of 868
+Got user seconds chunk 501 of 868
+Got user seconds chunk 502 of 868
+Got user seconds chunk 503 of 868
+Got user seconds chunk 504 of 868
+Got user seconds chunk 505 of 868
+Got user seconds chunk 506 of 868
+Got user seconds chunk 507 of 868
+Got user seconds chunk 508 of 868
+Got user seconds chunk 509 of 868
+Got user seconds chunk 510 of 868
+Got user seconds chunk 511 of 868
+Got user seconds chunk 512 of 868
+Got user seconds chunk 513 of 868
+Got user seconds chunk 514 of 868
+Got user seconds chunk 515 of 868
+Got user seconds chunk 516 of 868
+Got user seconds chunk 517 of 868
+Got user seconds chunk 518 of 868
+Got user seconds chunk 519 of 868
+Got user seconds chunk 520 of 868
+Got user seconds chunk 521 of 868
+Got user seconds chunk 522 of 868
+Got user seconds chunk 523 of 868
+Got user seconds chunk 524 of 868
+Got user seconds chunk 525 of 868
+Got user seconds chunk 526 of 868
+Got user seconds chunk 527 of 868
+Got user seconds chunk 528 of 868
+Got user seconds chunk 529 of 868
+Got user seconds chunk 530 of 868
+Got user seconds chunk 531 of 868
+Got user seconds chunk 532 of 868
+Got user seconds chunk 533 of 868
+Got user seconds chunk 534 of 868
+Got user seconds chunk 535 of 868
+Got user seconds chunk 536 of 868
+Got user seconds chunk 537 of 868
+Got user seconds chunk 538 of 868
+Got user seconds chunk 539 of 868
+Got user seconds chunk 540 of 868
+Got user seconds chunk 541 of 868
+Got user seconds chunk 542 of 868
+Got user seconds chunk 543 of 868
+Got user seconds chunk 544 of 868
+Got user seconds chunk 545 of 868
+Got user seconds chunk 546 of 868
+Got user seconds chunk 547 of 868
+Got user seconds chunk 548 of 868
+Got user seconds chunk 549 of 868
+Got user seconds chunk 550 of 868
+Got user seconds chunk 551 of 868
+Got user seconds chunk 552 of 868
+Got user seconds chunk 553 of 868
+Got user seconds chunk 554 of 868
+Got user seconds chunk 555 of 868
+Got user seconds chunk 556 of 868
+Got user seconds chunk 557 of 868
+Got user seconds chunk 558 of 868
+Got user seconds chunk 559 of 868
+Got user seconds chunk 560 of 868
+Got user seconds chunk 561 of 868
+Got user seconds chunk 562 of 868
+Got user seconds chunk 563 of 868
+Got user seconds chunk 564 of 868
+Got user seconds chunk 565 of 868
+Got user seconds chunk 566 of 868
+Got user seconds chunk 567 of 868
+Got user seconds chunk 568 of 868
+Got user seconds chunk 569 of 868
+Got user seconds chunk 570 of 868
+Got user seconds chunk 571 of 868
+Got user seconds chunk 572 of 868
+Got user seconds chunk 573 of 868
+Got user seconds chunk 574 of 868
+Got user seconds chunk 575 of 868
+Got user seconds chunk 576 of 868
+Got user seconds chunk 577 of 868
+Got user seconds chunk 578 of 868
+Got user seconds chunk 579 of 868
+Got user seconds chunk 580 of 868
+Got user seconds chunk 581 of 868
+Got user seconds chunk 582 of 868
+Got user seconds chunk 583 of 868
+Got user seconds chunk 584 of 868
+Got user seconds chunk 585 of 868
+Got user seconds chunk 586 of 868
+Got user seconds chunk 587 of 868
+Got user seconds chunk 588 of 868
+Got user seconds chunk 589 of 868
+Got user seconds chunk 590 of 868
+Got user seconds chunk 591 of 868
+Got user seconds chunk 592 of 868
+Got user seconds chunk 593 of 868
+Got user seconds chunk 594 of 868
+Got user seconds chunk 595 of 868
+Got user seconds chunk 596 of 868
+Got user seconds chunk 597 of 868
+Got user seconds chunk 598 of 868
+Got user seconds chunk 599 of 868
+Got user seconds chunk 600 of 868
+Got user seconds chunk 601 of 868
+Got user seconds chunk 602 of 868
+Got user seconds chunk 603 of 868
+Got user seconds chunk 604 of 868
+Got user seconds chunk 605 of 868
+Got user seconds chunk 606 of 868
+Got user seconds chunk 607 of 868
+Got user seconds chunk 608 of 868
+Got user seconds chunk 609 of 868
+Got user seconds chunk 610 of 868
+Got user seconds chunk 611 of 868
+Got user seconds chunk 612 of 868
+Got user seconds chunk 613 of 868
+Got user seconds chunk 614 of 868
+Got user seconds chunk 615 of 868
+Got user seconds chunk 616 of 868
+Got user seconds chunk 617 of 868
+Got user seconds chunk 618 of 868
+Got user seconds chunk 619 of 868
+Got user seconds chunk 620 of 868
+Got user seconds chunk 621 of 868
+Got user seconds chunk 622 of 868
+Got user seconds chunk 623 of 868
+Got user seconds chunk 624 of 868
+Got user seconds chunk 625 of 868
+Got user seconds chunk 626 of 868
+Got user seconds chunk 627 of 868
+Got user seconds chunk 628 of 868
+Got user seconds chunk 629 of 868
+Got user seconds chunk 630 of 868
+Got user seconds chunk 631 of 868
+Got user seconds chunk 632 of 868
+Got user seconds chunk 633 of 868
+Got user seconds chunk 634 of 868
+Got user seconds chunk 635 of 868
+Got user seconds chunk 636 of 868
+Got user seconds chunk 637 of 868
+Got user seconds chunk 638 of 868
+Got user seconds chunk 639 of 868
+Got user seconds chunk 640 of 868
+Got user seconds chunk 641 of 868
+Got user seconds chunk 642 of 868
+Got user seconds chunk 643 of 868
+Got user seconds chunk 644 of 868
+Got user seconds chunk 645 of 868
+Got user seconds chunk 646 of 868
+Got user seconds chunk 647 of 868
+Got user seconds chunk 648 of 868
+Got user seconds chunk 649 of 868
+Got user seconds chunk 650 of 868
+Got user seconds chunk 651 of 868
+Got user seconds chunk 652 of 868
+Got user seconds chunk 653 of 868
+Got user seconds chunk 654 of 868
+Got user seconds chunk 655 of 868
+Got user seconds chunk 656 of 868
+Got user seconds chunk 657 of 868
+Got user seconds chunk 658 of 868
+Got user seconds chunk 659 of 868
+Got user seconds chunk 660 of 868
+Got user seconds chunk 661 of 868
+Got user seconds chunk 662 of 868
+Got user seconds chunk 663 of 868
+Got user seconds chunk 664 of 868
+Got user seconds chunk 665 of 868
+Got user seconds chunk 666 of 868
+Got user seconds chunk 667 of 868
+Got user seconds chunk 668 of 868
+Got user seconds chunk 669 of 868
+Got user seconds chunk 670 of 868
+Got user seconds chunk 671 of 868
+Got user seconds chunk 672 of 868
+Got user seconds chunk 673 of 868
+Got user seconds chunk 674 of 868
+Got user seconds chunk 675 of 868
+Got user seconds chunk 676 of 868
+Got user seconds chunk 677 of 868
+Got user seconds chunk 678 of 868
+Got user seconds chunk 679 of 868
+Got user seconds chunk 680 of 868
+Got user seconds chunk 681 of 868
+Got user seconds chunk 682 of 868
+Got user seconds chunk 683 of 868
+Got user seconds chunk 684 of 868
+Got user seconds chunk 685 of 868
+Got user seconds chunk 686 of 868
+Got user seconds chunk 687 of 868
+Got user seconds chunk 688 of 868
+Got user seconds chunk 689 of 868
+Got user seconds chunk 690 of 868
+Got user seconds chunk 691 of 868
+Got user seconds chunk 692 of 868
+Got user seconds chunk 693 of 868
+Got user seconds chunk 694 of 868
+Got user seconds chunk 695 of 868
+Got user seconds chunk 696 of 868
+Got user seconds chunk 697 of 868
+Got user seconds chunk 698 of 868
+Got user seconds chunk 699 of 868
+Got user seconds chunk 700 of 868
+Got user seconds chunk 701 of 868
+Got user seconds chunk 702 of 868
+Got user seconds chunk 703 of 868
+Got user seconds chunk 704 of 868
+Got user seconds chunk 705 of 868
+Got user seconds chunk 706 of 868
+Got user seconds chunk 707 of 868
+Got user seconds chunk 708 of 868
+Got user seconds chunk 709 of 868
+Got user seconds chunk 710 of 868
+Got user seconds chunk 711 of 868
+Got user seconds chunk 712 of 868
+Got user seconds chunk 713 of 868
+Got user seconds chunk 714 of 868
+Got user seconds chunk 715 of 868
+Got user seconds chunk 716 of 868
+Got user seconds chunk 717 of 868
+Got user seconds chunk 718 of 868
+Got user seconds chunk 719 of 868
+Got user seconds chunk 720 of 868
+Got user seconds chunk 721 of 868
+Got user seconds chunk 722 of 868
+Got user seconds chunk 723 of 868
+Got user seconds chunk 724 of 868
+Got user seconds chunk 725 of 868
+Got user seconds chunk 726 of 868
+Got user seconds chunk 727 of 868
+Got user seconds chunk 728 of 868
+Got user seconds chunk 729 of 868
+Got user seconds chunk 730 of 868
+Got user seconds chunk 731 of 868
+Got user seconds chunk 732 of 868
+Got user seconds chunk 733 of 868
+Got user seconds chunk 734 of 868
+Got user seconds chunk 735 of 868
+Got user seconds chunk 736 of 868
+Got user seconds chunk 737 of 868
+Got user seconds chunk 738 of 868
+Got user seconds chunk 739 of 868
+Got user seconds chunk 740 of 868
+Got user seconds chunk 741 of 868
+Got user seconds chunk 742 of 868
+Got user seconds chunk 743 of 868
+Got user seconds chunk 744 of 868
+Got user seconds chunk 745 of 868
+Got user seconds chunk 746 of 868
+Got user seconds chunk 747 of 868
+Got user seconds chunk 748 of 868
+Got user seconds chunk 749 of 868
+Got user seconds chunk 750 of 868
+Got user seconds chunk 751 of 868
+Got user seconds chunk 752 of 868
+Got user seconds chunk 753 of 868
+Got user seconds chunk 754 of 868
+Got user seconds chunk 755 of 868
+Got user seconds chunk 756 of 868
+Got user seconds chunk 757 of 868
+Got user seconds chunk 758 of 868
+Got user seconds chunk 759 of 868
+Got user seconds chunk 760 of 868
+Got user seconds chunk 761 of 868
+Got user seconds chunk 762 of 868
+Got user seconds chunk 763 of 868
+Got user seconds chunk 764 of 868
+Got user seconds chunk 765 of 868
+Got user seconds chunk 766 of 868
+Got user seconds chunk 767 of 868
+Got user seconds chunk 768 of 868
+Got user seconds chunk 769 of 868
+Got user seconds chunk 770 of 868
+Got user seconds chunk 771 of 868
+Got user seconds chunk 772 of 868
+Got user seconds chunk 773 of 868
+Got user seconds chunk 774 of 868
+Got user seconds chunk 775 of 868
+Got user seconds chunk 776 of 868
+Got user seconds chunk 777 of 868
+Got user seconds chunk 778 of 868
+Got user seconds chunk 779 of 868
+Got user seconds chunk 780 of 868
+Got user seconds chunk 781 of 868
+Got user seconds chunk 782 of 868
+Got user seconds chunk 783 of 868
+Got user seconds chunk 784 of 868
+Got user seconds chunk 785 of 868
+Got user seconds chunk 786 of 868
+Got user seconds chunk 787 of 868
+Got user seconds chunk 788 of 868
+Got user seconds chunk 789 of 868
+Got user seconds chunk 790 of 868
+Got user seconds chunk 791 of 868
+Got user seconds chunk 792 of 868
+Got user seconds chunk 793 of 868
+Got user seconds chunk 794 of 868
+Got user seconds chunk 795 of 868
+Got user seconds chunk 796 of 868
+Got user seconds chunk 797 of 868
+Got user seconds chunk 798 of 868
+Got user seconds chunk 799 of 868
+Got user seconds chunk 800 of 868
+Got user seconds chunk 801 of 868
+Got user seconds chunk 802 of 868
+Got user seconds chunk 803 of 868
+Got user seconds chunk 804 of 868
+Got user seconds chunk 805 of 868
+Got user seconds chunk 806 of 868
+Got user seconds chunk 807 of 868
+Got user seconds chunk 808 of 868
+Got user seconds chunk 809 of 868
+Got user seconds chunk 810 of 868
+Got user seconds chunk 811 of 868
+Got user seconds chunk 812 of 868
+Got user seconds chunk 813 of 868
+Got user seconds chunk 814 of 868
+Got user seconds chunk 815 of 868
+Got user seconds chunk 816 of 868
+Got user seconds chunk 817 of 868
+Got user seconds chunk 818 of 868
+Got user seconds chunk 819 of 868
+Got user seconds chunk 820 of 868
+Got user seconds chunk 821 of 868
+Got user seconds chunk 822 of 868
+Got user seconds chunk 823 of 868
+Got user seconds chunk 824 of 868
+Got user seconds chunk 825 of 868
+Got user seconds chunk 826 of 868
+Got user seconds chunk 827 of 868
+Got user seconds chunk 828 of 868
+Got user seconds chunk 829 of 868
+Got user seconds chunk 830 of 868
+Got user seconds chunk 831 of 868
+Got user seconds chunk 832 of 868
+Got user seconds chunk 833 of 868
+Got user seconds chunk 834 of 868
+Got user seconds chunk 835 of 868
+Got user seconds chunk 836 of 868
+Got user seconds chunk 837 of 868
+Got user seconds chunk 838 of 868
+Got user seconds chunk 839 of 868
+Got user seconds chunk 840 of 868
+Got user seconds chunk 841 of 868
+Got user seconds chunk 842 of 868
+Got user seconds chunk 843 of 868
+Got user seconds chunk 844 of 868
+Got user seconds chunk 845 of 868
+Got user seconds chunk 846 of 868
+Got user seconds chunk 847 of 868
+Got user seconds chunk 848 of 868
+Got user seconds chunk 849 of 868
+Got user seconds chunk 850 of 868
+Got user seconds chunk 851 of 868
+Got user seconds chunk 852 of 868
+Got user seconds chunk 853 of 868
+Got user seconds chunk 854 of 868
+Got user seconds chunk 855 of 868
+Got user seconds chunk 856 of 868
+Got user seconds chunk 857 of 868
+Got user seconds chunk 858 of 868
+Got user seconds chunk 859 of 868
+Got user seconds chunk 860 of 868
+Got user seconds chunk 861 of 868
+Got user seconds chunk 862 of 868
+Got user seconds chunk 863 of 868
+Got user seconds chunk 864 of 868
+Got user seconds chunk 865 of 868
+Got user seconds chunk 866 of 868
+Got user seconds chunk 867 of 868
+Got user seconds chunk 868 of 868
+saving to CSV
+starting tokenize_cleaned_csv.py
+done with globals
+starting
+reading csv
+got 868 chunks
+Creating csv file
+tokenizing
+Tokenized chunk 1 of 868
+Tokenized chunk 2 of 868
+Tokenized chunk 3 of 868
+Tokenized chunk 4 of 868
+Tokenized chunk 5 of 868
+Tokenized chunk 6 of 868
+Tokenized chunk 7 of 868
+Tokenized chunk 8 of 868
+Tokenized chunk 9 of 868
+Tokenized chunk 10 of 868
+Tokenized chunk 11 of 868
+Tokenized chunk 12 of 868
+Tokenized chunk 13 of 868
+Tokenized chunk 14 of 868
+Tokenized chunk 15 of 868
+Tokenized chunk 16 of 868
+Tokenized chunk 17 of 868
+Tokenized chunk 18 of 868
+Tokenized chunk 19 of 868
+Tokenized chunk 20 of 868
+Tokenized chunk 21 of 868
+Tokenized chunk 22 of 868
+Tokenized chunk 23 of 868
+Tokenized chunk 24 of 868
+Tokenized chunk 25 of 868
+Tokenized chunk 26 of 868
+Tokenized chunk 27 of 868
+Tokenized chunk 28 of 868
+Tokenized chunk 29 of 868
+Tokenized chunk 30 of 868
+Tokenized chunk 31 of 868
+Tokenized chunk 32 of 868
+Tokenized chunk 33 of 868
+Tokenized chunk 34 of 868
+Tokenized chunk 35 of 868
+Tokenized chunk 36 of 868
+Tokenized chunk 37 of 868
+Tokenized chunk 38 of 868
+Tokenized chunk 39 of 868
+Tokenized chunk 40 of 868
+Tokenized chunk 41 of 868
+Tokenized chunk 42 of 868
+Tokenized chunk 43 of 868
+Tokenized chunk 44 of 868
+Tokenized chunk 45 of 868
+Tokenized chunk 46 of 868
+Tokenized chunk 47 of 868
+Tokenized chunk 48 of 868
+Tokenized chunk 49 of 868
+Tokenized chunk 50 of 868
+Tokenized chunk 51 of 868
+Tokenized chunk 52 of 868
+Tokenized chunk 53 of 868
+Tokenized chunk 54 of 868
+Tokenized chunk 55 of 868
+Tokenized chunk 56 of 868
+Tokenized chunk 57 of 868
+Tokenized chunk 58 of 868
+Tokenized chunk 59 of 868
+Tokenized chunk 60 of 868
+Tokenized chunk 61 of 868
+Tokenized chunk 62 of 868
+Tokenized chunk 63 of 868
+Tokenized chunk 64 of 868
+Tokenized chunk 65 of 868
+Tokenized chunk 66 of 868
+Tokenized chunk 67 of 868
+Tokenized chunk 68 of 868
+Tokenized chunk 69 of 868
+Tokenized chunk 70 of 868
+Tokenized chunk 71 of 868
+Tokenized chunk 72 of 868
+Tokenized chunk 73 of 868
+Tokenized chunk 74 of 868
+Tokenized chunk 75 of 868
+Tokenized chunk 76 of 868
+Tokenized chunk 77 of 868
+Tokenized chunk 78 of 868
+Tokenized chunk 79 of 868
+Tokenized chunk 80 of 868
+Tokenized chunk 81 of 868
+Tokenized chunk 82 of 868
+Tokenized chunk 83 of 868
+Tokenized chunk 84 of 868
+Tokenized chunk 85 of 868
+Tokenized chunk 86 of 868
+Tokenized chunk 87 of 868
+Tokenized chunk 88 of 868
+Tokenized chunk 89 of 868
+Tokenized chunk 90 of 868
+Tokenized chunk 91 of 868
+Tokenized chunk 92 of 868
+Tokenized chunk 93 of 868
+Tokenized chunk 94 of 868
+Tokenized chunk 95 of 868
+Tokenized chunk 96 of 868
+Tokenized chunk 97 of 868
+Tokenized chunk 98 of 868
+Tokenized chunk 99 of 868
+Tokenized chunk 100 of 868
+Tokenized chunk 101 of 868
+Tokenized chunk 102 of 868
+Tokenized chunk 103 of 868
+Tokenized chunk 104 of 868
+Tokenized chunk 105 of 868
+Tokenized chunk 106 of 868
+Tokenized chunk 107 of 868
+Tokenized chunk 108 of 868
+Tokenized chunk 109 of 868
+Tokenized chunk 110 of 868
+Tokenized chunk 111 of 868
+Tokenized chunk 112 of 868
+Tokenized chunk 113 of 868
+Tokenized chunk 114 of 868
+Tokenized chunk 115 of 868
+Tokenized chunk 116 of 868
+Tokenized chunk 117 of 868
+Tokenized chunk 118 of 868
+Tokenized chunk 119 of 868
+Tokenized chunk 120 of 868
+Tokenized chunk 121 of 868
+Tokenized chunk 122 of 868
+Tokenized chunk 123 of 868
+Tokenized chunk 124 of 868
+Tokenized chunk 125 of 868
+Tokenized chunk 126 of 868
+Tokenized chunk 127 of 868
+Tokenized chunk 128 of 868
+Tokenized chunk 129 of 868
+Tokenized chunk 130 of 868
+Tokenized chunk 131 of 868
+Tokenized chunk 132 of 868
+Tokenized chunk 133 of 868
+Tokenized chunk 134 of 868
+Tokenized chunk 135 of 868
+Tokenized chunk 136 of 868
+Tokenized chunk 137 of 868
+Tokenized chunk 138 of 868
+Tokenized chunk 139 of 868
+Tokenized chunk 140 of 868
+Tokenized chunk 141 of 868
+Tokenized chunk 142 of 868
+Tokenized chunk 143 of 868
+Tokenized chunk 144 of 868
+Tokenized chunk 145 of 868
+Tokenized chunk 146 of 868
+Tokenized chunk 147 of 868
+Tokenized chunk 148 of 868
+Tokenized chunk 149 of 868
+Tokenized chunk 150 of 868
+Tokenized chunk 151 of 868
+Tokenized chunk 152 of 868
+Tokenized chunk 153 of 868
+Tokenized chunk 154 of 868
+Tokenized chunk 155 of 868
+Tokenized chunk 156 of 868
+Tokenized chunk 157 of 868
+Tokenized chunk 158 of 868
+Tokenized chunk 159 of 868
+Tokenized chunk 160 of 868
+Tokenized chunk 161 of 868
+Tokenized chunk 162 of 868
+Tokenized chunk 163 of 868
+Tokenized chunk 164 of 868
+Tokenized chunk 165 of 868
+Tokenized chunk 166 of 868
+Tokenized chunk 167 of 868
+Tokenized chunk 168 of 868
+Tokenized chunk 169 of 868
+Tokenized chunk 170 of 868
+Tokenized chunk 171 of 868
+Tokenized chunk 172 of 868
+Tokenized chunk 173 of 868
+Tokenized chunk 174 of 868
+Tokenized chunk 175 of 868
+Tokenized chunk 176 of 868
+Tokenized chunk 177 of 868
+Tokenized chunk 178 of 868
+Tokenized chunk 179 of 868
+Tokenized chunk 180 of 868
+Tokenized chunk 181 of 868
+Tokenized chunk 182 of 868
+Tokenized chunk 183 of 868
+Tokenized chunk 184 of 868
+Tokenized chunk 185 of 868
+Tokenized chunk 186 of 868
+Tokenized chunk 187 of 868
+Tokenized chunk 188 of 868
+Tokenized chunk 189 of 868
+Tokenized chunk 190 of 868
+Tokenized chunk 191 of 868
+Tokenized chunk 192 of 868
+Tokenized chunk 193 of 868
+Tokenized chunk 194 of 868
+Tokenized chunk 195 of 868
+Tokenized chunk 196 of 868
+Tokenized chunk 197 of 868
+Tokenized chunk 198 of 868
+Tokenized chunk 199 of 868
+Tokenized chunk 200 of 868
+Tokenized chunk 201 of 868
+Tokenized chunk 202 of 868
+Tokenized chunk 203 of 868
+Tokenized chunk 204 of 868
+Tokenized chunk 205 of 868
+Tokenized chunk 206 of 868
+Tokenized chunk 207 of 868
+Tokenized chunk 208 of 868
+Tokenized chunk 209 of 868
+Tokenized chunk 210 of 868
+Tokenized chunk 211 of 868
+Tokenized chunk 212 of 868
+Tokenized chunk 213 of 868
+Tokenized chunk 214 of 868
+Tokenized chunk 215 of 868
+Tokenized chunk 216 of 868
+Tokenized chunk 217 of 868
+Tokenized chunk 218 of 868
+Tokenized chunk 219 of 868
+Tokenized chunk 220 of 868
+Tokenized chunk 221 of 868
+Tokenized chunk 222 of 868
+Tokenized chunk 223 of 868
+Tokenized chunk 224 of 868
+Tokenized chunk 225 of 868
+Tokenized chunk 226 of 868
+Tokenized chunk 227 of 868
+Tokenized chunk 228 of 868
+Tokenized chunk 229 of 868
+Tokenized chunk 230 of 868
+Tokenized chunk 231 of 868
+Tokenized chunk 232 of 868
+Tokenized chunk 233 of 868
+Tokenized chunk 234 of 868
+Tokenized chunk 235 of 868
+Tokenized chunk 236 of 868
+Tokenized chunk 237 of 868
+Tokenized chunk 238 of 868
+Tokenized chunk 239 of 868
+Tokenized chunk 240 of 868
+Tokenized chunk 241 of 868
+Tokenized chunk 242 of 868
+Tokenized chunk 243 of 868
+Tokenized chunk 244 of 868
+Tokenized chunk 245 of 868
+Tokenized chunk 246 of 868
+Tokenized chunk 247 of 868
+Tokenized chunk 248 of 868
+Tokenized chunk 249 of 868
+Tokenized chunk 250 of 868
+Tokenized chunk 251 of 868
+Tokenized chunk 252 of 868
+Tokenized chunk 253 of 868
+Tokenized chunk 254 of 868
+Tokenized chunk 255 of 868
+Tokenized chunk 256 of 868
+Tokenized chunk 257 of 868
+Tokenized chunk 258 of 868
+Tokenized chunk 259 of 868
+Tokenized chunk 260 of 868
+Tokenized chunk 261 of 868
+Tokenized chunk 262 of 868
+Tokenized chunk 263 of 868
+Tokenized chunk 264 of 868
+Tokenized chunk 265 of 868
+Tokenized chunk 266 of 868
+Tokenized chunk 267 of 868
+Tokenized chunk 268 of 868
+Tokenized chunk 269 of 868
+Tokenized chunk 270 of 868
+Tokenized chunk 271 of 868
+Tokenized chunk 272 of 868
+Tokenized chunk 273 of 868
+Tokenized chunk 274 of 868
+Tokenized chunk 275 of 868
+Tokenized chunk 276 of 868
+Tokenized chunk 277 of 868
+Tokenized chunk 278 of 868
+Tokenized chunk 279 of 868
+Tokenized chunk 280 of 868
+Tokenized chunk 281 of 868
+Tokenized chunk 282 of 868
+Tokenized chunk 283 of 868
+Tokenized chunk 284 of 868
+Tokenized chunk 285 of 868
+Tokenized chunk 286 of 868
+Tokenized chunk 287 of 868
+Tokenized chunk 288 of 868
+Tokenized chunk 289 of 868
+Tokenized chunk 290 of 868
+Tokenized chunk 291 of 868
+Tokenized chunk 292 of 868
+Tokenized chunk 293 of 868
+Tokenized chunk 294 of 868
+Tokenized chunk 295 of 868
+Tokenized chunk 296 of 868
+Tokenized chunk 297 of 868
+Tokenized chunk 298 of 868
+Tokenized chunk 299 of 868
+Tokenized chunk 300 of 868
+Tokenized chunk 301 of 868
+Tokenized chunk 302 of 868
+Tokenized chunk 303 of 868
+Tokenized chunk 304 of 868
+Tokenized chunk 305 of 868
+Tokenized chunk 306 of 868
+Tokenized chunk 307 of 868
+Tokenized chunk 308 of 868
+Tokenized chunk 309 of 868
+Tokenized chunk 310 of 868
+Tokenized chunk 311 of 868
+Tokenized chunk 312 of 868
+Tokenized chunk 313 of 868
+Tokenized chunk 314 of 868
+Tokenized chunk 315 of 868
+Tokenized chunk 316 of 868
+Tokenized chunk 317 of 868
+Tokenized chunk 318 of 868
+Tokenized chunk 319 of 868
+Tokenized chunk 320 of 868
+Tokenized chunk 321 of 868
+Tokenized chunk 322 of 868
+Tokenized chunk 323 of 868
+Tokenized chunk 324 of 868
+Tokenized chunk 325 of 868
+Tokenized chunk 326 of 868
+Tokenized chunk 327 of 868
+Tokenized chunk 328 of 868
+Tokenized chunk 329 of 868
+Tokenized chunk 330 of 868
+Tokenized chunk 331 of 868
+Tokenized chunk 332 of 868
+Tokenized chunk 333 of 868
+Tokenized chunk 334 of 868
+Tokenized chunk 335 of 868
+Tokenized chunk 336 of 868
+Tokenized chunk 337 of 868
+Tokenized chunk 338 of 868
+Tokenized chunk 339 of 868
+Tokenized chunk 340 of 868
+Tokenized chunk 341 of 868
+Tokenized chunk 342 of 868
+Tokenized chunk 343 of 868
+Tokenized chunk 344 of 868
+Tokenized chunk 345 of 868
+Tokenized chunk 346 of 868
+Tokenized chunk 347 of 868
+Tokenized chunk 348 of 868
+Tokenized chunk 349 of 868
+Tokenized chunk 350 of 868
+Tokenized chunk 351 of 868
+Tokenized chunk 352 of 868
+Tokenized chunk 353 of 868
+Tokenized chunk 354 of 868
+Tokenized chunk 355 of 868
+Tokenized chunk 356 of 868
+Tokenized chunk 357 of 868
+Tokenized chunk 358 of 868
+Tokenized chunk 359 of 868
+Tokenized chunk 360 of 868
+Tokenized chunk 361 of 868
+Tokenized chunk 362 of 868
+Tokenized chunk 363 of 868
+Tokenized chunk 364 of 868
+Tokenized chunk 365 of 868
+Tokenized chunk 366 of 868
+Tokenized chunk 367 of 868
+Tokenized chunk 368 of 868
+Tokenized chunk 369 of 868
+Tokenized chunk 370 of 868
+Tokenized chunk 371 of 868
+Tokenized chunk 372 of 868
+Tokenized chunk 373 of 868
+Tokenized chunk 374 of 868
+Tokenized chunk 375 of 868
+Tokenized chunk 376 of 868
+Tokenized chunk 377 of 868
+Tokenized chunk 378 of 868
+Tokenized chunk 379 of 868
+Tokenized chunk 380 of 868
+Tokenized chunk 381 of 868
+Tokenized chunk 382 of 868
+Tokenized chunk 383 of 868
+Tokenized chunk 384 of 868
+Tokenized chunk 385 of 868
+Tokenized chunk 386 of 868
+Tokenized chunk 387 of 868
+Tokenized chunk 388 of 868
+Tokenized chunk 389 of 868
+Tokenized chunk 390 of 868
+Tokenized chunk 391 of 868
+Tokenized chunk 392 of 868
+Tokenized chunk 393 of 868
+Tokenized chunk 394 of 868
+Tokenized chunk 395 of 868
+Tokenized chunk 396 of 868
+Tokenized chunk 397 of 868
+Tokenized chunk 398 of 868
+Tokenized chunk 399 of 868
+Tokenized chunk 400 of 868
+Tokenized chunk 401 of 868
+Tokenized chunk 402 of 868
+Tokenized chunk 403 of 868
+Tokenized chunk 404 of 868
+Tokenized chunk 405 of 868
+Tokenized chunk 406 of 868
+Tokenized chunk 407 of 868
+Tokenized chunk 408 of 868
+Tokenized chunk 409 of 868
+Tokenized chunk 410 of 868
+Tokenized chunk 411 of 868
+Tokenized chunk 412 of 868
+Tokenized chunk 413 of 868
+Tokenized chunk 414 of 868
+Tokenized chunk 415 of 868
+Tokenized chunk 416 of 868
+Tokenized chunk 417 of 868
+Tokenized chunk 418 of 868
+Tokenized chunk 419 of 868
+Tokenized chunk 420 of 868
+Tokenized chunk 421 of 868
+Tokenized chunk 422 of 868
+Tokenized chunk 423 of 868
+Tokenized chunk 424 of 868
+Tokenized chunk 425 of 868
+Tokenized chunk 426 of 868
+Tokenized chunk 427 of 868
+Tokenized chunk 428 of 868
+Tokenized chunk 429 of 868
+Tokenized chunk 430 of 868
+Tokenized chunk 431 of 868
+Tokenized chunk 432 of 868
+Tokenized chunk 433 of 868
+Tokenized chunk 434 of 868
+Tokenized chunk 435 of 868
+Tokenized chunk 436 of 868
+Tokenized chunk 437 of 868
+Tokenized chunk 438 of 868
+Tokenized chunk 439 of 868
+Tokenized chunk 440 of 868
+Tokenized chunk 441 of 868
+Tokenized chunk 442 of 868
+Tokenized chunk 443 of 868
+Tokenized chunk 444 of 868
+Tokenized chunk 445 of 868
+Tokenized chunk 446 of 868
+Tokenized chunk 447 of 868
+Tokenized chunk 448 of 868
+Tokenized chunk 449 of 868
+Tokenized chunk 450 of 868
+Tokenized chunk 451 of 868
+Tokenized chunk 452 of 868
+Tokenized chunk 453 of 868
+Tokenized chunk 454 of 868
+Tokenized chunk 455 of 868
+Tokenized chunk 456 of 868
+Tokenized chunk 457 of 868
+Tokenized chunk 458 of 868
+Tokenized chunk 459 of 868
+Tokenized chunk 460 of 868
+Tokenized chunk 461 of 868
+Tokenized chunk 462 of 868
+Tokenized chunk 463 of 868
+Tokenized chunk 464 of 868
+Tokenized chunk 465 of 868
+Tokenized chunk 466 of 868
+Tokenized chunk 467 of 868
+Tokenized chunk 468 of 868
+Tokenized chunk 469 of 868
+Tokenized chunk 470 of 868
+Tokenized chunk 471 of 868
+Tokenized chunk 472 of 868
+Tokenized chunk 473 of 868
+Tokenized chunk 474 of 868
+Tokenized chunk 475 of 868
+Tokenized chunk 476 of 868
+Tokenized chunk 477 of 868
+Tokenized chunk 478 of 868
+Tokenized chunk 479 of 868
+Tokenized chunk 480 of 868
+Tokenized chunk 481 of 868
+Tokenized chunk 482 of 868
+Tokenized chunk 483 of 868
+Tokenized chunk 484 of 868
+Tokenized chunk 485 of 868
+Tokenized chunk 486 of 868
+Tokenized chunk 487 of 868
+Tokenized chunk 488 of 868
+Tokenized chunk 489 of 868
+Tokenized chunk 490 of 868
+Tokenized chunk 491 of 868
+Tokenized chunk 492 of 868
+Tokenized chunk 493 of 868
+Tokenized chunk 494 of 868
+Tokenized chunk 495 of 868
+Tokenized chunk 496 of 868
+Tokenized chunk 497 of 868
+Tokenized chunk 498 of 868
+Tokenized chunk 499 of 868
+Tokenized chunk 500 of 868
+Tokenized chunk 501 of 868
+Tokenized chunk 502 of 868
+Tokenized chunk 503 of 868
+Tokenized chunk 504 of 868
+Tokenized chunk 505 of 868
+Tokenized chunk 506 of 868
+Tokenized chunk 507 of 868
+Tokenized chunk 508 of 868
+Tokenized chunk 509 of 868
+Tokenized chunk 510 of 868
+Tokenized chunk 511 of 868
+Tokenized chunk 512 of 868
+Tokenized chunk 513 of 868
+Tokenized chunk 514 of 868
+Tokenized chunk 515 of 868
+Tokenized chunk 516 of 868
+Tokenized chunk 517 of 868
+Tokenized chunk 518 of 868
+Tokenized chunk 519 of 868
+Tokenized chunk 520 of 868
+Tokenized chunk 521 of 868
+Tokenized chunk 522 of 868
+Tokenized chunk 523 of 868
+Tokenized chunk 524 of 868
+Tokenized chunk 525 of 868
+Tokenized chunk 526 of 868
+Tokenized chunk 527 of 868
+Tokenized chunk 528 of 868
+Tokenized chunk 529 of 868
+Tokenized chunk 530 of 868
+Tokenized chunk 531 of 868
+Tokenized chunk 532 of 868
+Tokenized chunk 533 of 868
+Tokenized chunk 534 of 868
+Tokenized chunk 535 of 868
+Tokenized chunk 536 of 868
+Tokenized chunk 537 of 868
+Tokenized chunk 538 of 868
+Tokenized chunk 539 of 868
+Tokenized chunk 540 of 868
+Tokenized chunk 541 of 868
+Tokenized chunk 542 of 868
+Tokenized chunk 543 of 868
+Tokenized chunk 544 of 868
+Tokenized chunk 545 of 868
+Tokenized chunk 546 of 868
+Tokenized chunk 547 of 868
+Tokenized chunk 548 of 868
+Tokenized chunk 549 of 868
+Tokenized chunk 550 of 868
+Tokenized chunk 551 of 868
+Tokenized chunk 552 of 868
+Tokenized chunk 553 of 868
+Tokenized chunk 554 of 868
+Tokenized chunk 555 of 868
+Tokenized chunk 556 of 868
+Tokenized chunk 557 of 868
+Tokenized chunk 558 of 868
+Tokenized chunk 559 of 868
+Tokenized chunk 560 of 868
+Tokenized chunk 561 of 868
+Tokenized chunk 562 of 868
+Tokenized chunk 563 of 868
+Tokenized chunk 564 of 868
+Tokenized chunk 565 of 868
+Tokenized chunk 566 of 868
+Tokenized chunk 567 of 868
+Tokenized chunk 568 of 868
+Tokenized chunk 569 of 868
+Tokenized chunk 570 of 868
+Tokenized chunk 571 of 868
+Tokenized chunk 572 of 868
+Tokenized chunk 573 of 868
+Tokenized chunk 574 of 868
+Tokenized chunk 575 of 868
+Tokenized chunk 576 of 868
+Tokenized chunk 577 of 868
+Tokenized chunk 578 of 868
+Tokenized chunk 579 of 868
+Tokenized chunk 580 of 868
+Tokenized chunk 581 of 868
+Tokenized chunk 582 of 868
+Tokenized chunk 583 of 868
+Tokenized chunk 584 of 868
+Tokenized chunk 585 of 868
+Tokenized chunk 586 of 868
+Tokenized chunk 587 of 868
+Tokenized chunk 588 of 868
+Tokenized chunk 589 of 868
+Tokenized chunk 590 of 868
+Tokenized chunk 591 of 868
+Tokenized chunk 592 of 868
+Tokenized chunk 593 of 868
+Tokenized chunk 594 of 868
+Tokenized chunk 595 of 868
+Tokenized chunk 596 of 868
+Tokenized chunk 597 of 868
+Tokenized chunk 598 of 868
+Tokenized chunk 599 of 868
+Tokenized chunk 600 of 868
+Tokenized chunk 601 of 868
+Tokenized chunk 602 of 868
+Tokenized chunk 603 of 868
+Tokenized chunk 604 of 868
+Tokenized chunk 605 of 868
+Tokenized chunk 606 of 868
+Tokenized chunk 607 of 868
+Tokenized chunk 608 of 868
+Tokenized chunk 609 of 868
+Tokenized chunk 610 of 868
+Tokenized chunk 611 of 868
+Tokenized chunk 612 of 868
+Tokenized chunk 613 of 868
+Tokenized chunk 614 of 868
+Tokenized chunk 615 of 868
+Tokenized chunk 616 of 868
+Tokenized chunk 617 of 868
+Tokenized chunk 618 of 868
+Tokenized chunk 619 of 868
+Tokenized chunk 620 of 868
+Tokenized chunk 621 of 868
+Tokenized chunk 622 of 868
+Tokenized chunk 623 of 868
+Tokenized chunk 624 of 868
+Tokenized chunk 625 of 868
+Tokenized chunk 626 of 868
+Tokenized chunk 627 of 868
+Tokenized chunk 628 of 868
+Tokenized chunk 629 of 868
+Tokenized chunk 630 of 868
+Tokenized chunk 631 of 868
+Tokenized chunk 632 of 868
+Tokenized chunk 633 of 868
+Tokenized chunk 634 of 868
+Tokenized chunk 635 of 868
+Tokenized chunk 636 of 868
+Tokenized chunk 637 of 868
+Tokenized chunk 638 of 868
+Tokenized chunk 639 of 868
+Tokenized chunk 640 of 868
+Tokenized chunk 641 of 868
+Tokenized chunk 642 of 868
+Tokenized chunk 643 of 868
+Tokenized chunk 644 of 868
+Tokenized chunk 645 of 868
+Tokenized chunk 646 of 868
+Tokenized chunk 647 of 868
+Tokenized chunk 648 of 868
+Tokenized chunk 649 of 868
+Tokenized chunk 650 of 868
+Tokenized chunk 651 of 868
+Tokenized chunk 652 of 868
+Tokenized chunk 653 of 868
+Tokenized chunk 654 of 868
+Tokenized chunk 655 of 868
+Tokenized chunk 656 of 868
+Tokenized chunk 657 of 868
+Tokenized chunk 658 of 868
+Tokenized chunk 659 of 868
+Tokenized chunk 660 of 868
+Tokenized chunk 661 of 868
+Tokenized chunk 662 of 868
+Tokenized chunk 663 of 868
+Tokenized chunk 664 of 868
+Tokenized chunk 665 of 868
+Tokenized chunk 666 of 868
+Tokenized chunk 667 of 868
+Tokenized chunk 668 of 868
+Tokenized chunk 669 of 868
+Tokenized chunk 670 of 868
+Tokenized chunk 671 of 868
+Tokenized chunk 672 of 868
+Tokenized chunk 673 of 868
+Tokenized chunk 674 of 868
+Tokenized chunk 675 of 868
+Tokenized chunk 676 of 868
+Tokenized chunk 677 of 868
+Tokenized chunk 678 of 868
+Tokenized chunk 679 of 868
+Tokenized chunk 680 of 868
+Tokenized chunk 681 of 868
+Tokenized chunk 682 of 868
+Tokenized chunk 683 of 868
+Tokenized chunk 684 of 868
+Tokenized chunk 685 of 868
+Tokenized chunk 686 of 868
+Tokenized chunk 687 of 868
+Tokenized chunk 688 of 868
+Tokenized chunk 689 of 868
+Tokenized chunk 690 of 868
+Tokenized chunk 691 of 868
+Tokenized chunk 692 of 868
+Tokenized chunk 693 of 868
+Tokenized chunk 694 of 868
+Tokenized chunk 695 of 868
+Tokenized chunk 696 of 868
+Tokenized chunk 697 of 868
+Tokenized chunk 698 of 868
+Tokenized chunk 699 of 868
+Tokenized chunk 700 of 868
+Tokenized chunk 701 of 868
+Tokenized chunk 702 of 868
+Tokenized chunk 703 of 868
+Tokenized chunk 704 of 868
+Tokenized chunk 705 of 868
+Tokenized chunk 706 of 868
+Tokenized chunk 707 of 868
+Tokenized chunk 708 of 868
+Tokenized chunk 709 of 868
+Tokenized chunk 710 of 868
+Tokenized chunk 711 of 868
+Tokenized chunk 712 of 868
+Tokenized chunk 713 of 868
+Tokenized chunk 714 of 868
+Tokenized chunk 715 of 868
+Tokenized chunk 716 of 868
+Tokenized chunk 717 of 868
+Tokenized chunk 718 of 868
+Tokenized chunk 719 of 868
+Tokenized chunk 720 of 868
+Tokenized chunk 721 of 868
+Tokenized chunk 722 of 868
+Tokenized chunk 723 of 868
+Tokenized chunk 724 of 868
+Tokenized chunk 725 of 868
+Tokenized chunk 726 of 868
+Tokenized chunk 727 of 868
+Tokenized chunk 728 of 868
+Tokenized chunk 729 of 868
+Tokenized chunk 730 of 868
+Tokenized chunk 731 of 868
+Tokenized chunk 732 of 868
+Tokenized chunk 733 of 868
+Tokenized chunk 734 of 868
+Tokenized chunk 735 of 868
+Tokenized chunk 736 of 868
+Tokenized chunk 737 of 868
+Tokenized chunk 738 of 868
+Tokenized chunk 739 of 868
+Tokenized chunk 740 of 868
+Tokenized chunk 741 of 868
+Tokenized chunk 742 of 868
+Tokenized chunk 743 of 868
+Tokenized chunk 744 of 868
+Tokenized chunk 745 of 868
+Tokenized chunk 746 of 868
+Tokenized chunk 747 of 868
+Tokenized chunk 748 of 868
+Tokenized chunk 749 of 868
+Tokenized chunk 750 of 868
+Tokenized chunk 751 of 868
+Tokenized chunk 752 of 868
+Tokenized chunk 753 of 868
+Tokenized chunk 754 of 868
+Tokenized chunk 755 of 868
+Tokenized chunk 756 of 868
+Tokenized chunk 757 of 868
+Tokenized chunk 758 of 868
+Tokenized chunk 759 of 868
+Tokenized chunk 760 of 868
+Tokenized chunk 761 of 868
+Tokenized chunk 762 of 868
+Tokenized chunk 763 of 868
+Tokenized chunk 764 of 868
+Tokenized chunk 765 of 868
+Tokenized chunk 766 of 868
+Tokenized chunk 767 of 868
+Tokenized chunk 768 of 868
+Tokenized chunk 769 of 868
+Tokenized chunk 770 of 868
+Tokenized chunk 771 of 868
+Tokenized chunk 772 of 868
+Tokenized chunk 773 of 868
+Tokenized chunk 774 of 868
+Tokenized chunk 775 of 868
+Tokenized chunk 776 of 868
+Tokenized chunk 777 of 868
+Tokenized chunk 778 of 868
+Tokenized chunk 779 of 868
+Tokenized chunk 780 of 868
+Tokenized chunk 781 of 868
+Tokenized chunk 782 of 868
+Tokenized chunk 783 of 868
+Tokenized chunk 784 of 868
+Tokenized chunk 785 of 868
+Tokenized chunk 786 of 868
+Tokenized chunk 787 of 868
+Tokenized chunk 788 of 868
+Tokenized chunk 789 of 868
+Tokenized chunk 790 of 868
+Tokenized chunk 791 of 868
+Tokenized chunk 792 of 868
+Tokenized chunk 793 of 868
+Tokenized chunk 794 of 868
+Tokenized chunk 795 of 868
+Tokenized chunk 796 of 868
+Tokenized chunk 797 of 868
+Tokenized chunk 798 of 868
+Tokenized chunk 799 of 868
+Tokenized chunk 800 of 868
+Tokenized chunk 801 of 868
+Tokenized chunk 802 of 868
+Tokenized chunk 803 of 868
+Tokenized chunk 804 of 868
+Tokenized chunk 805 of 868
+Tokenized chunk 806 of 868
+Tokenized chunk 807 of 868
+Tokenized chunk 808 of 868
+Tokenized chunk 809 of 868
+Tokenized chunk 810 of 868
+Tokenized chunk 811 of 868
+Tokenized chunk 812 of 868
+Tokenized chunk 813 of 868
+Tokenized chunk 814 of 868
+Tokenized chunk 815 of 868
+Tokenized chunk 816 of 868
+Tokenized chunk 817 of 868
+Tokenized chunk 818 of 868
+Tokenized chunk 819 of 868
+Tokenized chunk 820 of 868
+Tokenized chunk 821 of 868
+Tokenized chunk 822 of 868
+Tokenized chunk 823 of 868
+Tokenized chunk 824 of 868
+Tokenized chunk 825 of 868
+Tokenized chunk 826 of 868
+Tokenized chunk 827 of 868
+Tokenized chunk 828 of 868
+Tokenized chunk 829 of 868
+Tokenized chunk 830 of 868
+Tokenized chunk 831 of 868
+Tokenized chunk 832 of 868
+Tokenized chunk 833 of 868
+Tokenized chunk 834 of 868
+Tokenized chunk 835 of 868
+Tokenized chunk 836 of 868
+Tokenized chunk 837 of 868
+Tokenized chunk 838 of 868
+Tokenized chunk 839 of 868
+Tokenized chunk 840 of 868
+Tokenized chunk 841 of 868
+Tokenized chunk 842 of 868
+Tokenized chunk 843 of 868
+Tokenized chunk 844 of 868
+Tokenized chunk 845 of 868
+Tokenized chunk 846 of 868
+Tokenized chunk 847 of 868
+Tokenized chunk 848 of 868
+Tokenized chunk 849 of 868
+Tokenized chunk 850 of 868
+Tokenized chunk 851 of 868
+Tokenized chunk 852 of 868
+Tokenized chunk 853 of 868
+Tokenized chunk 854 of 868
+Tokenized chunk 855 of 868
+Tokenized chunk 856 of 868
+Tokenized chunk 857 of 868
+Tokenized chunk 858 of 868
+Tokenized chunk 859 of 868
+Tokenized chunk 860 of 868
+Tokenized chunk 861 of 868
+Tokenized chunk 862 of 868
+Tokenized chunk 863 of 868
+Tokenized chunk 864 of 868
+Tokenized chunk 865 of 868
+Tokenized chunk 866 of 868
+Tokenized chunk 867 of 868
+Tokenized chunk 868 of 868
+Got results
+writing
+writing chunk 0 of 868
+writing chunk 1 of 868
+writing chunk 2 of 868
+writing chunk 3 of 868
+writing chunk 4 of 868
+writing chunk 5 of 868
+writing chunk 6 of 868
+writing chunk 7 of 868
+writing chunk 8 of 868
+writing chunk 9 of 868
+writing chunk 10 of 868
+writing chunk 11 of 868
+writing chunk 12 of 868
+writing chunk 13 of 868
+writing chunk 14 of 868
+writing chunk 15 of 868
+writing chunk 16 of 868
+writing chunk 17 of 868
+writing chunk 18 of 868
+writing chunk 19 of 868
+writing chunk 20 of 868
+writing chunk 21 of 868
+writing chunk 22 of 868
+writing chunk 23 of 868
+writing chunk 24 of 868
+writing chunk 25 of 868
+writing chunk 26 of 868
+writing chunk 27 of 868
+writing chunk 28 of 868
+writing chunk 29 of 868
+writing chunk 30 of 868
+writing chunk 31 of 868
+writing chunk 32 of 868
+writing chunk 33 of 868
+writing chunk 34 of 868
+writing chunk 35 of 868
+writing chunk 36 of 868
+writing chunk 37 of 868
+writing chunk 38 of 868
+writing chunk 39 of 868
+writing chunk 40 of 868
+writing chunk 41 of 868
+writing chunk 42 of 868
+writing chunk 43 of 868
+writing chunk 44 of 868
+writing chunk 45 of 868
+writing chunk 46 of 868
+writing chunk 47 of 868
+writing chunk 48 of 868
+writing chunk 49 of 868
+writing chunk 50 of 868
+writing chunk 51 of 868
+writing chunk 52 of 868
+writing chunk 53 of 868
+writing chunk 54 of 868
+writing chunk 55 of 868
+writing chunk 56 of 868
+writing chunk 57 of 868
+writing chunk 58 of 868
+writing chunk 59 of 868
+writing chunk 60 of 868
+writing chunk 61 of 868
+writing chunk 62 of 868
+writing chunk 63 of 868
+writing chunk 64 of 868
+writing chunk 65 of 868
+writing chunk 66 of 868
+writing chunk 67 of 868
+writing chunk 68 of 868
+writing chunk 69 of 868
+writing chunk 70 of 868
+writing chunk 71 of 868
+writing chunk 72 of 868
+writing chunk 73 of 868
+writing chunk 74 of 868
+writing chunk 75 of 868
+writing chunk 76 of 868
+writing chunk 77 of 868
+writing chunk 78 of 868
+writing chunk 79 of 868
+writing chunk 80 of 868
+writing chunk 81 of 868
+writing chunk 82 of 868
+writing chunk 83 of 868
+writing chunk 84 of 868
+writing chunk 85 of 868
+writing chunk 86 of 868
+writing chunk 87 of 868
+writing chunk 88 of 868
+writing chunk 89 of 868
+writing chunk 90 of 868
+writing chunk 91 of 868
+writing chunk 92 of 868
+writing chunk 93 of 868
+writing chunk 94 of 868
+writing chunk 95 of 868
+writing chunk 96 of 868
+writing chunk 97 of 868
+writing chunk 98 of 868
+writing chunk 99 of 868
+writing chunk 100 of 868
+writing chunk 101 of 868
+writing chunk 102 of 868
+writing chunk 103 of 868
+writing chunk 104 of 868
+writing chunk 105 of 868
+writing chunk 106 of 868
+writing chunk 107 of 868
+writing chunk 108 of 868
+writing chunk 109 of 868
+writing chunk 110 of 868
+writing chunk 111 of 868
+writing chunk 112 of 868
+writing chunk 113 of 868
+writing chunk 114 of 868
+writing chunk 115 of 868
+writing chunk 116 of 868
+writing chunk 117 of 868
+writing chunk 118 of 868
+writing chunk 119 of 868
+writing chunk 120 of 868
+writing chunk 121 of 868
+writing chunk 122 of 868
+writing chunk 123 of 868
+writing chunk 124 of 868
+writing chunk 125 of 868
+writing chunk 126 of 868
+writing chunk 127 of 868
+writing chunk 128 of 868
+writing chunk 129 of 868
+writing chunk 130 of 868
+writing chunk 131 of 868
+writing chunk 132 of 868
+writing chunk 133 of 868
+writing chunk 134 of 868
+writing chunk 135 of 868
+writing chunk 136 of 868
+writing chunk 137 of 868
+writing chunk 138 of 868
+writing chunk 139 of 868
+writing chunk 140 of 868
+writing chunk 141 of 868
+writing chunk 142 of 868
+writing chunk 143 of 868
+writing chunk 144 of 868
+writing chunk 145 of 868
+writing chunk 146 of 868
+writing chunk 147 of 868
+writing chunk 148 of 868
+writing chunk 149 of 868
+writing chunk 150 of 868
+writing chunk 151 of 868
+writing chunk 152 of 868
+writing chunk 153 of 868
+writing chunk 154 of 868
+writing chunk 155 of 868
+writing chunk 156 of 868
+writing chunk 157 of 868
+writing chunk 158 of 868
+writing chunk 159 of 868
+writing chunk 160 of 868
+writing chunk 161 of 868
+writing chunk 162 of 868
+writing chunk 163 of 868
+writing chunk 164 of 868
+writing chunk 165 of 868
+writing chunk 166 of 868
+writing chunk 167 of 868
+writing chunk 168 of 868
+writing chunk 169 of 868
+writing chunk 170 of 868
+writing chunk 171 of 868
+writing chunk 172 of 868
+writing chunk 173 of 868
+writing chunk 174 of 868
+writing chunk 175 of 868
+writing chunk 176 of 868
+writing chunk 177 of 868
+writing chunk 178 of 868
+writing chunk 179 of 868
+writing chunk 180 of 868
+writing chunk 181 of 868
+writing chunk 182 of 868
+writing chunk 183 of 868
+writing chunk 184 of 868
+writing chunk 185 of 868
+writing chunk 186 of 868
+writing chunk 187 of 868
+writing chunk 188 of 868
+writing chunk 189 of 868
+writing chunk 190 of 868
+writing chunk 191 of 868
+writing chunk 192 of 868
+writing chunk 193 of 868
+writing chunk 194 of 868
+writing chunk 195 of 868
+writing chunk 196 of 868
+writing chunk 197 of 868
+writing chunk 198 of 868
+writing chunk 199 of 868
+writing chunk 200 of 868
+writing chunk 201 of 868
+writing chunk 202 of 868
+writing chunk 203 of 868
+writing chunk 204 of 868
+writing chunk 205 of 868
+writing chunk 206 of 868
+writing chunk 207 of 868
+writing chunk 208 of 868
+writing chunk 209 of 868
+writing chunk 210 of 868
+writing chunk 211 of 868
+writing chunk 212 of 868
+writing chunk 213 of 868
+writing chunk 214 of 868
+writing chunk 215 of 868
+writing chunk 216 of 868
+writing chunk 217 of 868
+writing chunk 218 of 868
+writing chunk 219 of 868
+writing chunk 220 of 868
+writing chunk 221 of 868
+writing chunk 222 of 868
+writing chunk 223 of 868
+writing chunk 224 of 868
+writing chunk 225 of 868
+writing chunk 226 of 868
+writing chunk 227 of 868
+writing chunk 228 of 868
+writing chunk 229 of 868
+writing chunk 230 of 868
+writing chunk 231 of 868
+writing chunk 232 of 868
+writing chunk 233 of 868
+writing chunk 234 of 868
+writing chunk 235 of 868
+writing chunk 236 of 868
+writing chunk 237 of 868
+writing chunk 238 of 868
+writing chunk 239 of 868
+writing chunk 240 of 868
+writing chunk 241 of 868
+writing chunk 242 of 868
+writing chunk 243 of 868
+writing chunk 244 of 868
+writing chunk 245 of 868
+writing chunk 246 of 868
+writing chunk 247 of 868
+writing chunk 248 of 868
+writing chunk 249 of 868
+writing chunk 250 of 868
+writing chunk 251 of 868
+writing chunk 252 of 868
+writing chunk 253 of 868
+writing chunk 254 of 868
+writing chunk 255 of 868
+writing chunk 256 of 868
+writing chunk 257 of 868
+writing chunk 258 of 868
+writing chunk 259 of 868
+writing chunk 260 of 868
+writing chunk 261 of 868
+writing chunk 262 of 868
+writing chunk 263 of 868
+writing chunk 264 of 868
+writing chunk 265 of 868
+writing chunk 266 of 868
+writing chunk 267 of 868
+writing chunk 268 of 868
+writing chunk 269 of 868
+writing chunk 270 of 868
+writing chunk 271 of 868
+writing chunk 272 of 868
+writing chunk 273 of 868
+writing chunk 274 of 868
+writing chunk 275 of 868
+writing chunk 276 of 868
+writing chunk 277 of 868
+writing chunk 278 of 868
+writing chunk 279 of 868
+writing chunk 280 of 868
+writing chunk 281 of 868
+writing chunk 282 of 868
+writing chunk 283 of 868
+writing chunk 284 of 868
+writing chunk 285 of 868
+writing chunk 286 of 868
+writing chunk 287 of 868
+writing chunk 288 of 868
+writing chunk 289 of 868
+writing chunk 290 of 868
+writing chunk 291 of 868
+writing chunk 292 of 868
+writing chunk 293 of 868
+writing chunk 294 of 868
+writing chunk 295 of 868
+writing chunk 296 of 868
+writing chunk 297 of 868
+writing chunk 298 of 868
+writing chunk 299 of 868
+writing chunk 300 of 868
+writing chunk 301 of 868
+writing chunk 302 of 868
+writing chunk 303 of 868
+writing chunk 304 of 868
+writing chunk 305 of 868
+writing chunk 306 of 868
+writing chunk 307 of 868
+writing chunk 308 of 868
+writing chunk 309 of 868
+writing chunk 310 of 868
+writing chunk 311 of 868
+writing chunk 312 of 868
+writing chunk 313 of 868
+writing chunk 314 of 868
+writing chunk 315 of 868
+writing chunk 316 of 868
+writing chunk 317 of 868
+writing chunk 318 of 868
+writing chunk 319 of 868
+writing chunk 320 of 868
+writing chunk 321 of 868
+writing chunk 322 of 868
+writing chunk 323 of 868
+writing chunk 324 of 868
+writing chunk 325 of 868
+writing chunk 326 of 868
+writing chunk 327 of 868
+writing chunk 328 of 868
+writing chunk 329 of 868
+writing chunk 330 of 868
+writing chunk 331 of 868
+writing chunk 332 of 868
+writing chunk 333 of 868
+writing chunk 334 of 868
+writing chunk 335 of 868
+writing chunk 336 of 868
+writing chunk 337 of 868
+writing chunk 338 of 868
+writing chunk 339 of 868
+writing chunk 340 of 868
+writing chunk 341 of 868
+writing chunk 342 of 868
+writing chunk 343 of 868
+writing chunk 344 of 868
+writing chunk 345 of 868
+writing chunk 346 of 868
+writing chunk 347 of 868
+writing chunk 348 of 868
+writing chunk 349 of 868
+writing chunk 350 of 868
+writing chunk 351 of 868
+writing chunk 352 of 868
+writing chunk 353 of 868
+writing chunk 354 of 868
+writing chunk 355 of 868
+writing chunk 356 of 868
+writing chunk 357 of 868
+writing chunk 358 of 868
+writing chunk 359 of 868
+writing chunk 360 of 868
+writing chunk 361 of 868
+writing chunk 362 of 868
+writing chunk 363 of 868
+writing chunk 364 of 868
+writing chunk 365 of 868
+writing chunk 366 of 868
+writing chunk 367 of 868
+writing chunk 368 of 868
+writing chunk 369 of 868
+writing chunk 370 of 868
+writing chunk 371 of 868
+writing chunk 372 of 868
+writing chunk 373 of 868
+writing chunk 374 of 868
+writing chunk 375 of 868
+writing chunk 376 of 868
+writing chunk 377 of 868
+writing chunk 378 of 868
+writing chunk 379 of 868
+writing chunk 380 of 868
+writing chunk 381 of 868
+writing chunk 382 of 868
+writing chunk 383 of 868
+writing chunk 384 of 868
+writing chunk 385 of 868
+writing chunk 386 of 868
+writing chunk 387 of 868
+writing chunk 388 of 868
+writing chunk 389 of 868
+writing chunk 390 of 868
+writing chunk 391 of 868
+writing chunk 392 of 868
+writing chunk 393 of 868
+writing chunk 394 of 868
+writing chunk 395 of 868
+writing chunk 396 of 868
+writing chunk 397 of 868
+writing chunk 398 of 868
+writing chunk 399 of 868
+writing chunk 400 of 868
+writing chunk 401 of 868
+writing chunk 402 of 868
+writing chunk 403 of 868
+writing chunk 404 of 868
+writing chunk 405 of 868
+writing chunk 406 of 868
+writing chunk 407 of 868
+writing chunk 408 of 868
+writing chunk 409 of 868
+writing chunk 410 of 868
+writing chunk 411 of 868
+writing chunk 412 of 868
+writing chunk 413 of 868
+writing chunk 414 of 868
+writing chunk 415 of 868
+writing chunk 416 of 868
+writing chunk 417 of 868
+writing chunk 418 of 868
+writing chunk 419 of 868
+writing chunk 420 of 868
+writing chunk 421 of 868
+writing chunk 422 of 868
+writing chunk 423 of 868
+writing chunk 424 of 868
+writing chunk 425 of 868
+writing chunk 426 of 868
+writing chunk 427 of 868
+writing chunk 428 of 868
+writing chunk 429 of 868
+writing chunk 430 of 868
+writing chunk 431 of 868
+writing chunk 432 of 868
+writing chunk 433 of 868
+writing chunk 434 of 868
+writing chunk 435 of 868
+writing chunk 436 of 868
+writing chunk 437 of 868
+writing chunk 438 of 868
+writing chunk 439 of 868
+writing chunk 440 of 868
+writing chunk 441 of 868
+writing chunk 442 of 868
+writing chunk 443 of 868
+writing chunk 444 of 868
+writing chunk 445 of 868
+writing chunk 446 of 868
+writing chunk 447 of 868
+writing chunk 448 of 868
+writing chunk 449 of 868
+writing chunk 450 of 868
+writing chunk 451 of 868
+writing chunk 452 of 868
+writing chunk 453 of 868
+writing chunk 454 of 868
+writing chunk 455 of 868
+writing chunk 456 of 868
+writing chunk 457 of 868
+writing chunk 458 of 868
+writing chunk 459 of 868
+writing chunk 460 of 868
+writing chunk 461 of 868
+writing chunk 462 of 868
+writing chunk 463 of 868
+writing chunk 464 of 868
+writing chunk 465 of 868
+writing chunk 466 of 868
+writing chunk 467 of 868
+writing chunk 468 of 868
+writing chunk 469 of 868
+writing chunk 470 of 868
+writing chunk 471 of 868
+writing chunk 472 of 868
+writing chunk 473 of 868
+writing chunk 474 of 868
+writing chunk 475 of 868
+writing chunk 476 of 868
+writing chunk 477 of 868
+writing chunk 478 of 868
+writing chunk 479 of 868
+writing chunk 480 of 868
+writing chunk 481 of 868
+writing chunk 482 of 868
+writing chunk 483 of 868
+writing chunk 484 of 868
+writing chunk 485 of 868
+writing chunk 486 of 868
+writing chunk 487 of 868
+writing chunk 488 of 868
+writing chunk 489 of 868
+writing chunk 490 of 868
+writing chunk 491 of 868
+writing chunk 492 of 868
+writing chunk 493 of 868
+writing chunk 494 of 868
+writing chunk 495 of 868
+writing chunk 496 of 868
+writing chunk 497 of 868
+writing chunk 498 of 868
+writing chunk 499 of 868
+writing chunk 500 of 868
+writing chunk 501 of 868
+writing chunk 502 of 868
+writing chunk 503 of 868
+writing chunk 504 of 868
+writing chunk 505 of 868
+writing chunk 506 of 868
+writing chunk 507 of 868
+writing chunk 508 of 868
+writing chunk 509 of 868
+writing chunk 510 of 868
+writing chunk 511 of 868
+writing chunk 512 of 868
+writing chunk 513 of 868
+writing chunk 514 of 868
+writing chunk 515 of 868
+writing chunk 516 of 868
+writing chunk 517 of 868
+writing chunk 518 of 868
+writing chunk 519 of 868
+writing chunk 520 of 868
+writing chunk 521 of 868
+writing chunk 522 of 868
+writing chunk 523 of 868
+writing chunk 524 of 868
+writing chunk 525 of 868
+writing chunk 526 of 868
+writing chunk 527 of 868
+writing chunk 528 of 868
+writing chunk 529 of 868
+writing chunk 530 of 868
+writing chunk 531 of 868
+writing chunk 532 of 868
+writing chunk 533 of 868
+writing chunk 534 of 868
+writing chunk 535 of 868
+writing chunk 536 of 868
+writing chunk 537 of 868
+writing chunk 538 of 868
+writing chunk 539 of 868
+writing chunk 540 of 868
+writing chunk 541 of 868
+writing chunk 542 of 868
+writing chunk 543 of 868
+writing chunk 544 of 868
+writing chunk 545 of 868
+writing chunk 546 of 868
+writing chunk 547 of 868
+writing chunk 548 of 868
+writing chunk 549 of 868
+writing chunk 550 of 868
+writing chunk 551 of 868
+writing chunk 552 of 868
+writing chunk 553 of 868
+writing chunk 554 of 868
+writing chunk 555 of 868
+writing chunk 556 of 868
+writing chunk 557 of 868
+writing chunk 558 of 868
+writing chunk 559 of 868
+writing chunk 560 of 868
+writing chunk 561 of 868
+writing chunk 562 of 868
+writing chunk 563 of 868
+writing chunk 564 of 868
+writing chunk 565 of 868
+writing chunk 566 of 868
+writing chunk 567 of 868
+writing chunk 568 of 868
+writing chunk 569 of 868
+writing chunk 570 of 868
+writing chunk 571 of 868
+writing chunk 572 of 868
+writing chunk 573 of 868
+writing chunk 574 of 868
+writing chunk 575 of 868
+writing chunk 576 of 868
+writing chunk 577 of 868
+writing chunk 578 of 868
+writing chunk 579 of 868
+writing chunk 580 of 868
+writing chunk 581 of 868
+writing chunk 582 of 868
+writing chunk 583 of 868
+writing chunk 584 of 868
+writing chunk 585 of 868
+writing chunk 586 of 868
+writing chunk 587 of 868
+writing chunk 588 of 868
+writing chunk 589 of 868
+writing chunk 590 of 868
+writing chunk 591 of 868
+writing chunk 592 of 868
+writing chunk 593 of 868
+writing chunk 594 of 868
+writing chunk 595 of 868
+writing chunk 596 of 868
+writing chunk 597 of 868
+writing chunk 598 of 868
+writing chunk 599 of 868
+writing chunk 600 of 868
+writing chunk 601 of 868
+writing chunk 602 of 868
+writing chunk 603 of 868
+writing chunk 604 of 868
+writing chunk 605 of 868
+writing chunk 606 of 868
+writing chunk 607 of 868
+writing chunk 608 of 868
+writing chunk 609 of 868
+writing chunk 610 of 868
+writing chunk 611 of 868
+writing chunk 612 of 868
+writing chunk 613 of 868
+writing chunk 614 of 868
+writing chunk 615 of 868
+writing chunk 616 of 868
+writing chunk 617 of 868
+writing chunk 618 of 868
+writing chunk 619 of 868
+writing chunk 620 of 868
+writing chunk 621 of 868
+writing chunk 622 of 868
+writing chunk 623 of 868
+writing chunk 624 of 868
+writing chunk 625 of 868
+writing chunk 626 of 868
+writing chunk 627 of 868
+writing chunk 628 of 868
+writing chunk 629 of 868
+writing chunk 630 of 868
+writing chunk 631 of 868
+writing chunk 632 of 868
+writing chunk 633 of 868
+writing chunk 634 of 868
+writing chunk 635 of 868
+writing chunk 636 of 868
+writing chunk 637 of 868
+writing chunk 638 of 868
+writing chunk 639 of 868
+writing chunk 640 of 868
+writing chunk 641 of 868
+writing chunk 642 of 868
+writing chunk 643 of 868
+writing chunk 644 of 868
+writing chunk 645 of 868
+writing chunk 646 of 868
+writing chunk 647 of 868
+writing chunk 648 of 868
+writing chunk 649 of 868
+writing chunk 650 of 868
+writing chunk 651 of 868
+writing chunk 652 of 868
+writing chunk 653 of 868
+writing chunk 654 of 868
+writing chunk 655 of 868
+writing chunk 656 of 868
+writing chunk 657 of 868
+writing chunk 658 of 868
+writing chunk 659 of 868
+writing chunk 660 of 868
+writing chunk 661 of 868
+writing chunk 662 of 868
+writing chunk 663 of 868
+writing chunk 664 of 868
+writing chunk 665 of 868
+writing chunk 666 of 868
+writing chunk 667 of 868
+writing chunk 668 of 868
+writing chunk 669 of 868
+writing chunk 670 of 868
+writing chunk 671 of 868
+writing chunk 672 of 868
+writing chunk 673 of 868
+writing chunk 674 of 868
+writing chunk 675 of 868
+writing chunk 676 of 868
+writing chunk 677 of 868
+writing chunk 678 of 868
+writing chunk 679 of 868
+writing chunk 680 of 868
+writing chunk 681 of 868
+writing chunk 682 of 868
+writing chunk 683 of 868
+writing chunk 684 of 868
+writing chunk 685 of 868
+writing chunk 686 of 868
+writing chunk 687 of 868
+writing chunk 688 of 868
+writing chunk 689 of 868
+writing chunk 690 of 868
+writing chunk 691 of 868
+writing chunk 692 of 868
+writing chunk 693 of 868
+writing chunk 694 of 868
+writing chunk 695 of 868
+writing chunk 696 of 868
+writing chunk 697 of 868
+writing chunk 698 of 868
+writing chunk 699 of 868
+writing chunk 700 of 868
+writing chunk 701 of 868
+writing chunk 702 of 868
+writing chunk 703 of 868
+writing chunk 704 of 868
+writing chunk 705 of 868
+writing chunk 706 of 868
+writing chunk 707 of 868
+writing chunk 708 of 868
+writing chunk 709 of 868
+writing chunk 710 of 868
+writing chunk 711 of 868
+writing chunk 712 of 868
+writing chunk 713 of 868
+writing chunk 714 of 868
+writing chunk 715 of 868
+writing chunk 716 of 868
+writing chunk 717 of 868
+writing chunk 718 of 868
+writing chunk 719 of 868
+writing chunk 720 of 868
+writing chunk 721 of 868
+writing chunk 722 of 868
+writing chunk 723 of 868
+writing chunk 724 of 868
+writing chunk 725 of 868
+writing chunk 726 of 868
+writing chunk 727 of 868
+writing chunk 728 of 868
+writing chunk 729 of 868
+writing chunk 730 of 868
+writing chunk 731 of 868
+writing chunk 732 of 868
+writing chunk 733 of 868
+writing chunk 734 of 868
+writing chunk 735 of 868
+writing chunk 736 of 868
+writing chunk 737 of 868
+writing chunk 738 of 868
+writing chunk 739 of 868
+writing chunk 740 of 868
+writing chunk 741 of 868
+writing chunk 742 of 868
+writing chunk 743 of 868
+writing chunk 744 of 868
+writing chunk 745 of 868
+writing chunk 746 of 868
+writing chunk 747 of 868
+writing chunk 748 of 868
+writing chunk 749 of 868
+writing chunk 750 of 868
+writing chunk 751 of 868
+writing chunk 752 of 868
+writing chunk 753 of 868
+writing chunk 754 of 868
+writing chunk 755 of 868
+writing chunk 756 of 868
+writing chunk 757 of 868
+writing chunk 758 of 868
+writing chunk 759 of 868
+writing chunk 760 of 868
+writing chunk 761 of 868
+writing chunk 762 of 868
+writing chunk 763 of 868
+writing chunk 764 of 868
+writing chunk 765 of 868
+writing chunk 766 of 868
+writing chunk 767 of 868
+writing chunk 768 of 868
+writing chunk 769 of 868
+writing chunk 770 of 868
+writing chunk 771 of 868
+writing chunk 772 of 868
+writing chunk 773 of 868
+writing chunk 774 of 868
+writing chunk 775 of 868
+writing chunk 776 of 868
+writing chunk 777 of 868
+writing chunk 778 of 868
+writing chunk 779 of 868
+writing chunk 780 of 868
+writing chunk 781 of 868
+writing chunk 782 of 868
+writing chunk 783 of 868
+writing chunk 784 of 868
+writing chunk 785 of 868
+writing chunk 786 of 868
+writing chunk 787 of 868
+writing chunk 788 of 868
+writing chunk 789 of 868
+writing chunk 790 of 868
+writing chunk 791 of 868
+writing chunk 792 of 868
+writing chunk 793 of 868
+writing chunk 794 of 868
+writing chunk 795 of 868
+writing chunk 796 of 868
+writing chunk 797 of 868
+writing chunk 798 of 868
+writing chunk 799 of 868
+writing chunk 800 of 868
+writing chunk 801 of 868
+writing chunk 802 of 868
+writing chunk 803 of 868
+writing chunk 804 of 868
+writing chunk 805 of 868
+writing chunk 806 of 868
+writing chunk 807 of 868
+writing chunk 808 of 868
+writing chunk 809 of 868
+writing chunk 810 of 868
+writing chunk 811 of 868
+writing chunk 812 of 868
+writing chunk 813 of 868
+writing chunk 814 of 868
+writing chunk 815 of 868
+writing chunk 816 of 868
+writing chunk 817 of 868
+writing chunk 818 of 868
+writing chunk 819 of 868
+writing chunk 820 of 868
+writing chunk 821 of 868
+writing chunk 822 of 868
+writing chunk 823 of 868
+writing chunk 824 of 868
+writing chunk 825 of 868
+writing chunk 826 of 868
+writing chunk 827 of 868
+writing chunk 828 of 868
+writing chunk 829 of 868
+writing chunk 830 of 868
+writing chunk 831 of 868
+writing chunk 832 of 868
+writing chunk 833 of 868
+writing chunk 834 of 868
+writing chunk 835 of 868
+writing chunk 836 of 868
+writing chunk 837 of 868
+writing chunk 838 of 868
+writing chunk 839 of 868
+writing chunk 840 of 868
+writing chunk 841 of 868
+writing chunk 842 of 868
+writing chunk 843 of 868
+writing chunk 844 of 868
+writing chunk 845 of 868
+writing chunk 846 of 868
+writing chunk 847 of 868
+writing chunk 848 of 868
+writing chunk 849 of 868
+writing chunk 850 of 868
+writing chunk 851 of 868
+writing chunk 852 of 868
+writing chunk 853 of 868
+writing chunk 854 of 868
+writing chunk 855 of 868
+writing chunk 856 of 868
+writing chunk 857 of 868
+writing chunk 858 of 868
+writing chunk 859 of 868
+writing chunk 860 of 868
+writing chunk 861 of 868
+writing chunk 862 of 868
+writing chunk 863 of 868
+writing chunk 864 of 868
+writing chunk 865 of 868
+writing chunk 866 of 868
+writing chunk 867 of 868
+Time to tokenize: 492.0622777938843 seconds
+starting eval_and_convert_to_parquet.py
+done with globals
+starting
+reading csv
+eval-ing
+evaled chunk 1 of 868
+evaled chunk 2 of 868
+evaled chunk 3 of 868
+evaled chunk 4 of 868
+evaled chunk 5 of 868
+evaled chunk 6 of 868
+evaled chunk 7 of 868
+evaled chunk 8 of 868
+evaled chunk 9 of 868
+evaled chunk 10 of 868
+evaled chunk 11 of 868
+evaled chunk 12 of 868
+evaled chunk 13 of 868
+evaled chunk 14 of 868
+evaled chunk 15 of 868
+evaled chunk 16 of 868
+evaled chunk 17 of 868
+evaled chunk 18 of 868
+evaled chunk 19 of 868
+evaled chunk 20 of 868
+evaled chunk 21 of 868
+evaled chunk 22 of 868
+evaled chunk 23 of 868
+evaled chunk 24 of 868
+evaled chunk 25 of 868
+evaled chunk 26 of 868
+evaled chunk 27 of 868
+evaled chunk 28 of 868
+evaled chunk 29 of 868
+evaled chunk 30 of 868
+evaled chunk 31 of 868
+evaled chunk 32 of 868
+evaled chunk 33 of 868
+evaled chunk 34 of 868
+evaled chunk 35 of 868
+evaled chunk 36 of 868
+evaled chunk 37 of 868
+evaled chunk 38 of 868
+evaled chunk 39 of 868
+evaled chunk 40 of 868
+evaled chunk 41 of 868
+evaled chunk 42 of 868
+evaled chunk 43 of 868
+evaled chunk 44 of 868
+evaled chunk 45 of 868
+evaled chunk 46 of 868
+evaled chunk 47 of 868
+evaled chunk 48 of 868
+evaled chunk 49 of 868
+evaled chunk 50 of 868
+evaled chunk 51 of 868
+evaled chunk 52 of 868
+evaled chunk 53 of 868
+evaled chunk 54 of 868
+evaled chunk 55 of 868
+evaled chunk 56 of 868
+evaled chunk 57 of 868
+evaled chunk 58 of 868
+evaled chunk 59 of 868
+evaled chunk 60 of 868
+evaled chunk 61 of 868
+evaled chunk 62 of 868
+evaled chunk 63 of 868
+evaled chunk 64 of 868
+evaled chunk 65 of 868
+evaled chunk 66 of 868
+evaled chunk 67 of 868
+evaled chunk 68 of 868
+evaled chunk 69 of 868
+evaled chunk 70 of 868
+evaled chunk 71 of 868
+evaled chunk 72 of 868
+evaled chunk 73 of 868
+evaled chunk 74 of 868
+evaled chunk 75 of 868
+evaled chunk 76 of 868
+evaled chunk 77 of 868
+evaled chunk 78 of 868
+evaled chunk 79 of 868
+evaled chunk 80 of 868
+evaled chunk 81 of 868
+evaled chunk 82 of 868
+evaled chunk 83 of 868
+evaled chunk 84 of 868
+evaled chunk 85 of 868
+evaled chunk 86 of 868
+evaled chunk 87 of 868
+evaled chunk 88 of 868
+evaled chunk 89 of 868
+evaled chunk 90 of 868
+evaled chunk 91 of 868
+evaled chunk 92 of 868
+evaled chunk 93 of 868
+evaled chunk 94 of 868
+evaled chunk 95 of 868
+evaled chunk 96 of 868
+evaled chunk 97 of 868
+evaled chunk 98 of 868
+evaled chunk 99 of 868
+evaled chunk 100 of 868
+evaled chunk 101 of 868
+evaled chunk 102 of 868
+evaled chunk 103 of 868
+evaled chunk 104 of 868
+evaled chunk 105 of 868
+evaled chunk 106 of 868
+evaled chunk 107 of 868
+evaled chunk 108 of 868
+evaled chunk 109 of 868
+evaled chunk 110 of 868
+evaled chunk 111 of 868
+evaled chunk 112 of 868
+evaled chunk 113 of 868
+evaled chunk 114 of 868
+evaled chunk 115 of 868
+evaled chunk 116 of 868
+evaled chunk 117 of 868
+evaled chunk 118 of 868
+evaled chunk 119 of 868
+evaled chunk 120 of 868
+evaled chunk 121 of 868
+evaled chunk 122 of 868
+evaled chunk 123 of 868
+evaled chunk 124 of 868
+evaled chunk 125 of 868
+evaled chunk 126 of 868
+evaled chunk 127 of 868
+evaled chunk 128 of 868
+evaled chunk 129 of 868
+evaled chunk 130 of 868
+evaled chunk 131 of 868
+evaled chunk 132 of 868
+evaled chunk 133 of 868
+evaled chunk 134 of 868
+evaled chunk 135 of 868
+evaled chunk 136 of 868
+evaled chunk 137 of 868
+evaled chunk 138 of 868
+evaled chunk 139 of 868
+evaled chunk 140 of 868
+evaled chunk 141 of 868
+evaled chunk 142 of 868
+evaled chunk 143 of 868
+evaled chunk 144 of 868
+evaled chunk 145 of 868
+evaled chunk 146 of 868
+evaled chunk 147 of 868
+evaled chunk 148 of 868
+evaled chunk 149 of 868
+evaled chunk 150 of 868
+evaled chunk 151 of 868
+evaled chunk 152 of 868
+evaled chunk 153 of 868
+evaled chunk 154 of 868
+evaled chunk 155 of 868
+evaled chunk 156 of 868
+evaled chunk 157 of 868
+evaled chunk 158 of 868
+evaled chunk 159 of 868
+evaled chunk 160 of 868
+evaled chunk 161 of 868
+evaled chunk 162 of 868
+evaled chunk 163 of 868
+evaled chunk 164 of 868
+evaled chunk 165 of 868
+evaled chunk 166 of 868
+evaled chunk 167 of 868
+evaled chunk 168 of 868
+evaled chunk 169 of 868
+evaled chunk 170 of 868
+evaled chunk 171 of 868
+evaled chunk 172 of 868
+evaled chunk 173 of 868
+evaled chunk 174 of 868
+evaled chunk 175 of 868
+evaled chunk 176 of 868
+evaled chunk 177 of 868
+evaled chunk 178 of 868
+evaled chunk 179 of 868
+evaled chunk 180 of 868
+evaled chunk 181 of 868
+evaled chunk 182 of 868
+evaled chunk 183 of 868
+evaled chunk 184 of 868
+evaled chunk 185 of 868
+evaled chunk 186 of 868
+evaled chunk 187 of 868
+evaled chunk 188 of 868
+evaled chunk 189 of 868
+evaled chunk 190 of 868
+evaled chunk 191 of 868
+evaled chunk 192 of 868
+evaled chunk 193 of 868
+evaled chunk 194 of 868
+evaled chunk 195 of 868
+evaled chunk 196 of 868
+evaled chunk 197 of 868
+evaled chunk 198 of 868
+evaled chunk 199 of 868
+evaled chunk 200 of 868
+evaled chunk 201 of 868
+evaled chunk 202 of 868
+evaled chunk 203 of 868
+evaled chunk 204 of 868
+evaled chunk 205 of 868
+evaled chunk 206 of 868
+evaled chunk 207 of 868
+evaled chunk 208 of 868
+evaled chunk 209 of 868
+evaled chunk 210 of 868
+evaled chunk 211 of 868
+evaled chunk 212 of 868
+evaled chunk 213 of 868
+evaled chunk 214 of 868
+evaled chunk 215 of 868
+evaled chunk 216 of 868
+evaled chunk 217 of 868
+evaled chunk 218 of 868
+evaled chunk 219 of 868
+evaled chunk 220 of 868
+evaled chunk 221 of 868
+evaled chunk 222 of 868
+evaled chunk 223 of 868
+evaled chunk 224 of 868
+evaled chunk 225 of 868
+evaled chunk 226 of 868
+evaled chunk 227 of 868
+evaled chunk 228 of 868
+evaled chunk 229 of 868
+evaled chunk 230 of 868
+evaled chunk 231 of 868
+evaled chunk 232 of 868
+evaled chunk 233 of 868
+evaled chunk 234 of 868
+evaled chunk 235 of 868
+evaled chunk 236 of 868
+evaled chunk 237 of 868
+evaled chunk 238 of 868
+evaled chunk 239 of 868
+evaled chunk 240 of 868
+evaled chunk 241 of 868
+evaled chunk 242 of 868
+evaled chunk 243 of 868
+evaled chunk 244 of 868
+evaled chunk 245 of 868
+evaled chunk 246 of 868
+evaled chunk 247 of 868
+evaled chunk 248 of 868
+evaled chunk 249 of 868
+evaled chunk 250 of 868
+evaled chunk 251 of 868
+evaled chunk 252 of 868
+evaled chunk 253 of 868
+evaled chunk 254 of 868
+evaled chunk 255 of 868
+evaled chunk 256 of 868
+evaled chunk 257 of 868
+evaled chunk 258 of 868
+evaled chunk 259 of 868
+evaled chunk 260 of 868
+evaled chunk 261 of 868
+evaled chunk 262 of 868
+evaled chunk 263 of 868
+evaled chunk 264 of 868
+evaled chunk 265 of 868
+evaled chunk 266 of 868
+evaled chunk 267 of 868
+evaled chunk 268 of 868
+evaled chunk 269 of 868
+evaled chunk 270 of 868
+evaled chunk 271 of 868
+evaled chunk 272 of 868
+evaled chunk 273 of 868
+evaled chunk 274 of 868
+evaled chunk 275 of 868
+evaled chunk 276 of 868
+evaled chunk 277 of 868
+evaled chunk 278 of 868
+evaled chunk 279 of 868
+evaled chunk 280 of 868
+evaled chunk 281 of 868
+evaled chunk 282 of 868
+evaled chunk 283 of 868
+evaled chunk 284 of 868
+evaled chunk 285 of 868
+evaled chunk 286 of 868
+evaled chunk 287 of 868
+evaled chunk 288 of 868
+evaled chunk 289 of 868
+evaled chunk 290 of 868
+evaled chunk 291 of 868
+evaled chunk 292 of 868
+evaled chunk 293 of 868
+evaled chunk 294 of 868
+evaled chunk 295 of 868
+evaled chunk 296 of 868
+evaled chunk 297 of 868
+evaled chunk 298 of 868
+evaled chunk 299 of 868
+evaled chunk 300 of 868
+evaled chunk 301 of 868
+evaled chunk 302 of 868
+evaled chunk 303 of 868
+evaled chunk 304 of 868
+evaled chunk 305 of 868
+evaled chunk 306 of 868
+evaled chunk 307 of 868
+evaled chunk 308 of 868
+evaled chunk 309 of 868
+evaled chunk 310 of 868
+evaled chunk 311 of 868
+evaled chunk 312 of 868
+evaled chunk 313 of 868
+evaled chunk 314 of 868
+evaled chunk 315 of 868
+evaled chunk 316 of 868
+evaled chunk 317 of 868
+evaled chunk 318 of 868
+evaled chunk 319 of 868
+evaled chunk 320 of 868
+evaled chunk 321 of 868
+evaled chunk 322 of 868
+evaled chunk 323 of 868
+evaled chunk 324 of 868
+evaled chunk 325 of 868
+evaled chunk 326 of 868
+evaled chunk 327 of 868
+evaled chunk 328 of 868
+evaled chunk 329 of 868
+evaled chunk 330 of 868
+evaled chunk 331 of 868
+evaled chunk 332 of 868
+evaled chunk 333 of 868
+evaled chunk 334 of 868
+evaled chunk 335 of 868
+evaled chunk 336 of 868
+evaled chunk 337 of 868
+evaled chunk 338 of 868
+evaled chunk 339 of 868
+evaled chunk 340 of 868
+evaled chunk 341 of 868
+evaled chunk 342 of 868
+evaled chunk 343 of 868
+evaled chunk 344 of 868
+evaled chunk 345 of 868
+evaled chunk 346 of 868
+evaled chunk 347 of 868
+evaled chunk 348 of 868
+evaled chunk 349 of 868
+evaled chunk 350 of 868
+evaled chunk 351 of 868
+evaled chunk 352 of 868
+evaled chunk 353 of 868
+evaled chunk 354 of 868
+evaled chunk 355 of 868
+evaled chunk 356 of 868
+evaled chunk 357 of 868
+evaled chunk 358 of 868
+evaled chunk 359 of 868
+evaled chunk 360 of 868
+evaled chunk 361 of 868
+evaled chunk 362 of 868
+evaled chunk 363 of 868
+evaled chunk 364 of 868
+evaled chunk 365 of 868
+evaled chunk 366 of 868
+evaled chunk 367 of 868
+evaled chunk 368 of 868
+evaled chunk 369 of 868
+evaled chunk 370 of 868
+evaled chunk 371 of 868
+evaled chunk 372 of 868
+evaled chunk 373 of 868
+evaled chunk 374 of 868
+evaled chunk 375 of 868
+evaled chunk 376 of 868
+evaled chunk 377 of 868
+evaled chunk 378 of 868
+evaled chunk 379 of 868
+evaled chunk 380 of 868
+evaled chunk 381 of 868
+evaled chunk 382 of 868
+evaled chunk 383 of 868
+evaled chunk 384 of 868
+evaled chunk 385 of 868
+evaled chunk 386 of 868
+evaled chunk 387 of 868
+evaled chunk 388 of 868
+evaled chunk 389 of 868
+evaled chunk 390 of 868
+evaled chunk 391 of 868
+evaled chunk 392 of 868
+evaled chunk 393 of 868
+evaled chunk 394 of 868
+evaled chunk 395 of 868
+evaled chunk 396 of 868
+evaled chunk 397 of 868
+evaled chunk 398 of 868
+evaled chunk 399 of 868
+evaled chunk 400 of 868
+evaled chunk 401 of 868
+evaled chunk 402 of 868
+evaled chunk 403 of 868
+evaled chunk 404 of 868
+evaled chunk 405 of 868
+evaled chunk 406 of 868
+evaled chunk 407 of 868
+evaled chunk 408 of 868
+evaled chunk 409 of 868
+evaled chunk 410 of 868
+evaled chunk 411 of 868
+evaled chunk 412 of 868
+evaled chunk 413 of 868
+evaled chunk 414 of 868
+evaled chunk 415 of 868
+evaled chunk 416 of 868
+evaled chunk 417 of 868
+evaled chunk 418 of 868
+evaled chunk 419 of 868
+evaled chunk 420 of 868
+evaled chunk 421 of 868
+evaled chunk 422 of 868
+evaled chunk 423 of 868
+evaled chunk 424 of 868
+evaled chunk 425 of 868
+evaled chunk 426 of 868
+evaled chunk 427 of 868
+evaled chunk 428 of 868
+evaled chunk 429 of 868
+evaled chunk 430 of 868
+evaled chunk 431 of 868
+evaled chunk 432 of 868
+evaled chunk 433 of 868
+evaled chunk 434 of 868
+evaled chunk 435 of 868
+evaled chunk 436 of 868
+evaled chunk 437 of 868
+evaled chunk 438 of 868
+evaled chunk 439 of 868
+evaled chunk 440 of 868
+evaled chunk 441 of 868
+evaled chunk 442 of 868
+evaled chunk 443 of 868
+evaled chunk 444 of 868
+evaled chunk 445 of 868
+evaled chunk 446 of 868
+evaled chunk 447 of 868
+evaled chunk 448 of 868
+evaled chunk 449 of 868
+evaled chunk 450 of 868
+evaled chunk 451 of 868
+evaled chunk 452 of 868
+evaled chunk 453 of 868
+evaled chunk 454 of 868
+evaled chunk 455 of 868
+evaled chunk 456 of 868
+evaled chunk 457 of 868
+evaled chunk 458 of 868
+evaled chunk 459 of 868
+evaled chunk 460 of 868
+evaled chunk 461 of 868
+evaled chunk 462 of 868
+evaled chunk 463 of 868
+evaled chunk 464 of 868
+evaled chunk 465 of 868
+evaled chunk 466 of 868
+evaled chunk 467 of 868
+evaled chunk 468 of 868
+evaled chunk 469 of 868
+evaled chunk 470 of 868
+evaled chunk 471 of 868
+evaled chunk 472 of 868
+evaled chunk 473 of 868
+evaled chunk 474 of 868
+evaled chunk 475 of 868
+evaled chunk 476 of 868
+evaled chunk 477 of 868
+evaled chunk 478 of 868
+evaled chunk 479 of 868
+evaled chunk 480 of 868
+evaled chunk 481 of 868
+evaled chunk 482 of 868
+evaled chunk 483 of 868
+evaled chunk 484 of 868
+evaled chunk 485 of 868
+evaled chunk 486 of 868
+evaled chunk 487 of 868
+evaled chunk 488 of 868
+evaled chunk 489 of 868
+evaled chunk 490 of 868
+evaled chunk 491 of 868
+evaled chunk 492 of 868
+evaled chunk 493 of 868
+evaled chunk 494 of 868
+evaled chunk 495 of 868
+evaled chunk 496 of 868
+evaled chunk 497 of 868
+evaled chunk 498 of 868
+evaled chunk 499 of 868
+evaled chunk 500 of 868
+evaled chunk 501 of 868
+evaled chunk 502 of 868
+evaled chunk 503 of 868
+evaled chunk 504 of 868
+evaled chunk 505 of 868
+evaled chunk 506 of 868
+evaled chunk 507 of 868
+evaled chunk 508 of 868
+evaled chunk 509 of 868
+evaled chunk 510 of 868
+evaled chunk 511 of 868
+evaled chunk 512 of 868
+evaled chunk 513 of 868
+evaled chunk 514 of 868
+evaled chunk 515 of 868
+evaled chunk 516 of 868
+evaled chunk 517 of 868
+evaled chunk 518 of 868
+evaled chunk 519 of 868
+evaled chunk 520 of 868
+evaled chunk 521 of 868
+evaled chunk 522 of 868
+evaled chunk 523 of 868
+evaled chunk 524 of 868
+evaled chunk 525 of 868
+evaled chunk 526 of 868
+evaled chunk 527 of 868
+evaled chunk 528 of 868
+evaled chunk 529 of 868
+evaled chunk 530 of 868
+evaled chunk 531 of 868
+evaled chunk 532 of 868
+evaled chunk 533 of 868
+evaled chunk 534 of 868
+evaled chunk 535 of 868
+evaled chunk 536 of 868
+evaled chunk 537 of 868
+evaled chunk 538 of 868
+evaled chunk 539 of 868
+evaled chunk 540 of 868
+evaled chunk 541 of 868
+evaled chunk 542 of 868
+evaled chunk 543 of 868
+evaled chunk 544 of 868
+evaled chunk 545 of 868
+evaled chunk 546 of 868
+evaled chunk 547 of 868
+evaled chunk 548 of 868
+evaled chunk 549 of 868
+evaled chunk 550 of 868
+evaled chunk 551 of 868
+evaled chunk 552 of 868
+evaled chunk 553 of 868
+evaled chunk 554 of 868
+evaled chunk 555 of 868
+evaled chunk 556 of 868
+evaled chunk 557 of 868
+evaled chunk 558 of 868
+evaled chunk 559 of 868
+evaled chunk 560 of 868
+evaled chunk 561 of 868
+evaled chunk 562 of 868
+evaled chunk 563 of 868
+evaled chunk 564 of 868
+evaled chunk 565 of 868
+evaled chunk 566 of 868
+evaled chunk 567 of 868
+evaled chunk 568 of 868
+evaled chunk 569 of 868
+evaled chunk 570 of 868
+evaled chunk 571 of 868
+evaled chunk 572 of 868
+evaled chunk 573 of 868
+evaled chunk 574 of 868
+evaled chunk 575 of 868
+evaled chunk 576 of 868
+evaled chunk 577 of 868
+evaled chunk 578 of 868
+evaled chunk 579 of 868
+evaled chunk 580 of 868
+evaled chunk 581 of 868
+evaled chunk 582 of 868
+evaled chunk 583 of 868
+evaled chunk 584 of 868
+evaled chunk 585 of 868
+evaled chunk 586 of 868
+evaled chunk 587 of 868
+evaled chunk 588 of 868
+evaled chunk 589 of 868
+evaled chunk 590 of 868
+evaled chunk 591 of 868
+evaled chunk 592 of 868
+evaled chunk 593 of 868
+evaled chunk 594 of 868
+evaled chunk 595 of 868
+evaled chunk 596 of 868
+evaled chunk 597 of 868
+evaled chunk 598 of 868
+evaled chunk 599 of 868
+evaled chunk 600 of 868
+evaled chunk 601 of 868
+evaled chunk 602 of 868
+evaled chunk 603 of 868
+evaled chunk 604 of 868
+evaled chunk 605 of 868
+evaled chunk 606 of 868
+evaled chunk 607 of 868
+evaled chunk 608 of 868
+evaled chunk 609 of 868
+evaled chunk 610 of 868
+evaled chunk 611 of 868
+evaled chunk 612 of 868
+evaled chunk 613 of 868
+evaled chunk 614 of 868
+evaled chunk 615 of 868
+evaled chunk 616 of 868
+evaled chunk 617 of 868
+evaled chunk 618 of 868
+evaled chunk 619 of 868
+evaled chunk 620 of 868
+evaled chunk 621 of 868
+evaled chunk 622 of 868
+evaled chunk 623 of 868
+evaled chunk 624 of 868
+evaled chunk 625 of 868
+evaled chunk 626 of 868
+evaled chunk 627 of 868
+evaled chunk 628 of 868
+evaled chunk 629 of 868
+evaled chunk 630 of 868
+evaled chunk 631 of 868
+evaled chunk 632 of 868
+evaled chunk 633 of 868
+evaled chunk 634 of 868
+evaled chunk 635 of 868
+evaled chunk 636 of 868
+evaled chunk 637 of 868
+evaled chunk 638 of 868
+evaled chunk 639 of 868
+evaled chunk 640 of 868
+evaled chunk 641 of 868
+evaled chunk 642 of 868
+evaled chunk 643 of 868
+evaled chunk 644 of 868
+evaled chunk 645 of 868
+evaled chunk 646 of 868
+evaled chunk 647 of 868
+evaled chunk 648 of 868
+evaled chunk 649 of 868
+evaled chunk 650 of 868
+evaled chunk 651 of 868
+evaled chunk 652 of 868
+evaled chunk 653 of 868
+evaled chunk 654 of 868
+evaled chunk 655 of 868
+evaled chunk 656 of 868
+evaled chunk 657 of 868
+evaled chunk 658 of 868
+evaled chunk 659 of 868
+evaled chunk 660 of 868
+evaled chunk 661 of 868
+evaled chunk 662 of 868
+evaled chunk 663 of 868
+evaled chunk 664 of 868
+evaled chunk 665 of 868
+evaled chunk 666 of 868
+evaled chunk 667 of 868
+evaled chunk 668 of 868
+evaled chunk 669 of 868
+evaled chunk 670 of 868
+evaled chunk 671 of 868
+evaled chunk 672 of 868
+evaled chunk 673 of 868
+evaled chunk 674 of 868
+evaled chunk 675 of 868
+evaled chunk 676 of 868
+evaled chunk 677 of 868
+evaled chunk 678 of 868
+evaled chunk 679 of 868
+evaled chunk 680 of 868
+evaled chunk 681 of 868
+evaled chunk 682 of 868
+evaled chunk 683 of 868
+evaled chunk 684 of 868
+evaled chunk 685 of 868
+evaled chunk 686 of 868
+evaled chunk 687 of 868
+evaled chunk 688 of 868
+evaled chunk 689 of 868
+evaled chunk 690 of 868
+evaled chunk 691 of 868
+evaled chunk 692 of 868
+evaled chunk 693 of 868
+evaled chunk 694 of 868
+evaled chunk 695 of 868
+evaled chunk 696 of 868
+evaled chunk 697 of 868
+evaled chunk 698 of 868
+evaled chunk 699 of 868
+evaled chunk 700 of 868
+evaled chunk 701 of 868
+evaled chunk 702 of 868
+evaled chunk 703 of 868
+evaled chunk 704 of 868
+evaled chunk 705 of 868
+evaled chunk 706 of 868
+evaled chunk 707 of 868
+evaled chunk 708 of 868
+evaled chunk 709 of 868
+evaled chunk 710 of 868
+evaled chunk 711 of 868
+evaled chunk 712 of 868
+evaled chunk 713 of 868
+evaled chunk 714 of 868
+evaled chunk 715 of 868
+evaled chunk 716 of 868
+evaled chunk 717 of 868
+evaled chunk 718 of 868
+evaled chunk 719 of 868
+evaled chunk 720 of 868
+evaled chunk 721 of 868
+evaled chunk 722 of 868
+evaled chunk 723 of 868
+evaled chunk 724 of 868
+evaled chunk 725 of 868
+evaled chunk 726 of 868
+evaled chunk 727 of 868
+evaled chunk 728 of 868
+evaled chunk 729 of 868
+evaled chunk 730 of 868
+evaled chunk 731 of 868
+evaled chunk 732 of 868
+evaled chunk 733 of 868
+evaled chunk 734 of 868
+evaled chunk 735 of 868
+evaled chunk 736 of 868
+evaled chunk 737 of 868
+evaled chunk 738 of 868
+evaled chunk 739 of 868
+evaled chunk 740 of 868
+evaled chunk 741 of 868
+evaled chunk 742 of 868
+evaled chunk 743 of 868
+evaled chunk 744 of 868
+evaled chunk 745 of 868
+evaled chunk 746 of 868
+evaled chunk 747 of 868
+evaled chunk 748 of 868
+evaled chunk 749 of 868
+evaled chunk 750 of 868
+evaled chunk 751 of 868
+evaled chunk 752 of 868
+evaled chunk 753 of 868
+evaled chunk 754 of 868
+evaled chunk 755 of 868
+evaled chunk 756 of 868
+evaled chunk 757 of 868
+evaled chunk 758 of 868
+evaled chunk 759 of 868
+evaled chunk 760 of 868
+evaled chunk 761 of 868
+evaled chunk 762 of 868
+evaled chunk 763 of 868
+evaled chunk 764 of 868
+evaled chunk 765 of 868
+evaled chunk 766 of 868
+evaled chunk 767 of 868
+evaled chunk 768 of 868
+evaled chunk 769 of 868
+evaled chunk 770 of 868
+evaled chunk 771 of 868
+evaled chunk 772 of 868
+evaled chunk 773 of 868
+evaled chunk 774 of 868
+evaled chunk 775 of 868
+evaled chunk 776 of 868
+evaled chunk 777 of 868
+evaled chunk 778 of 868
+evaled chunk 779 of 868
+evaled chunk 780 of 868
+evaled chunk 781 of 868
+evaled chunk 782 of 868
+evaled chunk 783 of 868
+evaled chunk 784 of 868
+evaled chunk 785 of 868
+evaled chunk 786 of 868
+evaled chunk 787 of 868
+evaled chunk 788 of 868
+evaled chunk 789 of 868
+evaled chunk 790 of 868
+evaled chunk 791 of 868
+evaled chunk 792 of 868
+evaled chunk 793 of 868
+evaled chunk 794 of 868
+evaled chunk 795 of 868
+evaled chunk 796 of 868
+evaled chunk 797 of 868
+evaled chunk 798 of 868
+evaled chunk 799 of 868
+evaled chunk 800 of 868
+evaled chunk 801 of 868
+evaled chunk 802 of 868
+evaled chunk 803 of 868
+evaled chunk 804 of 868
+evaled chunk 805 of 868
+evaled chunk 806 of 868
+evaled chunk 807 of 868
+evaled chunk 808 of 868
+evaled chunk 809 of 868
+evaled chunk 810 of 868
+evaled chunk 811 of 868
+evaled chunk 812 of 868
+evaled chunk 813 of 868
+evaled chunk 814 of 868
+evaled chunk 815 of 868
+evaled chunk 816 of 868
+evaled chunk 817 of 868
+evaled chunk 818 of 868
+evaled chunk 819 of 868
+evaled chunk 820 of 868
+evaled chunk 821 of 868
+evaled chunk 822 of 868
+evaled chunk 823 of 868
+evaled chunk 824 of 868
+evaled chunk 825 of 868
+evaled chunk 826 of 868
+evaled chunk 827 of 868
+evaled chunk 828 of 868
+evaled chunk 829 of 868
+evaled chunk 830 of 868
+evaled chunk 831 of 868
+evaled chunk 832 of 868
+evaled chunk 833 of 868
+evaled chunk 834 of 868
+evaled chunk 835 of 868
+evaled chunk 836 of 868
+evaled chunk 837 of 868
+evaled chunk 838 of 868
+evaled chunk 839 of 868
+evaled chunk 840 of 868
+evaled chunk 841 of 868
+evaled chunk 842 of 868
+evaled chunk 843 of 868
+evaled chunk 844 of 868
+evaled chunk 845 of 868
+evaled chunk 846 of 868
+evaled chunk 847 of 868
+evaled chunk 848 of 868
+evaled chunk 849 of 868
+evaled chunk 850 of 868
+evaled chunk 851 of 868
+evaled chunk 852 of 868
+evaled chunk 853 of 868
+evaled chunk 854 of 868
+evaled chunk 855 of 868
+evaled chunk 856 of 868
+evaled chunk 857 of 868
+evaled chunk 858 of 868
+evaled chunk 859 of 868
+evaled chunk 860 of 868
+evaled chunk 861 of 868
+evaled chunk 862 of 868
+evaled chunk 863 of 868
+evaled chunk 864 of 868
+evaled chunk 865 of 868
+evaled chunk 866 of 868
+evaled chunk 867 of 868
+evaled chunk 868 of 868
+converting to a dataframe
+fixing other column types
+wrote file
+starting add_true_date_info.py
+done with globals
+starting
+reading
+adding total user posts
+adding post numbers
+getting first date
+labeling with true dates
+writing
+starting zsts_to_exp_df
+done with globals
+starting
+Reading submissions
+
+read all lines
+Reading comments
+
+read all lines
+starting clean_and_add_seconds.py
+done with globals
+starting
+Converting date column to datetime
+Getting min date
+cleaning
+Filling seconds column
+/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+filling seconds chunk 1 of 170
+filling seconds chunk 2 of 170
+filling seconds chunk 3 of 170
+filling seconds chunk 4 of 170
+filling seconds chunk 5 of 170
+filling seconds chunk 6 of 170
+filling seconds chunk 7 of 170
+filling seconds chunk 8 of 170
+filling seconds chunk 9 of 170
+filling seconds chunk 10 of 170
+filling seconds chunk 11 of 170
+filling seconds chunk 12 of 170
+filling seconds chunk 13 of 170
+filling seconds chunk 14 of 170
+filling seconds chunk 15 of 170
+filling seconds chunk 16 of 170
+filling seconds chunk 17 of 170
+filling seconds chunk 18 of 170
+filling seconds chunk 19 of 170
+filling seconds chunk 20 of 170
+filling seconds chunk 21 of 170
+filling seconds chunk 22 of 170
+filling seconds chunk 23 of 170
+filling seconds chunk 24 of 170
+filling seconds chunk 25 of 170
+filling seconds chunk 26 of 170
+filling seconds chunk 27 of 170
+filling seconds chunk 28 of 170
+filling seconds chunk 29 of 170
+filling seconds chunk 30 of 170
+filling seconds chunk 31 of 170
+filling seconds chunk 32 of 170
+filling seconds chunk 33 of 170
+filling seconds chunk 34 of 170
+filling seconds chunk 35 of 170
+filling seconds chunk 36 of 170
+filling seconds chunk 37 of 170
+filling seconds chunk 38 of 170
+filling seconds chunk 39 of 170
+filling seconds chunk 40 of 170
+filling seconds chunk 41 of 170
+filling seconds chunk 42 of 170
+filling seconds chunk 43 of 170
+filling seconds chunk 44 of 170
+filling seconds chunk 45 of 170
+filling seconds chunk 46 of 170
+filling seconds chunk 47 of 170
+filling seconds chunk 48 of 170
+filling seconds chunk 49 of 170
+filling seconds chunk 50 of 170
+filling seconds chunk 51 of 170
+filling seconds chunk 52 of 170
+filling seconds chunk 53 of 170
+filling seconds chunk 54 of 170
+filling seconds chunk 55 of 170
+filling seconds chunk 56 of 170
+filling seconds chunk 57 of 170
+filling seconds chunk 58 of 170
+filling seconds chunk 59 of 170
+filling seconds chunk 60 of 170
+filling seconds chunk 61 of 170
+filling seconds chunk 62 of 170
+filling seconds chunk 63 of 170
+filling seconds chunk 64 of 170
+filling seconds chunk 65 of 170
+filling seconds chunk 66 of 170
+filling seconds chunk 67 of 170
+filling seconds chunk 68 of 170
+filling seconds chunk 69 of 170
+filling seconds chunk 70 of 170
+filling seconds chunk 71 of 170
+filling seconds chunk 72 of 170
+filling seconds chunk 73 of 170
+filling seconds chunk 74 of 170
+filling seconds chunk 75 of 170
+filling seconds chunk 76 of 170
+filling seconds chunk 77 of 170
+filling seconds chunk 78 of 170
+filling seconds chunk 79 of 170
+filling seconds chunk 80 of 170
+filling seconds chunk 81 of 170
+filling seconds chunk 82 of 170
+filling seconds chunk 83 of 170
+filling seconds chunk 84 of 170
+filling seconds chunk 85 of 170
+filling seconds chunk 86 of 170
+filling seconds chunk 87 of 170
+filling seconds chunk 88 of 170
+filling seconds chunk 89 of 170
+filling seconds chunk 90 of 170
+filling seconds chunk 91 of 170
+filling seconds chunk 92 of 170
+filling seconds chunk 93 of 170
+filling seconds chunk 94 of 170
+filling seconds chunk 95 of 170
+filling seconds chunk 96 of 170
+filling seconds chunk 97 of 170
+filling seconds chunk 98 of 170
+filling seconds chunk 99 of 170
+filling seconds chunk 100 of 170
+filling seconds chunk 101 of 170
+filling seconds chunk 102 of 170
+filling seconds chunk 103 of 170
+filling seconds chunk 104 of 170
+filling seconds chunk 105 of 170
+filling seconds chunk 106 of 170
+filling seconds chunk 107 of 170
+filling seconds chunk 108 of 170
+filling seconds chunk 109 of 170
+filling seconds chunk 110 of 170
+filling seconds chunk 111 of 170
+filling seconds chunk 112 of 170
+filling seconds chunk 113 of 170
+filling seconds chunk 114 of 170
+filling seconds chunk 115 of 170
+filling seconds chunk 116 of 170
+filling seconds chunk 117 of 170
+filling seconds chunk 118 of 170
+filling seconds chunk 119 of 170
+filling seconds chunk 120 of 170
+filling seconds chunk 121 of 170
+filling seconds chunk 122 of 170
+filling seconds chunk 123 of 170
+filling seconds chunk 124 of 170
+filling seconds chunk 125 of 170
+filling seconds chunk 126 of 170
+filling seconds chunk 127 of 170
+filling seconds chunk 128 of 170
+filling seconds chunk 129 of 170
+filling seconds chunk 130 of 170
+filling seconds chunk 131 of 170
+filling seconds chunk 132 of 170
+filling seconds chunk 133 of 170
+filling seconds chunk 134 of 170
+filling seconds chunk 135 of 170
+filling seconds chunk 136 of 170
+filling seconds chunk 137 of 170
+filling seconds chunk 138 of 170
+filling seconds chunk 139 of 170
+filling seconds chunk 140 of 170
+filling seconds chunk 141 of 170
+filling seconds chunk 142 of 170
+filling seconds chunk 143 of 170
+filling seconds chunk 144 of 170
+filling seconds chunk 145 of 170
+filling seconds chunk 146 of 170
+filling seconds chunk 147 of 170
+filling seconds chunk 148 of 170
+filling seconds chunk 149 of 170
+filling seconds chunk 150 of 170
+filling seconds chunk 151 of 170
+filling seconds chunk 152 of 170
+filling seconds chunk 153 of 170
+filling seconds chunk 154 of 170
+filling seconds chunk 155 of 170
+filling seconds chunk 156 of 170
+filling seconds chunk 157 of 170
+filling seconds chunk 158 of 170
+filling seconds chunk 159 of 170
+filling seconds chunk 160 of 170
+filling seconds chunk 161 of 170
+filling seconds chunk 162 of 170
+filling seconds chunk 163 of 170
+filling seconds chunk 164 of 170
+filling seconds chunk 165 of 170
+filling seconds chunk 166 of 170
+filling seconds chunk 167 of 170
+filling seconds chunk 168 of 170
+filling seconds chunk 169 of 170
+filling seconds chunk 170 of 170
+Adding user seconds: writing user seconds
+/home/bls910/.conda/envs/first-kernel/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+Got user seconds chunk 1 of 170
+Got user seconds chunk 2 of 170
+Got user seconds chunk 3 of 170
+Got user seconds chunk 4 of 170
+Got user seconds chunk 5 of 170
+Got user seconds chunk 6 of 170
+Got user seconds chunk 7 of 170
+Got user seconds chunk 8 of 170
+Got user seconds chunk 9 of 170
+Got user seconds chunk 10 of 170
+Got user seconds chunk 11 of 170
+Got user seconds chunk 12 of 170
+Got user seconds chunk 13 of 170
+Got user seconds chunk 14 of 170
+Got user seconds chunk 15 of 170
+Got user seconds chunk 16 of 170
+Got user seconds chunk 17 of 170
+Got user seconds chunk 18 of 170
+Got user seconds chunk 19 of 170
+Got user seconds chunk 20 of 170
+Got user seconds chunk 21 of 170
+Got user seconds chunk 22 of 170
+Got user seconds chunk 23 of 170
+Got user seconds chunk 24 of 170
+Got user seconds chunk 25 of 170
+Got user seconds chunk 26 of 170
+Got user seconds chunk 27 of 170
+Got user seconds chunk 28 of 170
+Got user seconds chunk 29 of 170
+Got user seconds chunk 30 of 170
+Got user seconds chunk 31 of 170
+Got user seconds chunk 32 of 170
+Got user seconds chunk 33 of 170
+Got user seconds chunk 34 of 170
+Got user seconds chunk 35 of 170
+Got user seconds chunk 36 of 170
+Got user seconds chunk 37 of 170
+Got user seconds chunk 38 of 170
+Got user seconds chunk 39 of 170
+Got user seconds chunk 40 of 170
+Got user seconds chunk 41 of 170
+Got user seconds chunk 42 of 170
+Got user seconds chunk 43 of 170
+Got user seconds chunk 44 of 170
+Got user seconds chunk 45 of 170
+Got user seconds chunk 46 of 170
+Got user seconds chunk 47 of 170
+Got user seconds chunk 48 of 170
+Got user seconds chunk 49 of 170
+Got user seconds chunk 50 of 170
+Got user seconds chunk 51 of 170
+Got user seconds chunk 52 of 170
+Got user seconds chunk 53 of 170
+Got user seconds chunk 54 of 170
+Got user seconds chunk 55 of 170
+Got user seconds chunk 56 of 170
+Got user seconds chunk 57 of 170
+Got user seconds chunk 58 of 170
+Got user seconds chunk 59 of 170
+Got user seconds chunk 60 of 170
+Got user seconds chunk 61 of 170
+Got user seconds chunk 62 of 170
+Got user seconds chunk 63 of 170
+Got user seconds chunk 64 of 170
+Got user seconds chunk 65 of 170
+Got user seconds chunk 66 of 170
+Got user seconds chunk 67 of 170
+Got user seconds chunk 68 of 170
+Got user seconds chunk 69 of 170
+Got user seconds chunk 70 of 170
+Got user seconds chunk 71 of 170
+Got user seconds chunk 72 of 170
+Got user seconds chunk 73 of 170
+Got user seconds chunk 74 of 170
+Got user seconds chunk 75 of 170
+Got user seconds chunk 76 of 170
+Got user seconds chunk 77 of 170
+Got user seconds chunk 78 of 170
+Got user seconds chunk 79 of 170
+Got user seconds chunk 80 of 170
+Got user seconds chunk 81 of 170
+Got user seconds chunk 82 of 170
+Got user seconds chunk 83 of 170
+Got user seconds chunk 84 of 170
+Got user seconds chunk 85 of 170
+Got user seconds chunk 86 of 170
+Got user seconds chunk 87 of 170
+Got user seconds chunk 88 of 170
+Got user seconds chunk 89 of 170
+Got user seconds chunk 90 of 170
+Got user seconds chunk 91 of 170
+Got user seconds chunk 92 of 170
+Got user seconds chunk 93 of 170
+Got user seconds chunk 94 of 170
+Got user seconds chunk 95 of 170
+Got user seconds chunk 96 of 170
+Got user seconds chunk 97 of 170
+Got user seconds chunk 98 of 170
+Got user seconds chunk 99 of 170
+Got user seconds chunk 100 of 170
+Got user seconds chunk 101 of 170
+Got user seconds chunk 102 of 170
+Got user seconds chunk 103 of 170
+Got user seconds chunk 104 of 170
+Got user seconds chunk 105 of 170
+Got user seconds chunk 106 of 170
+Got user seconds chunk 107 of 170
+Got user seconds chunk 108 of 170
+Got user seconds chunk 109 of 170
+Got user seconds chunk 110 of 170
+Got user seconds chunk 111 of 170
+Got user seconds chunk 112 of 170
+Got user seconds chunk 113 of 170
+Got user seconds chunk 114 of 170
+Got user seconds chunk 115 of 170
+Got user seconds chunk 116 of 170
+Got user seconds chunk 117 of 170
+Got user seconds chunk 118 of 170
+Got user seconds chunk 119 of 170
+Got user seconds chunk 120 of 170
+Got user seconds chunk 121 of 170
+Got user seconds chunk 122 of 170
+Got user seconds chunk 123 of 170
+Got user seconds chunk 124 of 170
+Got user seconds chunk 125 of 170
+Got user seconds chunk 126 of 170
+Got user seconds chunk 127 of 170
+Got user seconds chunk 128 of 170
+Got user seconds chunk 129 of 170
+Got user seconds chunk 130 of 170
+Got user seconds chunk 131 of 170
+Got user seconds chunk 132 of 170
+Got user seconds chunk 133 of 170
+Got user seconds chunk 134 of 170
+Got user seconds chunk 135 of 170
+Got user seconds chunk 136 of 170
+Got user seconds chunk 137 of 170
+Got user seconds chunk 138 of 170
+Got user seconds chunk 139 of 170
+Got user seconds chunk 140 of 170
+Got user seconds chunk 141 of 170
+Got user seconds chunk 142 of 170
+Got user seconds chunk 143 of 170
+Got user seconds chunk 144 of 170
+Got user seconds chunk 145 of 170
+Got user seconds chunk 146 of 170
+Got user seconds chunk 147 of 170
+Got user seconds chunk 148 of 170
+Got user seconds chunk 149 of 170
+Got user seconds chunk 150 of 170
+Got user seconds chunk 151 of 170
+Got user seconds chunk 152 of 170
+Got user seconds chunk 153 of 170
+Got user seconds chunk 154 of 170
+Got user seconds chunk 155 of 170
+Got user seconds chunk 156 of 170
+Got user seconds chunk 157 of 170
+Got user seconds chunk 158 of 170
+Got user seconds chunk 159 of 170
+Got user seconds chunk 160 of 170
+Got user seconds chunk 161 of 170
+Got user seconds chunk 162 of 170
+Got user seconds chunk 163 of 170
+Got user seconds chunk 164 of 170
+Got user seconds chunk 165 of 170
+Got user seconds chunk 166 of 170
+Got user seconds chunk 167 of 170
+Got user seconds chunk 168 of 170
+Got user seconds chunk 169 of 170
+Got user seconds chunk 170 of 170
+saving to CSV
+starting add_true_date_info.py
+done with globals
+starting
+reading
+adding total user posts
+adding post numbers
+getting first date
+labeling with true dates
+filling experience
+/home/bls910/reddit/preprocess_exp/add_true_date_info.py:36: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  exp_df.sort_values(by=["author", "true_date"], inplace=True)
+/home/bls910/reddit/preprocess_exp/add_true_date_info.py:37: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  exp_df['dt'] = exp_df.groupby('author')['true_date'].diff().dt.total_seconds() / 86400
+got k = 3.517725333390246
+/home/bls910/reddit/preprocess_exp/add_true_date_info.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  exp_df['experience_delta'] = exp_df['dt'].apply(lambda x: delta_experience(x, k))
+/home/bls910/reddit/preprocess_exp/add_true_date_info.py:41: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  exp_df['experience'] = exp_df.groupby('author')['experience_delta'].cumsum()
+/home/bls910/reddit/preprocess_exp/add_true_date_info.py:42: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  exp_df.drop(columns=['experience_delta'], inplace=True)
+writing

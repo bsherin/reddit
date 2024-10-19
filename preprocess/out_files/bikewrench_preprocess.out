@@ -1,0 +1,25 @@
+Python 3.11.7
+starting tokenize_cleaned_csv.py
+done with globals
+starting
+reading to dask and processing
+getting total rows
+Total rows: 553678
+Total chunks: 6
+starting processing
+Processed chunk 1 of 6
+Processed chunk 2 of 6
+Processed chunk 3 of 6
+Processed chunk 4 of 6
+Processed chunk 5 of 6
+Processed chunk 6 of 6
+Time to tokenize: 166.90111303329468 seconds
+starting add_true_date_info.py
+done with globals
+starting
+reading
+adding total user posts
+adding post numbers
+getting first date
+labeling with true dates
+writing

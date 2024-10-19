@@ -1,0 +1,9 @@
+{
+  "csv_path": "/projects/p32275/magicTCG/magicTCG_toplevel_urls_only_prep_vvqcbigy_pf_sent_tokenized.csv",
+  "max_lines": 99999999999999999,
+  "eval_text_column": true,
+  "drop_title": true,
+  "chunk_size": 100000,
+  "number_of_workers": 6,
+  "output_file": "output.pkl"
+}
