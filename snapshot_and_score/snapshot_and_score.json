@@ -1,5 +1,4 @@
 {
-   "seed": 1,
    "users_per_month": 500,
    "posts_per_user": 2,
    "start_buffer": 0,

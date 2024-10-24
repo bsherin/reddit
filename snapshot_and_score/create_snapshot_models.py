@@ -85,8 +85,8 @@ params = ["seed", "users_per_month", "posts_per_user", "truncate_text", "max_len
           "start_buffer", "end_buffer", "min_user_posts", "leave_unknown", "max_discount"]
 
 class LmSnapshotAuto():
-    def __init__(self, jsonfile, subreddit, base_path, uid):
-        self.uid = uid[:5]
+    def __init__(self, jsonfile, subreddit, base_path, uid, seed):
+        self.uid = uid
         self.subreddit_name = subreddit
         self.working_directory = f"{base_path}/{self.subreddit_name}"
 
@@ -99,6 +99,7 @@ class LmSnapshotAuto():
             else:
                 setattr(self, param, None)
         
+        self.seed = int(seed)
         self.df_file = f"{self.working_directory}/{self.subreddit_name}_df_true.parquet"
         self.user_df_file = f"{self.working_directory}/{self.subreddit_name}_user_data.parquet"
         self.output_location = self.working_directory
@@ -303,5 +304,5 @@ class LmSnapshotAuto():
 if __name__ == '__main__':
     print("starting")
     print("got args " + str(sys.argv))
-    Tile = LmSnapshotAuto(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    Tile = LmSnapshotAuto(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
     Tile.render_content()

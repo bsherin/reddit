@@ -13,13 +13,24 @@ module load python-anaconda3
 eval "$(conda shell.bash hook)"
 source activate first-kernel
 
-unique_id=$(date +%s%N | md5sum | head -c 5)
+echo "Extended Unique ID: ${UNIQUE_ID}"
 
 base_path="/projects/p32275"
 base_script_path="${HOME}/reddit/snapshot_and_score"
 json_path="${HOME}/reddit/snapshot_and_score/snapshot_and_score.json"
 
+cd $base_script_path
+
 python --version
 echo $SUBREDDIT
-python "${base_script_path}/create_snapshot_models.py" "$json_path" ${SUBREDDIT} ${base_path} "$unique_id" ${SEED}
-python "${base_script_path}/score_posts_from_snapshots.py" "$json_path" ${SUBREDDIT} ${base_path} "$unique_id"
+python -u "score_posts_from_snapshots_uid.py" "$json_path" ${SUBREDDIT} ${base_path} "${UNIQUE_ID}"
+
+base_script_path="${HOME}/reddit/trajectorize"
+json_path="${HOME}/reddit/trajectorize/trajectorize.json"
+
+cd $base_script_path
+
+python --version
+echo $SUBREDDIT
+python -u "scores_to_trajectories_uid.py" "$json_path" ${SUBREDDIT}  "${UNIQUE_ID}" ${base_path}
+python -u "build_trajectory_report_uid.py" "$json_path" ${SUBREDDIT} "${UNIQUE_ID}" ${base_path}

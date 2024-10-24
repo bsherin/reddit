@@ -1,0 +1,22 @@
+{
+    "sourceFile": "relabel_snapshot.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1729809371166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1729809418516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \n import pandas as pd\n import sys\n+import os\n snaphot_folder = sys.argv[1]\n param_df = pd.read_csv(f\"{snaphot_folder}/parameters.txt\", sep=\":\\t\", engine=\"python\", names=[\"key\", \"value\"], index_col=\"key\")\n is_exp = \"threshold_in_days\" in param_df.index\n seed = param_df.loc[\"seed\"].value\n@@ -12,6 +13,5 @@\n     new_folder_name = f\"{subreddit}_snapshots_exp_{uid}\"\n else:\n     new_folder_name = f\"{subreddit}_snapshots_{uid}\"\n \n-\n-    \n\\ No newline at end of file\n+os.rename(snaphot_folder, new_folder_name)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1729809371166,
+            "name": "Commit-0",
+            "content": "\nimport pandas as pd\nimport sys\nsnaphot_folder = sys.argv[1]\nparam_df = pd.read_csv(f\"{snaphot_folder}/parameters.txt\", sep=\":\\t\", engine=\"python\", names=[\"key\", \"value\"], index_col=\"key\")\nis_exp = \"threshold_in_days\" in param_df.index\nseed = param_df.loc[\"seed\"].value\nuid = param_df.loc[\"uid\"].value\nsubreddit = param_df.loc[\"subreddit\"].value\n\nif is_exp:\n    new_folder_name = f\"{subreddit}_snapshots_exp_{uid}\"\nelse:\n    new_folder_name = f\"{subreddit}_snapshots_{uid}\"\n\n\n    "
+        }
+    ]
+}

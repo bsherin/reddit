@@ -1,8 +1,8 @@
 {
    "users_per_month": 500,
    "posts_per_user": 2,
-   "start_buffer": 12,
-   "end_buffer": 12,
+   "start_buffer": 0,
+   "end_buffer": 0,
    "min_user_posts": 1,
    "threshold_in_days": 182,
    "leave_unknown": 100,

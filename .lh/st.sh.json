@@ -1,0 +1,18 @@
+{
+    "sourceFile": "st.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1729808231453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1729808231453,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n\nsubreddit=$1\nunique_id=$2\njob_name=${subreddit}_score_trajectorize_${unique_id}\n\nbase_script_path=\"${HOME}/reddit\"\nstart_seed=1\nend_seed=5\n\ncd $base_script_path\n\nexport SUBREDDIT=$subreddit\nexport UNIQUE_ID=$unique_id\noutput_file=${subreddit}_sscore_trajectorize_${unique_id}.out\necho \"output_file is $output_file\"\nsbatch --job-name=\"${job_name}\" --output=\"${output_file}\" score_trajectorize_wrapped.sh\n# To run this do something like\n# ./snapshot_score_trajectorize.sh bikewrench 9ax35"
+        }
+    ]
+}

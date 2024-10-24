@@ -88,7 +88,7 @@ params = ["working_directory", "subreddit_name", "users_per_month", "posts_per_u
           "start_buffer", "end_buffer", "min_user_posts", "leave_unknown", "max_discount"]
 class LmSnapshotAuto():
     def __init__(self, jsonfile, uid):
-        self.uid = uid[:5]
+        self.uid = uid
         with open(jsonfile, 'r') as file:
             config = json.load(file)
 

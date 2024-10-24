@@ -8,12 +8,11 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bsherin@u.northwestern.edu
 
-module purge all
 module load python-anaconda3
 eval "$(conda shell.bash hook)"
 source activate first-kernel
 
-unique_id=$(date +%s | md5sum | cut -d' ' -f1)
+unique_id=$(date +%s%N | md5sum | head -c 5)
 
 base_path="/projects/p32275"
 base_script_path="${HOME}/reddit/snapshot_and_score"
