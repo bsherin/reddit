@@ -1,0 +1,50 @@
+{
+    "sourceFile": "average/avg_smart.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1730058171573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730058254767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n folder_of_models=$1\n use_exp=$2\n min_posts=$3\n \n-job_name=${folder_of_models}_avg\n+job_name=${folder_of_models}_avg_${use_exp}\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n@@ -13,8 +13,8 @@\n \n export FOLDER_OF_MODELS=\"${full_path}\"\n export USE_EXP=\"${use_exp}\"\n export MIN_POSTS=\"${min_posts}\"\n-sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_wrapped.sh\n+sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_smart_wrapped.sh\n \n # To run this do something like\n # ./avg.sh StarWars/exp_models 2000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730058551542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n export MIN_POSTS=\"${min_posts}\"\n sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_smart_wrapped.sh\n \n # To run this do something like\n-# ./avg.sh StarWars/exp_models 2000\n\\ No newline at end of file\n+# ./avg.sh StarWars true 2000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730126427905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+#!/bin/bash\n+\n+folder_of_models=$1\n+use_exp=$2\n+min_posts=$3\n+\n+job_name=${folder_of_models}_avg_${use_exp}\n+outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n+\n+base_script_path=\"${HOME}/reddit/average\"\n+cd $base_script_path\n+\n+full_path=\"/projects/p32275/${folder_of_models}\"\n+\n+export FOLDER_OF_MODELS=\"${full_path}\"\n+export USE_EXP=\"${use_exp}\"\n+export MIN_POSTS=\"${min_posts}\"\n+sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n+\n+# To run this do something like\n+# ./avg.sh StarWars true 2000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730127226824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,41 +1,26 @@\n #!/bin/bash\n \n folder_of_models=$1\n-use_exp=$2\n-min_posts=$3\n+min_posts=$2\n \n-job_name=${folder_of_models}_avg_${use_exp}\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n full_path=\"/projects/p32275/${folder_of_models}\"\n \n export FOLDER_OF_MODELS=\"${full_path}\"\n-export USE_EXP=\"${use_exp}\"\n+\n export MIN_POSTS=\"${min_posts}\"\n+\n+export USE_EXP=\"true\"\n+job_name=${folder_of_models}_avg_true\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n-# To run this do something like\n-# ./avg.sh StarWars true 2000\n-#!/bin/bash\n+export USE_EXP=\"false\"\n+job_name=${folder_of_models}_avg_false\n+sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n-folder_of_models=$1\n-use_exp=$2\n-min_posts=$3\n-\n-job_name=${folder_of_models}_avg_${use_exp}\n-\n-base_script_path=\"${HOME}/reddit/average\"\n-cd $base_script_path\n-\n-full_path=\"/projects/p32275/${folder_of_models}\"\n\\ No newline at end of file\n-\n-export FOLDER_OF_MODELS=\"${full_path}\"\n-export USE_EXP=\"${use_exp}\"\n-export MIN_POSTS=\"${min_posts}\"\n-sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_smart_wrapped.sh\n-\n # To run this do something like\n-# ./avg.sh StarWars true 2000\n+# ./avg.sh StarWars 2000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730128215048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \n folder_of_models=$1\n min_posts=$2\n \n-outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n@@ -15,12 +14,14 @@\n export MIN_POSTS=\"${min_posts}\"\n \n export USE_EXP=\"true\"\n job_name=${folder_of_models}_avg_true\n+outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n export USE_EXP=\"false\"\n job_name=${folder_of_models}_avg_false\n+outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n # To run this do something like\n # ./avg.sh StarWars 2000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730155403980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n #!/bin/bash\n \n folder_of_models=$1\n-min_posts=$2\n+min_posts_reg=$2\n+min_posts_exp=$3\n \n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n@@ -10,18 +11,20 @@\n full_path=\"/projects/p32275/${folder_of_models}\"\n \n export FOLDER_OF_MODELS=\"${full_path}\"\n \n-export MIN_POSTS=\"${min_posts}\"\n \n+\n export USE_EXP=\"true\"\n job_name=${folder_of_models}_avg_true\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n+export MIN_POSTS=\"${min_posts_reg}\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n export USE_EXP=\"false\"\n job_name=${folder_of_models}_avg_false\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n+export MIN_POSTS=\"${min_posts_exp}\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n\\ No newline at end of file\n \n # To run this do something like\n-# ./avg.sh StarWars 2000\n+# ./avg_smart.sh StarWars 2000 1000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730157574071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,15 +16,15 @@\n \n export USE_EXP=\"true\"\n job_name=${folder_of_models}_avg_true\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n-export MIN_POSTS=\"${min_posts_reg}\"\n+export MIN_POSTS=\"${min_posts_exp\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n export USE_EXP=\"false\"\n job_name=${folder_of_models}_avg_false\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n-export MIN_POSTS=\"${min_posts_exp}\"\n+export MIN_POSTS=\"${min_posts_reg}\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n # To run this do something like\n # ./avg_smart.sh StarWars 2000 1000\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730157590209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \n export USE_EXP=\"true\"\n job_name=${folder_of_models}_avg_true\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n-export MIN_POSTS=\"${min_posts_exp\"\n+export MIN_POSTS=\"${min_posts_exp}\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" average_trajectories_smart_wrapped.sh\n \n export USE_EXP=\"false\"\n job_name=${folder_of_models}_avg_false\n"
+                }
+            ],
+            "date": 1730058171573,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n\nfolder_of_models=$1\nuse_exp=$2\nmin_posts=$3\n\njob_name=${folder_of_models}_avg\n\nbase_script_path=\"${HOME}/reddit/average\"\ncd $base_script_path\n\nfull_path=\"/projects/p32275/${folder_of_models}\"\n\nexport FOLDER_OF_MODELS=\"${full_path}\"\nexport USE_EXP=\"${use_exp}\"\nexport MIN_POSTS=\"${min_posts}\"\nsbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_wrapped.sh\n\n# To run this do something like\n# ./avg.sh StarWars/exp_models 2000"
+        }
+    ]
+}

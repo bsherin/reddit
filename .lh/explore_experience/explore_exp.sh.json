@@ -1,0 +1,50 @@
+{
+    "sourceFile": "explore_experience/explore_exp.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1730055275847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730055318168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n #!/bin/bash\n \n subreddit=$1\n-job_name=${subreddit}_explore_${subreddit}_${snapshot_uid}\n+job_name=${subreddit}_explore\n output_file=${job_name}.out\n \n base_script_path=\"${HOME}/reddit/explore_experience\"\n cd $base_script_path\n"
+                },
+                {
+                    "date": 1730055403624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,5 @@\n export SUBREDDIT=$subreddit\n sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" explore_exp_wrapped.sh\n \n # To run this do something like\n-# ./explore_exp.sh bikewrench 9ccf3\n\\ No newline at end of file\n+# ./explore_exp.sh bikewrench\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730125585941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n #!/bin/bash\n \n subreddit=$1\n job_name=${subreddit}_explore\n-output_file=${job_name}.out\n \n+\n base_script_path=\"${HOME}/reddit/explore_experience\"\n+output_file=${base_script_path}/outfiles/${job_name}.out\n+\n cd $base_script_path\n \n export SUBREDDIT=$subreddit\n sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" explore_exp_wrapped.sh\n"
+                },
+                {
+                    "date": 1730125640645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n job_name=${subreddit}_explore\n \n \n base_script_path=\"${HOME}/reddit/explore_experience\"\n-output_file=${base_script_path}/outfiles/${job_name}.out\n+output_file=${HOME}/outfiles/${job_name}.out\n \n cd $base_script_path\n \n export SUBREDDIT=$subreddit\n"
+                },
+                {
+                    "date": 1730125724162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n job_name=${subreddit}_explore\n \n \n base_script_path=\"${HOME}/reddit/explore_experience\"\n-output_file=${HOME}/outfiles/${job_name}.out\n+output_file=${HOME}/reddit/outfiles/${job_name}.out\n \n cd $base_script_path\n \n export SUBREDDIT=$subreddit\n"
+                },
+                {
+                    "date": 1730125936943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n #!/bin/bash\n \n subreddit=$1\n+\n job_name=${subreddit}_explore\n-\n-\n base_script_path=\"${HOME}/reddit/explore_experience\"\n output_file=${HOME}/reddit/outfiles/${job_name}.out\n \n cd $base_script_path\n"
+                },
+                {
+                    "date": 1730126058682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n #!/bin/bash\n \n-subreddit=$1\n+for subreddit in \"$@\"; do\n+  job_name=\"${subreddit}_explore\"\n+  base_script_path=\"${HOME}/reddit/explore_experience\"\n+  output_file=\"${HOME}/reddit/outfiles/${job_name}.out\"\n \n-job_name=${subreddit}_explore\n-base_script_path=\"${HOME}/reddit/explore_experience\"\n-output_file=${HOME}/reddit/outfiles/${job_name}.out\n+  cd \"$base_script_path\"\n \n-cd $base_script_path\n+  export SUBREDDIT=\"$subreddit\"\n+  sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" explore_exp_wrapped.sh\n+done\n \n-export SUBREDDIT=$subreddit\n-sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" explore_exp_wrapped.sh\n-\n # To run this do something like\n # ./explore_exp.sh bikewrench\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730126070609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n   sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" explore_exp_wrapped.sh\n done\n \n # To run this do something like\n-# ./explore_exp.sh bikewrench\n\\ No newline at end of file\n+# ./explore_exp.sh bikewrench magicTCG\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1730055275847,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n\nsubreddit=$1\njob_name=${subreddit}_explore_${subreddit}_${snapshot_uid}\noutput_file=${job_name}.out\n\nbase_script_path=\"${HOME}/reddit/explore_experience\"\ncd $base_script_path\n\nexport SUBREDDIT=$subreddit\nsbatch --job-name=\"${job_name}\" --output=\"${output_file}\" explore_exp_wrapped.sh\n\n# To run this do something like\n# ./explore_exp.sh bikewrench 9ccf3"
+        }
+    ]
+}

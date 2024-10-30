@@ -1,0 +1,26 @@
+{
+    "sourceFile": "explore_experience/explore_exp_wrapped.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1730053719954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730055246021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n cd $base_script_path\n \n python --version\n echo $SUBREDDIT\n-python -u \"explore_experience.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}\n\\ No newline at end of file\n+python -u \"explore_experience.py\" ${SUBREDDIT} ${base_path}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730055343356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,9 @@\n source activate first-kernel\n \n \n base_path=\"/projects/p32275\"\n-base_script_path=\"${HOME}/reddit/trajectorize\"\n-json_path=\"${HOME}/reddit/trajectorize/trajectorize.json\"\n+base_script_path=\"${HOME}/reddit/explore_experience\"\n \n cd $base_script_path\n \n python --version\n"
+                }
+            ],
+            "date": 1730053719954,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n#SBATCH --account=p32275\n#SBATCH --partition=normal\n#SBATCH --nodes=1\n#SBATCH --ntasks-per-node=10\n#SBATCH --time=10:00:00\n#SBATCH --mem-per-cpu=5G\n#SBATCH --mail-type=ALL\n#SBATCH --mail-user=bsherin@u.northwestern.edu\n\nmodule purge all\nmodule load python-anaconda3\neval \"$(conda shell.bash hook)\"\nsource activate first-kernel\n\n\nbase_path=\"/projects/p32275\"\nbase_script_path=\"${HOME}/reddit/trajectorize\"\njson_path=\"${HOME}/reddit/trajectorize/trajectorize.json\"\n\ncd $base_script_path\n\npython --version\necho $SUBREDDIT\npython -u \"explore_experience.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}"
+        }
+    ]
+}

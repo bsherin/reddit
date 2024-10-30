@@ -1,0 +1,30 @@
+{
+    "sourceFile": "average/average_trajectories_smart_wrapped.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1730058197656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730058761995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n #SBATCH --account=p32275\n #SBATCH --partition=short\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n-#SBATCH --time=-01:00:00\n+#SBATCH --time=01:00:00\n #SBATCH --mem-per-cpu=5G\n #SBATCH --mail-type=ALL\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n"
+                },
+                {
+                    "date": 1730127387165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n #SBATCH --time=01:00:00\n #SBATCH --mem-per-cpu=5G\n-#SBATCH --mail-type=ALL\n+#SBATCH --mail-type=FAIL\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n module purge all\n module load python-anaconda3\n"
+                },
+                {
+                    "date": 1730234995940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n #SBATCH --account=p32275\n #SBATCH --partition=short\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n-#SBATCH --time=01:00:00\n+#SBATCH --time=00:10:00\n #SBATCH --mem-per-cpu=5G\n #SBATCH --mail-type=FAIL\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n"
+                }
+            ],
+            "date": 1730058197656,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n#SBATCH --account=p32275\n#SBATCH --partition=short\n#SBATCH --nodes=1\n#SBATCH --ntasks-per-node=10\n#SBATCH --time=-01:00:00\n#SBATCH --mem-per-cpu=5G\n#SBATCH --mail-type=ALL\n#SBATCH --mail-user=bsherin@u.northwestern.edu\n\nmodule purge all\nmodule load python-anaconda3\neval \"$(conda shell.bash hook)\"\nsource activate first-kernel\n\nbase_script_path=\"${HOME}/reddit/average\"\n\ncd $base_script_path\n\npython --version\necho $SUBREDDIT\npython -u \"average_trajectories_smart.py\" ${FOLDER_OF_MODELS} ${USE_EXP} ${MIN_POSTS}"
+        }
+    ]
+}

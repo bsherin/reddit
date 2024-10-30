@@ -1,0 +1,18 @@
+{
+    "sourceFile": "preprocess_sequence.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1730052927711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1730052927711,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n\nsubreddit=$1\njob_name=${subreddit}_preprocess\noutput_file=${subreddit}_preprocess.out\n\nexport SUBREDDIT=$subreddit\n\nbase_script_path=\"${HOME}/reddit/preprocess\"\ncd $base_script_path\n\njob1_id=$(sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" preprocess_wrapped.sh | awk '{print $4}')\n\njob_name2=${subreddit}_preprocess_exp\noutput_file2=${subreddit}_preprocess_exp.out\nbase_script_path2=\"${HOME}/reddit/preprocess_exp\"\n\ncd $base_script_path2\nsbatch --job-name=\"${job_name2}\" --output=\"${output_file2}\"  --dependency=afterok:${job1_id} preprocess_exp_wrapped.sh\n\n\n# To run this do something like\n# ./preprocess_sequence.sh bikewrench"
+        }
+    ]
+}

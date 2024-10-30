@@ -35,5 +35,5 @@ cd $base_script_path
 
 python --version
 echo $SUBREDDIT
-python -u "scores_to_trajectorie_uids.py" "$json_path" ${SUBREDDIT}  "$unique_id" ${base_path}
+python -u "scores_to_trajectories_uids.py" "$json_path" ${SUBREDDIT}  "$unique_id" ${base_path}
 python -u "build_trajectory_report_uid.py" "$json_path" ${SUBREDDIT} "$unique_id" ${base_path}

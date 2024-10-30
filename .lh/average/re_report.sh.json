@@ -1,0 +1,78 @@
+{
+    "sourceFile": "average/re_report.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1730216374402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730217126949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,26 @@\n #!/bin/bash\n \n-results_pickle=$1\n-fn=$2\n-fv=$3\n-fk\n+subreddit=$1\n+type=$2\n+fn=$3\n+fv=$4\n+fk=$5\n \n+if [[ $type == \"reg\" ]]; then\n+    results_pickle=\"/projects/p32275/${subreddit}/avg/${subreddit}_avg_results.pkl\"\n+else\n+    results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n+fi\n+\n job_name=${re_report}_${fn}_${fv}\n\\ No newline at end of file\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n export RESULTS_PICKLE=\"${results_pickle}\"\n export FN=\"${fn}\"\n export fv=\"${fv}\"\n-sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_wrapped.sh\n+sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" re_report_wrapped.sh\n \n # To run this do something like\n-# ./avg.sh StarWars/exp_models 2000\n+# ./re_report.sh science\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730217164222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,5 @@\n export fv=\"${fv}\"\n sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" re_report_wrapped.sh\n \n # To run this do something like\n-# ./re_report.sh science\n\\ No newline at end of file\n+# ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730217414660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,15 @@\n fn=$3\n fv=$4\n fk=$5\n \n+echo \"Subreddit: ${subreddit}\"\n if [[ $type == \"reg\" ]]; then\n     results_pickle=\"/projects/p32275/${subreddit}/avg/${subreddit}_avg_results.pkl\"\n else\n     results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n fi\n-\n+echo \"Results pickle: ${results_pickle}\"\n job_name=${re_report}_${fn}_${fv}\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n"
+                },
+                {
+                    "date": 1730217586115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #!/bin/bash\n-\n+echo \"starting\"\n subreddit=$1\n type=$2\n fn=$3\n fv=$4\n@@ -19,9 +19,9 @@\n cd $base_script_path\n \n export RESULTS_PICKLE=\"${results_pickle}\"\n export FN=\"${fn}\"\n-export fv=\"${fv}\"\n+export FV=\"${fv}\"\n sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" re_report_wrapped.sh\n \n # To run this do something like\n # ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730217593688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n \n export RESULTS_PICKLE=\"${results_pickle}\"\n export FN=\"${fn}\"\n export FV=\"${fv}\"\n+export FK=\"${fk}\"\n sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" re_report_wrapped.sh\n \n # To run this do something like\n # ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730217653599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n #!/bin/bash\n echo \"starting\"\n-subreddit=$1\n+s\n+ubreddit=$1\n type=$2\n fn=$3\n fv=$4\n fk=$5\n"
+                },
+                {
+                    "date": 1730217662126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n #!/bin/bash\n echo \"starting\"\n-s\n-ubreddit=$1\n+subreddit=$1\n type=$2\n fn=$3\n fv=$4\n fk=$5\n"
+                },
+                {
+                    "date": 1730217743007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n else\n     results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n fi\n echo \"Results pickle: ${results_pickle}\"\n-job_name=${re_report}_${fn}_${fv}\n+job_name=${subreddit}_${fn}_${fv}\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n"
+                },
+                {
+                    "date": 1730229280833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n else\n     results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n fi\n echo \"Results pickle: ${results_pickle}\"\n-job_name=${subreddit}_${fn}_${fv}\n+job_name=\"${subreddit}_${fn}_${fv}\"\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n"
+                },
+                {
+                    "date": 1730229365531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n export RESULTS_PICKLE=\"${results_pickle}\"\n export FN=\"${fn}\"\n export FV=\"${fv}\"\n export FK=\"${fk}\"\n-sbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" re_report_wrapped.sh\n+outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n+sbatch --job-name=\"${job_name}\" --output=\"outfile\" re_report_wrapped.sh\n \n # To run this do something like\n # ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730229561121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n export FN=\"${fn}\"\n export FV=\"${fv}\"\n export FK=\"${fk}\"\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n-sbatch --job-name=\"${job_name}\" --output=\"outfile\" re_report_wrapped.sh\n+sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" re_report_wrapped.sh\n \n # To run this do something like\n # ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730231322736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+#!/bin/bash\n+echo \"starting\"\n+subreddit=$1\n+type=$2\n+fn=$3\n+fv=$4\n+fk=$5\n+\n+echo \"Subreddit: ${subreddit}\"\n+if [[ $type == \"reg\" ]]; then\n+    results_pickle=\"/projects/p32275/${subreddit}/avg/${subreddit}_avg_results.pkl\"\n+else\n+    results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n+fi\n+echo \"Results pickle: ${results_pickle}\"\n+job_name=\"${subreddit}_${fn}_${fv}\"\n+\n+base_script_path=\"${HOME}/reddit/average\"\n+cd $base_script_path\n+\n+export RESULTS_PICKLE=\"${results_pickle}\"\n+export FN=\"${fn}\"\n+export FV=\"${fv}\"\n+export FK=\"${fk}\"\n+outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n+sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" re_report_wrapped.sh\n+\n+# To run this do something like\n+# ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730232322509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,34 +25,5 @@\n outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" re_report_wrapped.sh\n \n # To run this do something like\n-# ./re_report.sh science exp nposts 2000 \">=\"\n-#!/bin/bash\n-echo \"starting\"\n-subreddit=$1\n-type=$2\n-fn=$3\n-fv=$4\n-fk=$5\n-\n-echo \"Subreddit: ${subreddit}\"\n-if [[ $type == \"reg\" ]]; then\n-    results_pickle=\"/projects/p32275/${subreddit}/avg/${subreddit}_avg_results.pkl\"\n-else\n-    results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n-fi\n-echo \"Results pickle: ${results_pickle}\"\n-job_name=\"${subreddit}_${fn}_${fv}\"\n-\n-base_script_path=\"${HOME}/reddit/average\"\n-cd $base_script_path\n-\n-export RESULTS_PICKLE=\"${results_pickle}\"\n-export FN=\"${fn}\"\n-export FV=\"${fv}\"\n-export FK=\"${fk}\"\n-outfile=\"${HOME}/reddit/outfiles/${job_name}.out\"\n-sbatch --job-name=\"${job_name}\" --output=\"${outfile}\" re_report_wrapped.sh\n-\n-# To run this do something like\n # ./re_report.sh science exp nposts 2000 \">=\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730232819284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #!/bin/bash\n echo \"starting\"\n subreddit=$1\n type=$2\n-fn=$3\n+fn=\"$3\"\n fv=$4\n fk=$5\n \n echo \"Subreddit: ${subreddit}\"\n"
+                },
+                {
+                    "date": 1730233122353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     results_pickle=\"/projects/p32275/${subreddit}/exp_avg/${subreddit}_avg_exp_results.pkl\"\n fi\n echo \"Results pickle: ${results_pickle}\"\n job_name=\"${subreddit}_${fn}_${fv}\"\n+job_name=\"${job_name// /_}\"\n \n base_script_path=\"${HOME}/reddit/average\"\n cd $base_script_path\n \n"
+                }
+            ],
+            "date": 1730216374402,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n\nresults_pickle=$1\nfn=$2\nfv=$3\nfk\n\njob_name=${re_report}_${fn}_${fv}\n\nbase_script_path=\"${HOME}/reddit/average\"\ncd $base_script_path\n\nexport RESULTS_PICKLE=\"${results_pickle}\"\nexport FN=\"${fn}\"\nexport fv=\"${fv}\"\nsbatch --job-name=\"${job_name}\" --output=\"${job_name}.out\" average_trajectories_wrapped.sh\n\n# To run this do something like\n# ./avg.sh StarWars/exp_models 2000"
+        }
+    ]
+}

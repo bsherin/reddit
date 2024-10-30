@@ -1,0 +1,18 @@
+{
+    "sourceFile": "snapshot_and_score/snapshot_and_score_exp_sampling.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1730150547878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1730150547878,
+            "name": "Commit-0",
+            "content": "{\n   \"users_per_month\": 500,\n   \"use_run_number_as_seed\": false,\n   \"posts_per_user\": 2,\n   \"start_buffer\": 0,\n   \"end_buffer\": 0,\n   \"min_user_posts\": 1,\n   \"threshold_in_days\": 182,\n   \"leave_unknown\": 100,\n   \"max_discount\": 0.9,\n   \"truncate_text\": false,\n   \"max_len\": 9999\n  }"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "sst_all.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1730056561172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730150882497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,32 +5,32 @@\n \n \n \n base_script_path=\"${HOME}/reddit\"\n-start_seed=1\n-end_seed=5\n+start_run_number=1\n+end_run_number=5\n \n cd $base_script_path\n \n export SUBREDDIT=$subreddit\n-for seed in $(seq $start_seed $end_seed); do\n-    echo \"Launching batch script with seed value: $seed\"\n-    export SEED=$seed\n+for run_number in $(seq $start_run_number $end_run_number); do\n+    echo \"Launching batch script with run_number value: $run_number\"\n+    export RUN_NUMBER=$run_number\n     base_unique_d=$(date +%s%N | md5sum | head -c 5)\n-    unique_id=\"${base_unique_d}_${seed}\"\n+    unique_id=\"${base_unique_d}_${run_number}\"\n     output_file=${subreddit}_sscore_trajectorize_${unique_id}.out\n     echo \"output_file is $output_file\"\n     sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped.sh\n done\n \n-start_seed=1\n-end_seed=5\n+start_run_number=1\n+end_run_number=5\n \n-for seed in $(seq $start_seed $end_seed); do\n-    export SEED=$seed\n-    echo \"Launching exp batch script with seed value: $seed\"\n+for run_number in $(seq $start_run_number $end_run_number); do\n+    export SEED=$run_number\n+    echo \"Launching exp batch script with run_number value: $run_number\"\n     base_unique_d=$(date +%s%N | md5sum | head -c 5)\n-    unique_id=\"${base_unique_d}_exp_${seed}\"\n+    unique_id=\"${base_unique_d}_exp_${run_number}\"\n     output_file=${subreddit}_sscore_trajectorize_${unique_id}.out\n     echo \"output_file is $output_file\"\n     sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped_exp.sh\n done\n"
+                },
+                {
+                    "date": 1730151157591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n #!/bin/bash\n \n subreddit=$1\n-job_name=${subreddit}_sscore_trajectorize\n \n \n \n base_script_path=\"${HOME}/reddit\"\n@@ -16,9 +15,10 @@\n     echo \"Launching batch script with run_number value: $run_number\"\n     export RUN_NUMBER=$run_number\n     base_unique_d=$(date +%s%N | md5sum | head -c 5)\n     unique_id=\"${base_unique_d}_${run_number}\"\n-    output_file=${subreddit}_sscore_trajectorize_${unique_id}.out\n+    job_name=${subreddit}_sscore_trajectorize_${unique_id}\n+    output_file=\"${HOME}/reddit/outfiles/${job_name}.out\"\n     echo \"output_file is $output_file\"\n     sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped.sh\n done\n \n@@ -29,9 +29,10 @@\n     export SEED=$run_number\n     echo \"Launching exp batch script with run_number value: $run_number\"\n     base_unique_d=$(date +%s%N | md5sum | head -c 5)\n     unique_id=\"${base_unique_d}_exp_${run_number}\"\n-    output_file=${subreddit}_sscore_trajectorize_${unique_id}.out\n+    job_name=${subreddit}_sscore_trajectorize_${unique_id}\n+    output_file=\"${HOME}/reddit/outfiles/${job_name}.out\"\n     echo \"output_file is $output_file\"\n     sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped_exp.sh\n done\n \n"
+                },
+                {
+                    "date": 1730151206807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n #!/bin/bash\n \n subreddit=$1\n \n-\n-\n base_script_path=\"${HOME}/reddit\"\n start_run_number=1\n end_run_number=5\n \n"
+                },
+                {
+                    "date": 1730155715767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n start_run_number=1\n end_run_number=5\n \n for run_number in $(seq $start_run_number $end_run_number); do\n-    export SEED=$run_number\n+    export RUN_NUMBER=$run_number\n     echo \"Launching exp batch script with run_number value: $run_number\"\n     base_unique_d=$(date +%s%N | md5sum | head -c 5)\n     unique_id=\"${base_unique_d}_exp_${run_number}\"\n     job_name=${subreddit}_sscore_trajectorize_${unique_id}\n"
+                }
+            ],
+            "date": 1730056561172,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n\nsubreddit=$1\njob_name=${subreddit}_sscore_trajectorize\n\n\n\nbase_script_path=\"${HOME}/reddit\"\nstart_seed=1\nend_seed=5\n\ncd $base_script_path\n\nexport SUBREDDIT=$subreddit\nfor seed in $(seq $start_seed $end_seed); do\n    echo \"Launching batch script with seed value: $seed\"\n    export SEED=$seed\n    base_unique_d=$(date +%s%N | md5sum | head -c 5)\n    unique_id=\"${base_unique_d}_${seed}\"\n    output_file=${subreddit}_sscore_trajectorize_${unique_id}.out\n    echo \"output_file is $output_file\"\n    sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped.sh\ndone\n\nstart_seed=1\nend_seed=5\n\nfor seed in $(seq $start_seed $end_seed); do\n    export SEED=$seed\n    echo \"Launching exp batch script with seed value: $seed\"\n    base_unique_d=$(date +%s%N | md5sum | head -c 5)\n    unique_id=\"${base_unique_d}_exp_${seed}\"\n    output_file=${subreddit}_sscore_trajectorize_${unique_id}.out\n    echo \"output_file is $output_file\"\n    sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped_exp.sh\ndone\n\n# To run this do something like\n# ./sst_all.sh bikewrench"
+        }
+    ]
+}

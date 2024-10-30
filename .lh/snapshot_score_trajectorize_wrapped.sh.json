@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1729808394285,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730038417881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,6 @@\n cd $base_script_path\n \n python --version\n echo $SUBREDDIT\n-python -u \"scores_to_trajectorie_uids.py\" \"$json_path\" ${SUBREDDIT}  \"$unique_id\" ${base_path}\n+python -u \"scores_to_trajectories_uid.py\" \"$json_path\" ${SUBREDDIT}  \"$unique_id\" ${base_path}\n python -u \"build_trajectory_report_uid.py\" \"$json_path\" ${SUBREDDIT} \"$unique_id\" ${base_path}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730150443919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n eval \"$(conda shell.bash hook)\"\n source activate first-kernel\n \n base_unique_id=$(date +%s%N | md5sum | head -c 5)\n-unique_id=\"${base_unique_id}_${SEED}\"\n+unique_id=\"${base_unique_id}_${RUN_NUMBER}\"\n echo \"Extended Unique ID: $unique_id\"\n \n base_path=\"/projects/p32275\"\n base_script_path=\"${HOME}/reddit/snapshot_and_score\"\n@@ -24,9 +24,9 @@\n cd $base_script_path\n \n python --version\n echo $SUBREDDIT\n-python -u \"create_snapshot_models.py\" \"$json_path\" ${SUBREDDIT} ${base_path} \"$unique_id\" ${SEED}\n+python -u \"create_snapshot_models.py\" \"$json_path\" ${SUBREDDIT} ${base_path} \"$unique_id\" ${RUN_NUMBER}\n python -u \"score_posts_from_snapshots_uid.py\" \"$json_path\" ${SUBREDDIT} ${base_path} \"$unique_id\"\n \n base_script_path=\"${HOME}/reddit/trajectorize\"\n json_path=\"${HOME}/reddit/trajectorize/trajectorize.json\"\n"
                 }
             ],
             "date": 1729808394285,

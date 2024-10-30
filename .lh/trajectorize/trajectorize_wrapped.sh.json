@@ -1,0 +1,22 @@
+{
+    "sourceFile": "trajectorize/trajectorize_wrapped.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1730038372117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730038440513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,6 @@\n cd $base_script_path\n \n python --version\n echo $SUBREDDIT\n-python -u \"scores_to_trajectories_uids.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}\n-python -u \"build_trajectory_report.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}\n\\ No newline at end of file\n+python -u \"scores_to_trajectories_uid.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}\n+python -u \"build_trajectory_report_uid.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1730038372117,
+            "name": "Commit-0",
+            "content": "#!/bin/bash\n#SBATCH --account=p32275\n#SBATCH --partition=normal\n#SBATCH --nodes=1\n#SBATCH --ntasks-per-node=10\n#SBATCH --time=10:00:00\n#SBATCH --mem-per-cpu=5G\n#SBATCH --mail-type=ALL\n#SBATCH --mail-user=bsherin@u.northwestern.edu\n\nmodule purge all\nmodule load python-anaconda3\neval \"$(conda shell.bash hook)\"\nsource activate first-kernel\n\n\nbase_path=\"/projects/p32275\"\nbase_script_path=\"${HOME}/reddit/trajectorize\"\njson_path=\"${HOME}/reddit/trajectorize/trajectorize.json\"\n\ncd $base_script_path\n\npython --version\necho $SUBREDDIT\npython -u \"scores_to_trajectories_uids.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}\npython -u \"build_trajectory_report.py\" \"$json_path\" ${SUBREDDIT} ${SNAPSHOT_UID} ${base_path}"
+        }
+    ]
+}
