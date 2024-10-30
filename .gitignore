@@ -7,3 +7,7 @@
 /reddit.code-workspace
 /redditandp32275.code-workspace
 *.out
+__pycache__
+.ipynb_checkpoints
+/.history
+/.lh
