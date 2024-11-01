@@ -152,5 +152,16 @@ def build_html_table_from_data_list(data_list, title=None, click_type="word-clic
                 the_html += "<td class='element-clickable' data-row='{1}' style='{3}' " \
                             "data-col='{2}' data-val='{0}'>{0}</td>".format(r, str(rnum), str(0), bstyle)
             the_html += "</tr>"
-    the_html += "</tbody></table>"
-    return the_html
+    
+    style_html =  """
+            <style>
+                .sidebyside-table {
+                    vertical-align: top;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    margin-right: 20px;
+                }
+            </style>
+        """
+    
+    return style_html + the_html

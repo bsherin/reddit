@@ -5,19 +5,20 @@ job_name=${subreddit}_sscore_trajectorize_exp
 
 base_script_path="${HOME}/reddit"
 
-start_seed=1
-end_seed=5
+start_run_number=1
+end_run_number=1
 
 cd $base_script_path
 
 export SUBREDDIT=$subreddit
 
-for seed in $(seq $start_seed $end_seed); do
-    export SEED=$seed
-    echo "Launching batch script with seed value: $seed"
+for run_number in $(seq $start_run_number $end_run_number); do
+    export RUN_NUMBER=$run_number
+    echo "Launching exp batch script with run_number value: $run_number"
     base_unique_d=$(date +%s%N | md5sum | head -c 5)
-    unique_id="${base_unique_d}_exp_${seed}"
-    output_file=${subreddit}_sscore_trajectorize_${unique_id}.out
+    unique_id="${base_unique_d}_exp_${run_number}"
+    job_name=${subreddit}_sscore_trajectorize_${unique_id}
+    output_file="${HOME}/reddit/outfiles/${job_name}.out"
     echo "output_file is $output_file"
     sbatch --job-name="${job_name}" --output="${output_file}" snapshot_score_trajectorize_wrapped_exp.sh
 done

@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=10
 #SBATCH --time=10:00:00
-#SBATCH --mem-per-cpu=5G
+#SBATCH --mem-per-cpu=10G
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bsherin@u.northwestern.edu
 
@@ -36,9 +36,9 @@ python -u "zsts_to_exp_df.py" "$json_path" ${SUBREDDIT} ${base_path}
 python -u "add_seconds.py" "$json_path" ${SUBREDDIT} ${base_path}
 python -u "add_true_date_info.py" "$json_path" ${SUBREDDIT} ${base_path}
 
-# base_script_path="${HOME}/reddit/characterize"
-# json_path="${HOME}/reddit/characterize/characterize.json"
+base_script_path="${HOME}/reddit/characterize"
+json_path="${HOME}/reddit/characterize/characterize.json"
 
-# cd $base_script_path
+cd $base_script_path
 
-# python -u "characterize.py" "$json_path" ${SUBREDDIT} ${base_path}
+python -u "characterize.py" "$json_path" ${SUBREDDIT} ${base_path}

@@ -80,6 +80,24 @@ class SubredditCharacteristicsReport():
     def get_month_count(self, df, month, year, mnumber):
         month_df = df[(df['true_date'].dt.year == year) & (df['true_date'].dt.month == month)]
         return {"month": month, "year": year, "posts": len(month_df), "month_number": mnumber}
+    
+    def get_avg_table(self, udf):
+        average_persistence = udf["persist"].mean()
+        median_persistence = udf["persist"].median()
+        average_comments = udf["comments"].mean()
+        median_comments = udf["comments"].median()
+        average_submissions = udf["submissions"].mean()
+        median_submissions = udf["submissions"].median()
+        avg_table = {
+            "unique_users": len(udf),
+            "average_comments": round(average_comments, 3),
+            "median_comments": round(median_comments, 3),
+            "average_submissions": round(average_submissions, 3),
+            "median_submissions": round(median_submissions, 5),
+            "average_persistence_days": round(average_persistence, 3),
+            "median_persistence_days": round(median_persistence, 3),
+        }
+        return avg_table
 
     def render_content(self):
         ds("Reading the dataframes")
@@ -88,7 +106,6 @@ class SubredditCharacteristicsReport():
         
         ds("Computing characteristics")
         min_date = user_df["first_post"].min()
-        unique_users = len(user_df)
         
         ds("Computing characteristics: Filling persistence")
         
@@ -96,27 +113,23 @@ class SubredditCharacteristicsReport():
         
         ds("Computing characteristics: Post lengths")
         average_post_length = df['text'].apply(len).mean()
+        median_post_length = df['text'].apply(len).median()
         
         user_df['total_posts'] = user_df['comments'] + user_df['submissions']
+        self.user_table = self.get_avg_table(user_df)
+        self.user_table["one_post_users"] = len(user_df[user_df["total_posts"] == 1])
+
+        nopu_df = user_df[user_df["total_posts"] > 1]
+        self.nopu_table = self.get_avg_table(nopu_df)
         
-        average_persistence = user_df["persist"].mean()
-        average_comments = user_df["comments"].mean()
-        average_submissions = user_df["submissions"].mean()
-        one_post_users = len(user_df[user_df["total_posts"] == 1])
-        
-        html = f"<div>Subreddit: {self.subreddit_name}</div>"
-        self.user_table = {
-            "unique_users": unique_users,
-            "one_post_users": one_post_users,
-            "average_comments": round(average_comments, 1),
-            "average_submissions": round(average_submissions, 1),
-            "average_persistence_days": round(average_persistence, 1),
-        }
+        u50df = user_df[user_df["total_posts"] >= 50]
+        self.u50_table = self.get_avg_table(u50df)
         
         self.posts_table = {
             "total_posts": len(df),
             "first_post": min_date,
             "average_post_length": round(average_post_length, 1),
+            "median_post_length": round(median_post_length, 1),
         }
         
         first_date = min_date
@@ -140,9 +153,13 @@ class SubredditCharacteristicsReport():
         if self.min_user_posts > 1:
             good_user_list = self.get_good_users(user_df)
             df = df[df['author'].isin(good_user_list)]
-        
 
-        html += html_table(self.user_table) + html_table(self.posts_table)
+        html = f"<h1>Characteristics of {self.subreddit_name}</h1>"
+        html += html_table(self.posts_table, title="posts info", sidebyside=True) 
+        html += html_table(self.user_table, title="all_users", sidebyside=True)
+        html += html_table(self.nopu_table, title="users_with_more_than_one_post", sidebyside=True) 
+        html += html_table(self.u50_table, title="users_with_50_or_more_posts", sidebyside=True)
+
         ds("working on plot")
         result_list = []
         mnumber = 1
@@ -165,7 +182,7 @@ class SubredditCharacteristicsReport():
         html += plot_trajectory(post_df, "month_number", "posts", xstrings=ticklabels,
                                 marker_size=self.marker_size)
         self.report = html
-        with open(f"{self.working_directory}/characteristics_report.html", 'w') as file:
+        with open(f"{self.working_directory}/{self.subreddit_name}_characteristics_report.html", 'w') as file:
             file.write(html)
 
 if __name__ == '__main__':

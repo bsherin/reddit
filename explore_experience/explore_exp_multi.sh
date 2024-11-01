@@ -12,4 +12,4 @@ for subreddit in "$@"; do
 done
 
 # To run this do something like
-# ./explore_exp.sh bikewrench magicTCG
+# ./explore_experience/explore_exp_multi.sh bikewrench magicTCG

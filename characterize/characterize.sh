@@ -2,7 +2,7 @@
 
 subreddit=$1
 job_name=${subreddit}_characterize
-output_file=${subreddit}_characterize.out
+output_file="${HOME}/reddit/outfiles/${job_name}.out"
 
 base_script_path="${HOME}/reddit/characterize"
 cd $base_script_path

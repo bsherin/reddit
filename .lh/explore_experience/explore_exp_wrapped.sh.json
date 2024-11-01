@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1730053719954,
@@ -16,6 +16,10 @@
                 {
                     "date": 1730055343356,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,9 @@\n source activate first-kernel\n \n \n base_path=\"/projects/p32275\"\n-base_script_path=\"${HOME}/reddit/trajectorize\"\n-json_path=\"${HOME}/reddit/trajectorize/trajectorize.json\"\n+base_script_path=\"${HOME}/reddit/explore_experience\"\n \n cd $base_script_path\n \n python --version\n"
+                },
+                {
+                    "date": 1730399621385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n #SBATCH --time=10:00:00\n #SBATCH --mem-per-cpu=5G\n-#SBATCH --mail-type=ALL\n+#SBATCH --mail-type=Fail\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n module purge all\n module load python-anaconda3\n"
                 }
             ],
             "date": 1730053719954,

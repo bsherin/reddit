@@ -87,48 +87,52 @@ class AverageTrajectories():
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
         
+        print("looping over folder")
         for item in os.listdir(self.folder_of_models):
-            item_path = os.path.join(self.folder_of_models, item)
-            # Check if the item is a directory
-            if os.path.isdir(item_path):
-                if "_snapshots" not in item_path:
-                    continue
-                param_df = pd.read_csv(f"{item_path}/parameters.txt", sep=":\t", engine="python", names=["key", "value"], index_col="key")
-                is_exp = "threshold_in_days" in param_df.index
-                if self.use_exp != is_exp:
-                    continue
-                fdict = {}
-                for stage_kind in stage_kinds:
-                    fdict[stage_kind] = load_pickle_or_parquet(f"{item_path}/{stage_kind}_trajectory_df.parquet")
-                trajectories.append(fdict)
-                
-                uids.append(param_df.loc["uid"].value)
-                if "run_number" in param_df.index:
-                    run_numbers.append(param_df.loc["run_number"].value)
-                    param_df = param_df.drop(["uid", "run_number"])
-                else:
-                    run_numbers.append(param_df.loc["seed"].value)
-                    param_df = param_df.drop(["uid", "seed"])
-                if subreddit is None:
-                    bn = os.path.basename(item_path)
-                    subreddit = re.findall("^(.*?)_snapshots", bn)[0]
-                    is_exp = is_exp_sampling(param_df)
-                    common_param_df = param_df
-                if not compare_dataframes(param_df, common_param_df):
-                    the_html = f"Got unmatched params for uid {uids[-1]} with original uid {uids[0]}<br>"
-                    the_html += self.html_table(param_df, sidebyside=True)
-                    the_html += self.html_table(common_param_df, sidebyside=True)
-                    return the_html
-                with open(f"{item_path}/trajectory_key_info.json", "r") as f:
-                    key_info = json.load(f)
-                key_info["k"] = round(float(key_info["k"]), 1)
-                if common_key_info is None:
-                    common_key_info = key_info
-                if not compare_dicts(key_info, common_key_info):
-                    the_html = f"Got unmatched key_info for uid {uids[-1]} with original uid {uids[0]}<br>"
-                    the_html += self.html_table(key_info, sidebyside=True)
-                    the_html += self.html_table(common_key_info, sidebyside=True)
-        
+            try:
+                item_path = os.path.join(self.folder_of_models, item)
+                # Check if the item is a directory
+                print("got item path", item_path)
+                if os.path.isdir(item_path):
+                    if "_snapshots" not in item_path:
+                        continue
+                    print("item_path is a snapshot")
+                    param_df = pd.read_csv(f"{item_path}/parameters.txt", sep=":\t", engine="python", names=["key", "value"], index_col="key")
+                    is_exp = "threshold_in_days" in param_df.index
+                    if self.use_exp != is_exp:
+                        continue
+                    fdict = {}
+                    for stage_kind in stage_kinds:
+                        fdict[stage_kind] = load_pickle_or_parquet(f"{item_path}/{stage_kind}_trajectory_df.parquet")
+                    trajectories.append(fdict)
+                    
+                    uids.append(param_df.loc["uid"].value)
+                    if "run_number" in param_df.index:
+                        run_numbers.append(param_df.loc["run_number"].value)
+                        param_df = param_df.drop(["uid", "run_number", "use_run_number_as_seed"])
+                    else:
+                        run_numbers.append(param_df.loc["seed"].value)
+                        param_df = param_df.drop(["uid", "seed"])
+                    if subreddit is None:
+                        bn = os.path.basename(item_path)
+                        subreddit = re.findall("^(.*?)_snapshots", bn)[0]
+                        is_exp = is_exp_sampling(param_df)
+                        common_param_df = param_df
+                    if not compare_dataframes(param_df, common_param_df):
+                        print(f"Got unmatched params for uid {uids[-1]} with original uid {uids[0]}<br>")
+                    with open(f"{item_path}/trajectory_key_info.json", "r") as f:
+                        key_info = json.load(f)
+                    del key_info["model"]
+                    key_info["k"] = round(float(key_info["k"]), 1)
+                    if common_key_info is None:
+                        common_key_info = key_info
+                    if not compare_dicts(key_info, common_key_info):
+                        print(f"Got unmatched key_info for uid {uids[-1]} with original uid {uids[0]}<br>")
+            except Exception as e:
+                print("got error processing item path", item)
+                print(e)
+                continue
+        print("done looping over folder")
         self.param_df = common_param_df
         self.key_info = common_key_info
         self.uids = uids
@@ -164,6 +168,7 @@ class AverageTrajectories():
             "run_numbers": getattr(Tile, "run_numbers"),
             "is_exp": getattr(Tile, "use_exp"),
         }
+        print("writing results")
         save_to_json(results["key_info"], f"{output_folder}/trajectory_key_info.json")
         with open(f"{output_folder}/parameters.txt", "w") as f:
             f.write(self.get_param_string(results["param_df"]))
@@ -183,5 +188,6 @@ if __name__ == '__main__':
     print("starting")
     use_exp = sys.argv[2].lower() == 'true'
     # folder_of_models, use_exp, min_posts=2000
+    print("got folder", sys.argv[1])
     Tile = AverageTrajectories(sys.argv[1], use_exp, sys.argv[3])
     Tile.render_content()
