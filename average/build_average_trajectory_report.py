@@ -6,7 +6,7 @@ import re
 import os
 import pandas as pd
 
-from plot_trajectory_snippet2 import plot_trajectory
+from plot_trajectory_snippet_errors import plot_trajectory
 from utilities import html_table
 
 def ds(text):
@@ -28,7 +28,7 @@ bin_key_dict = {
     # "ntokens_bins": "ntokens_bin_size"
 }
 class BuildAverageTrajectoryReport():
-    def __init__(self, source, fn="nposts", fv=2000, fk=">=", marker_size=8):
+    def __init__(self, source, fn="nposts", fv=2000, fk=">=", marker_size=6):
 
         self.source = source
         self.fn = fn
@@ -95,8 +95,13 @@ class BuildAverageTrajectoryReport():
             tstring = f"<b>score vs {x_col}</b><br>{bin_key_dict[kind]}={key_info[bin_key_dict[kind]]}"
             the_html += plot_trajectory(df, x_col, "score", 
                                         marker_size=self.marker_size, title_string=tstring)
+            the_html += plot_trajectory(df, x_col, "score", show_errors=True, fit_curve=True,
+                                        marker_size=self.marker_size, title_string=tstring)
             if self.fn in df.columns:
                 the_html += plot_trajectory(df, x_col, "score", fn=self.fn, fv=self.fv, fk=self.fk, 
+                                            marker_size=self.marker_size, top_margin=85, title_string=tstring)
+                the_html += plot_trajectory(df, x_col, "score", fn=self.fn, fv=self.fv, fk=self.fk, 
+                                            show_errors=True, fit_curve=True, 
                                             marker_size=self.marker_size, top_margin=85, title_string=tstring)
         
         return the_html

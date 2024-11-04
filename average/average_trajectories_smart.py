@@ -151,8 +151,12 @@ class AverageTrajectories():
             dfs = []
             for fdict in trajectories:
                 dfs.append(fdict[stage_kind])
-            combined_df = pd.concat(dfs)
-            result_df = combined_df.groupby(y_axis_labels[stage_kind]).mean().reset_index()
+            xlabel = y_axis_labels[stage_kind]
+            combined_df = pd.concat([df[[xlabel, 'score']] for df in dfs])
+            result_df = combined_df.groupby(xlabel).agg(['mean', 'std'])
+            result_df.columns = ['score', 'std_dev']
+            result_df = result_df.reset_index()
+            result_df["nposts"] = dfs[0]["nposts"]
             setattr(self, f"{stage_kind}_trajectory_df", result_df)
             result_df.to_parquet(f"{output_folder}/{stage_kind}_trajectory_df.parquet")
         results = {

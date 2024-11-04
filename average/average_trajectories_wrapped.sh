@@ -3,7 +3,7 @@
 #SBATCH --partition=short
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=10
-#SBATCH --time=01:00:00
+#SBATCH --time=00:10:00
 #SBATCH --mem-per-cpu=5G
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bsherin@u.northwestern.edu

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1729875491251,
@@ -20,6 +20,14 @@
                 {
                     "date": 1730058771464,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n #SBATCH --account=p32275\n #SBATCH --partition=short\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n-#SBATCH --time=-01:00:00\n+#SBATCH --time=01:00:00\n #SBATCH --mem-per-cpu=5G\n #SBATCH --mail-type=ALL\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n"
+                },
+                {
+                    "date": 1730734123308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n #SBATCH --account=p32275\n #SBATCH --partition=short\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n-#SBATCH --time=01:00:00\n+#SBATCH --time=00:20:00\n #SBATCH --mem-per-cpu=5G\n #SBATCH --mail-type=ALL\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n"
+                },
+                {
+                    "date": 1730734391076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n #SBATCH --account=p32275\n #SBATCH --partition=short\n #SBATCH --nodes=1\n #SBATCH --ntasks-per-node=10\n-#SBATCH --time=00:20:00\n+#SBATCH --time=00:10:00\n #SBATCH --mem-per-cpu=5G\n #SBATCH --mail-type=ALL\n #SBATCH --mail-user=bsherin@u.northwestern.edu\n \n"
                 }
             ],
             "date": 1729875491251,
