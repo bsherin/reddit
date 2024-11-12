@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1730149165622,
@@ -16,6 +16,10 @@
                 {
                     "date": 1730150594416,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,9 @@\n     \n     def create_month_model(self, df, month, year):\n         def select_random_posts(group):\n             if self.use_run_number_as_seed:\n-                return group.sample(n=self.posts_per_user, random_state=self.seed)\n+                return group.sample(n=self.posts_per_user, random_state=self.run_number)\n                 \n             else:\n                 return group.sample(n=self.posts_per_user)\n         try:\n@@ -158,9 +158,12 @@\n             if len(candidate_users) < self.users_per_month:\n                 self.month_table[-1][\"success\"] = False\n                 return {\"success\": False, \"reason\": f\"candidate users {len(candidate_users)} less than users per month {self.users_per_month}\", \"month\": month, \"year\": year}\n             if self.use_run_number_as_seed:\n+                print(\"using run number as seed\")\n                 random.seed(self.run_number)\n+            else:\n+                print(\"using random seed\")\n             selected_users = random.sample(culist, self.users_per_month)\n             user_filtered_df = above_df[above_df['author'].isin(selected_users)]\n             random_posts = user_filtered_df.groupby(\"author\").apply(select_random_posts).reset_index(drop=True)\n             if \"post_id\" in random_posts.columns:\n"
+                },
+                {
+                    "date": 1731371392052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,12 @@\n+# The language models are created using the KatzBigramLM class from the katz_class.py file. \n+# Unlike the create_snapshot_models.py script, this script uses the experience column in the data to sample posts with experience greater than a threshold.\n+# The language models are saved in a folder named \"snapshots\" in the output location.\n+# The script also saves a list of the post ids used to create the language models in a file named \"used_posts.pkl\" in the output location. \n+# The script saves a list of dictionaries containing information about the language models created for each month in a file named \"month_table.pkl\" in the output location. \n+# The script saves the start and end month and year of the longest sequence of months for which language models were successfully created in a file named \"parameters.txt\" in the output location.\n+\n+\n print(\"starting create_snapshot_models.py\")\n import uuid\n import pickle\n import json\n"
                 }
             ],
             "date": 1730149165622,

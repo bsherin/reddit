@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1730056561172,
@@ -24,6 +24,18 @@
                 {
                     "date": 1730155715767,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n start_run_number=1\n end_run_number=5\n \n for run_number in $(seq $start_run_number $end_run_number); do\n-    export SEED=$run_number\n+    export RUN_NUMBER=$run_number\n     echo \"Launching exp batch script with run_number value: $run_number\"\n     base_unique_d=$(date +%s%N | md5sum | head -c 5)\n     unique_id=\"${base_unique_d}_exp_${run_number}\"\n     job_name=${subreddit}_sscore_trajectorize_${unique_id}\n"
+                },
+                {
+                    "date": 1730743944773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n \n subreddit=$1\n \n base_script_path=\"${HOME}/reddit\"\n-start_run_number=1\n-end_run_number=5\n+start_run_number=10\n+end_run_number=20\n \n cd $base_script_path\n \n export SUBREDDIT=$subreddit\n"
+                },
+                {
+                    "date": 1730743951897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n     echo \"output_file is $output_file\"\n     sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped.sh\n done\n \n-start_run_number=1\n-end_run_number=5\n+start_run_number=10\n+end_run_number=20\n \n for run_number in $(seq $start_run_number $end_run_number); do\n     export RUN_NUMBER=$run_number\n     echo \"Launching exp batch script with run_number value: $run_number\"\n"
+                },
+                {
+                    "date": 1730838100810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,10 @@\n \n subreddit=$1\n \n base_script_path=\"${HOME}/reddit\"\n-start_run_number=10\n-end_run_number=20\n+start_run_number=1\n+end_run_number=15\n \n cd $base_script_path\n \n export SUBREDDIT=$subreddit\n@@ -19,10 +19,10 @@\n     echo \"output_file is $output_file\"\n     sbatch --job-name=\"${job_name}\" --output=\"${output_file}\" snapshot_score_trajectorize_wrapped.sh\n done\n \n-start_run_number=10\n-end_run_number=20\n+start_run_number=1\n+end_run_number=15\n \n for run_number in $(seq $start_run_number $end_run_number); do\n     export RUN_NUMBER=$run_number\n     echo \"Launching exp batch script with run_number value: $run_number\"\n"
                 }
             ],
             "date": 1730056561172,

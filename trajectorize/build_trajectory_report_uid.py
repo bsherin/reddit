@@ -1,3 +1,8 @@
+### This script is used to generate the full report subreddit.
+### It reads the df_true and user_data dataframes
+### It also reads the parameters.txt file and the trajectory_key_info.json file
+### The report is named {subreddit_name}_report.html
+
 print("starting")
 import json
 import sys

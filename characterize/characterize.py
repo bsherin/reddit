@@ -1,3 +1,7 @@
+### This script is used to generate a report on the characteristics of a subreddit.
+### It reads the df_true and user_data dataframes
+### The report is named {subreddit_name}_characteristics_report.html
+
 print("starting")
 import pickle
 import json

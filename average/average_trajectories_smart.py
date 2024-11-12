@@ -160,17 +160,17 @@ class AverageTrajectories():
             setattr(self, f"{stage_kind}_trajectory_df", result_df)
             result_df.to_parquet(f"{output_folder}/{stage_kind}_trajectory_df.parquet")
         results = {
-            "num_phases_trajectory_df": getattr(Tile, "num_phases_trajectory_df"),
-            "raw_post_count_trajectory_df": getattr(Tile, "raw_post_count_trajectory_df"),
-            "time_trajectory_df": getattr(Tile, "time_trajectory_df"),
-            "experience_trajectory_df": getattr(Tile, "experience_trajectory_df"),
+            "num_phases_trajectory_df": getattr(self, "num_phases_trajectory_df"),
+            "raw_post_count_trajectory_df": getattr(self, "raw_post_count_trajectory_df"),
+            "time_trajectory_df": getattr(self, "time_trajectory_df"),
+            "experience_trajectory_df": getattr(self, "experience_trajectory_df"),
             # "ntokens_bins_trajectory_df": getattr(Tile, "ntokens_bins_trajectory_df"),
-            "param_df": getattr(Tile, "param_df"),
-            "key_info": getattr(Tile, "key_info"),
-            "uids": getattr(Tile, "uids"),
-            "subreddit": getattr(Tile, "subreddit"),
-            "run_numbers": getattr(Tile, "run_numbers"),
-            "is_exp": getattr(Tile, "use_exp"),
+            "param_df": getattr(self, "param_df"),
+            "key_info": getattr(self, "key_info"),
+            "uids": getattr(self, "uids"),
+            "subreddit": getattr(self, "subreddit"),
+            "run_numbers": getattr(self, "run_numbers"),
+            "is_exp": getattr(self, "use_exp"),
         }
         print("writing results")
         save_to_json(results["key_info"], f"{output_folder}/trajectory_key_info.json")
@@ -180,9 +180,9 @@ class AverageTrajectories():
         rclass = BuildAverageTrajectoryReport(results, "nposts", self.min_posts, ">=")
         the_html = rclass.render_content()
         if self.use_exp:
-            fname = f"{subreddit}_avg_exp"
+            fname = f"{subreddit}_avg_exp_error"
         else:
-            fname = f"{subreddit}_avg"
+            fname = f"{subreddit}_avg_error"
         with open(f"{output_folder}/{fname}.html", "w") as f:
             f.write(the_html)
         with open(f"{output_folder}/{fname}_results.pkl", "wb") as f:

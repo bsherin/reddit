@@ -1,3 +1,9 @@
+### The script reads the {subreddit}_df_true dataframe and the snapshots, and scores the posts
+### The script saves the scored dataframe to {subreddit}_scored_{uid}.parquet
+### The script reads the parameters from {subreddit}_snapshots_{uid}/parameters.txt
+### The saved dataframe has the following columns:
+### author, post_id, seconds, subreddit, total_user_posts, post_number, true_date, experience, uid
+
 print("starting score_posts_from_snapshots.py")
 import pickle
 import json

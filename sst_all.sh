@@ -4,7 +4,7 @@ subreddit=$1
 
 base_script_path="${HOME}/reddit"
 start_run_number=1
-end_run_number=5
+end_run_number=15
 
 cd $base_script_path
 
@@ -21,7 +21,7 @@ for run_number in $(seq $start_run_number $end_run_number); do
 done
 
 start_run_number=1
-end_run_number=5
+end_run_number=15
 
 for run_number in $(seq $start_run_number $end_run_number); do
     export RUN_NUMBER=$run_number

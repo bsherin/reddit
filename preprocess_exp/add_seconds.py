@@ -1,3 +1,7 @@
+### Add seconds and user_seconds to the dataframe
+### The final dataframe has the following columns:
+### author, subreddit, body, score, link_id, parent_id, id, seconds, user_seconds
+
 print("starting clean_and_add_seconds.py")
 import json
 import re, os, multiprocessing, math

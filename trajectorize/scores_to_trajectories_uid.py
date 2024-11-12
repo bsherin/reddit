@@ -1,3 +1,8 @@
+### This script is used to generate the trajectory dataframes for a given snapshot
+### It the exp_df, user_df, and scored dataframe for the snapshot
+### It writes the trajectory dataframes to the snapshot folder
+### The key info is written to trajectory_key_info.json
+
 print("starting")
 import pickle
 import json

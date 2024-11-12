@@ -1,3 +1,11 @@
+# The language models are created using the KatzBigramLM class from the katz_class.py file. 
+# Unlike the create_snapshot_models.py script, this script uses the experience column in the data to sample posts with experience greater than a threshold.
+# The language models are saved in a folder named "snapshots" in the output location.
+# The script also saves a list of the post ids used to create the language models in a file named "used_posts.pkl" in the output location. 
+# The script saves a list of dictionaries containing information about the language models created for each month in a file named "month_table.pkl" in the output location. 
+# The script saves the start and end month and year of the longest sequence of months for which language models were successfully created in a file named "parameters.txt" in the output location.
+
+
 print("starting create_snapshot_models.py")
 import uuid
 import pickle

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 26,
+            "activePatchIndex": 27,
             "patches": [
                 {
                     "date": 1730058044759,
@@ -112,6 +112,10 @@
                 {
                     "date": 1730735078672,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,14 +150,14 @@\n         for stage_kind in stage_kinds:\n             dfs = []\n             for fdict in trajectories:\n                 dfs.append(fdict[stage_kind])\n-\n             xlabel = y_axis_labels[stage_kind]\n             combined_df = pd.concat([df[[xlabel, 'score']] for df in dfs])\n             result_df = combined_df.groupby(xlabel).agg(['mean', 'std'])\n             result_df.columns = ['score', 'std_dev']\n             result_df = result_df.reset_index()\n+            result_df[\"nposts\"] = dfs[0][\"nposts\"]\n             setattr(self, f\"{stage_kind}_trajectory_df\", result_df)\n             result_df.to_parquet(f\"{output_folder}/{stage_kind}_trajectory_df.parquet\")\n         results = {\n             \"num_phases_trajectory_df\": getattr(Tile, \"num_phases_trajectory_df\"),\n"
+                },
+                {
+                    "date": 1730743386503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,11 +179,11 @@\n         # source, fn, fv, fk, marker_size=8\n         rclass = BuildAverageTrajectoryReport(results, \"nposts\", self.min_posts, \">=\")\n         the_html = rclass.render_content()\n         if self.use_exp:\n-            fname = f\"{subreddit}_avg_exp\"\n+            fname = f\"{subreddit}_avg_exp_error\"\n         else:\n-            fname = f\"{subreddit}_avg\"\n+            fname = f\"{subreddit}_avg_error\"\n         with open(f\"{output_folder}/{fname}.html\", \"w\") as f:\n             f.write(the_html)\n         with open(f\"{output_folder}/{fname}_results.pkl\", \"wb\") as f:\n             pickle.dump(results, f)\n"
                 }
             ],
             "date": 1730058044759,

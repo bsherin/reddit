@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1729807669902,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731370501680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,10 @@\n+### The script reads the {subreddit}_df_true dataframe and the snapshots, and scores the posts\n+### The script saves the scored dataframe to {subreddit}_scored_{uid}.parquet\n+### The script reads the parameters from {subreddit}_snapshots_{uid}/parameters.txt\n+### The saved dataframe has the following columns:\n+### author, post_id, seconds, subreddit, total_user_posts, post_number, true_date, experience, uid\n+\n print(\"starting score_posts_from_snapshots.py\")\n import pickle\n import json\n import pickle\n"
                 }
             ],
             "date": 1729807669902,

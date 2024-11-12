@@ -1,3 +1,7 @@
+### This script reads the zst files for submissions and comments and creates a parquet file with user data
+### The user data includes has columns for author, first_post, last_post, submissions, comments, and top_level_comments
+
+
 print("starting zsts_to_user_data.py")
 import json
 import sys

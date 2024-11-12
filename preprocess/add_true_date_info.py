@@ -1,3 +1,9 @@
+### The script reads the parquet file created by the previous script and writes a new parquet file with the true date column added.
+### It also needs to read the user_data parquet file created by the zsts_to_user_data.py script.
+### The original parquet file is deleted.
+### The final parquet file has columns for post_id, kind, author, title, text, parent_id, num_comments, seconds, user_seconds, total_user_posts, post_number, and true_date.
+### The final parquet file is named {self.subreddit_name}_df_true.parquet.
+
 print("starting add_true_date_info.py")
 import json
 import sys

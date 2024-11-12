@@ -1,3 +1,13 @@
+### This script reads the CSV file created by the previous script and cleans the text column.
+### The user data is read from a parquet file created by the zsts_to_user_data.py script.
+### It removes URLs and non-alphabetic characters from the text column.
+### It also adds a seconds column that represents the number of seconds since the first post in the dataset. 
+### It also adds a user_seconds column that represents the number of seconds since the first post by the user.
+### Deleted and AutoModerator posts are removed from the dataset.
+### The final cleaned CSV has columns for post_id, kind, author, title, text, parent_id, num_comments, seconds, and user_seconds.
+### The cleaned CSV is saved to the working directory and the original CSV is deleted.
+
+
 print("starting clean_and_add_seconds.py")
 import json
 import re, os, multiprocessing, math

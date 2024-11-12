@@ -1,3 +1,8 @@
+### This script reads the zst files and writes the data to a csv file
+### The csv has the following columns:
+### post_id, kind, author, created, title, text, parent_id, num_comments
+
+
 print("starting zsts_to_post_csv")
 import sys
 import json

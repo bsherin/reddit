@@ -1,3 +1,10 @@
+### This script adds the true date of a post to the dataframe, and fills in the experience column.
+### The dataframe is saved to {subreddit_name}_df_exp_true.parquet
+### The experience parameters are saved to {subreddit_name}_exp_params.json
+### The dataframe has the following columns:
+### author, post_id, seconds, subreddit, total_user_posts, post_number, true_date, experience
+
+
 print("starting add_true_date_info.py")
 import json
 import sys

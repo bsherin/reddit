@@ -1,3 +1,8 @@
+### This script tokenizes the text in the cleaned CSV file and saves the result as a parquet file {subreddit_name}_df.parquet
+### The text is tokenized using the nltk library
+### The tokenized text is saved in a column called "text" in the parquet file
+### The final parquet file has these columns: post_id, kind, author, title, text, parent_id, num_comments, seconds, user_seconds
+
 print("starting tokenize_cleaned_csv.py")
 import json
 import os

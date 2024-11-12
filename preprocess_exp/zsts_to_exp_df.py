@@ -1,3 +1,6 @@
+### This script reads the zst files and converts them to a pandas dataframe named {subreddit_name}_df_exp.parquet
+### The dataframe has columns: post_id, kind, top_level, author, created, parent_id
+
 print("starting zsts_to_exp_df")
 import sys
 import json
