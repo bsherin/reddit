@@ -1,3 +1,9 @@
+### This script 
+### Outputs:
+###     - {subreddit}_exp_by_month.html: The experience by month report for the subreddit.
+###     - {subreddit}_exp_by_month.parquet: The results of the analysis saved in a parquet file.
+###            This has columns: fraction, true_month, avg_exp, median_exp
+
 print("starting")
 import pickle
 import json

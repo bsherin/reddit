@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1730054004901,
@@ -48,6 +48,10 @@
                 {
                     "date": 1730125519792,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,10 @@\n             \n             for month in range(smonth, emonth + 1):\n                 ds(f\"Processing year {year} month {month}\")\n                 month_df = score_df[(score_df['true_date'].dt.year == year) & (score_df['true_date'].dt.month == month)]\n+                if len(month_df) == 0:\n+                    continue\n                 above_threshold = month_df[month_df[\"experience\"] > self.threshold_in_days]\n                 fract = len(above_threshold) / len(month_df)\n                 avg_exp = month_df[\"experience\"].mean()\n                 median_exp = month_df[\"experience\"].median()\n"
+                },
+                {
+                    "date": 1731429122661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,10 @@\n+### This script \n+### Outputs:\n+###     - {subreddit}_exp_by_month.html: The experience by month report for the subreddit.\n+###     - {subreddit}_exp_by_month.parquet: The results of the analysis saved in a parquet file.\n+###            This has columns: fraction, true_month, avg_exp, median_exp\n+\n print(\"starting\")\n import pickle\n import json\n import sys\n"
                 }
             ],
             "date": 1730054004901,

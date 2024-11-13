@@ -1,6 +1,9 @@
 ### This script is used to generate the trajectory dataframes for a given snapshot
 ### It the exp_df, user_df, and scored dataframe for the snapshot
 ### It writes the trajectory dataframes to the snapshot folder
+### Each trajectory dataframe has the following columns:
+### num_phases, ntokens_bins, raw_post_count, [x-axis col], experience
+
 ### The key info is written to trajectory_key_info.json
 
 print("starting")

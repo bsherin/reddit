@@ -1,3 +1,14 @@
+### This script is used to generate the average trajectory report for a given subreddit.
+### The script takes in the following arguments:
+###     1. The folder containing the snapshots of the models for the subreddit.
+###     2. A boolean value indicating whether the models are generated using the exponential sampling method.
+###     3. The minimum number of posts required for a user to be included in the analysis.
+### Produces the following output:
+###     - {subreddit}_avg_error.html or {subreddit}_avg_exp_error.htm: The average trajectory report for the subreddit.
+###     - {subreddit}_avg_error_results.pkl {subreddit}_avg_exp_eerror_results.pkl: The results of the analysis saved in a pickle file.
+###     - trajectory df for each stage kind
+###     - parameters.txt
+
 print("starting")
 import pickle
 import json
