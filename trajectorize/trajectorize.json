@@ -8,5 +8,7 @@
   "ntokens_bin_size": 5,
   "minimum_user_posts": 50,
   "min_posts": 2000,
-  "marker_size": 8
+  "marker_size": 8,
+  "remove_high_posters": true,
+  "high_post_limit": 5000
 }

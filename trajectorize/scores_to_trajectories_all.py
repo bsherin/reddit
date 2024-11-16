@@ -202,18 +202,15 @@ def load_pickle_or_parquet(path):
 
 
 print("done with globals")
-class ScoresToTrajectoriesExpAutoK():
-    def __init__(self, jsonfile, subreddit, snapshot_uid, base_path):
+class ScoresToTrajectoriesExpAll():
+    def __init__(self, jsonfile, subreddit, base_path, hpl):
         import textwrap
         with open(jsonfile, 'r') as file:
             config = json.load(file)
         self.subreddit_name = subreddit
         self.working_directory = f"{base_path}/{self.subreddit_name}"
-        self.uid = snapshot_uid
-        self.snapshot_folder = f"{base_path}/{subreddit}/{subreddit}_snapshots_{self.uid}"
         self.user_df_pfile = f"{self.working_directory}/{self.subreddit_name}_user_data.parquet"
         self.exp_df_pfile =  f"{self.working_directory}/{self.subreddit_name}_df_exp_true.parquet"
-
         self.remove_exp_duplicates = config["remove_exp_duplicates"] if "remove_exp_duplicates" in config else False
         self.num_phases = config["num_phases"] if "num_phases" in config else 20
         self.post_bin_size = config["post_bin_size"] if "post_bin_size" in config else 10
@@ -222,16 +219,8 @@ class ScoresToTrajectoriesExpAutoK():
         self.experience_bin_size = config["experience_bin_size"] if "experience_bin_size" in config else 28
         self.ntokens_bin_size = config["ntokens_bin_size"] if "ntokens_bin_size" in config else 5
         self.minimum_user_posts = config["minimum_user_posts"] if "minimum_user_posts" in config else 50
-        self.remove_high_posters = config["remove_high_posters"] if "remove_high_posters" in config else False
-        self.high_post_limit = config["high_post_limit"] if "high_post_limit" in config else 20000
-
-        if self.remove_high_posters:
-            self.output_folder = f"{self.snapshot_folder}/trajectory_data_hpl_{self.high_post_limit}"
-            if not os.path.isdir(self.output_folder):
-                os.mkdir(self.output_folder)
-        else:
-            self.output_folder = self.snapshot_folder
-
+        self.remove_high_posters = True
+        self.high_post_limit = hpl
         return
 
     def pull_param_vals(self):
@@ -348,69 +337,82 @@ class ScoresToTrajectoriesExpAutoK():
         ds("Reading exp_df")
         exp_df = load_pickle_or_parquet(self.exp_df_pfile)
         self.k = exp_df["dt"].mean()
-        
-        
-        ds("Pulling snapshot params")
-        self.pull_param_vals()
-        
-        # self.pull_param_vals will create these attributes on self
-        # 'uid', 'df_pkl', 'user_df_pkl', 'output_location', 'output_folder_name', 'overwrite_allowed', '
-        # abort_on_month_failure', 'min_users_per_month', 'min_posts_per_month', 'users_per_month', 'posts_per_user', 
-        # 'start_month', 'start_year', 'end_month', 'end_year', 'prune_before_start', 'prune_after_end', 
-        # 'min_user_posts', 'max_vocab_size', 'max_discount, truncate_text, max_len
-        
-        if not hasattr(self, "truncate_text"):
-            self.truncate_text = False
-        
-        self.start_month = month_number(self.start_month)
-        self.end_month = month_number(self.end_month)
-        self.end_year = int(self.end_year)
-        self.start_year = int(self.start_year)
-        
-        self.uid = str(self.uid)
-        
-        ds("Reading score df")
-        
-        self.score_df_pfile = f"{self.snapshot_folder}/{self.subreddit_name}_scored_{self.uid}.parquet"
-        
-        score_df = load_pickle_or_parquet(self.score_df_pfile)
-        
-        with open(f"{self.snapshot_folder}/used_posts.pkl","rb") as f:
-            all_used_posts = flatten(pickle.load(f))
-        
-        score_df = score_df[~score_df.index.isin(all_used_posts)]
-        
-        ds("Reading user_df")
-        user_df = load_pickle_or_parquet(self.user_df_pfile)
-        
-        ds("Pruning users")
-        
-        edate = pd.Timestamp(year=self.end_year, month=self.end_month, day=1)
-        self.end_date = edate.to_period('M').to_timestamp(how='end')
-        self.start_date = pd.Timestamp(year=self.start_year, month=self.start_month, day=1)
-        good_user_list = self.get_good_users(user_df)
-        self.n_good_users = len(good_user_list)
-        score_df = score_df[score_df['author'].isin(good_user_list)]
-        score_df = score_df[score_df[self.uid] != -999]
-        
-        # if -999 in score_df[self.uid].tolist():
-        #     bad_df = score_df[score_df[self.uid] == -999]
-        #     print("bad_df with {} rows".format(len(bad_df)))
-        #     return 
-        
-        score_df["experience"] = exp_df["experience"]
-        
-        ds("Filling stage columns")
-        self.have_ntokens = "ntokens" in score_df.columns
-        
-        for stage_kind in stage_kinds:
-            self.process_stage_kind(stage_kind, score_df, user_df)
 
-        self.set_key_info()
-        save_to_json(self.key_info, f"{self.output_folder}/trajectory_key_info.json")
+        for item in os.listdir(self.working_directory):
+            item_path = os.path.join(self.working_directory, item)
+            # Check if the item is a directory
+            print("got item path", item_path)
+            if os.path.isdir(item_path):
+                if "_snapshots" not in item_path:
+                    continue
+                print("item_path is a snapshot")
+                self.snapshot_folder = item_path
+
+                if self.remove_high_posters:
+                    self.output_folder = f"{self.snapshot_folder}/trajectory_data_hpl_{self.high_post_limit}"
+                    if not os.path.isdir(self.output_folder):
+                        os.mkdir(self.output_folder)
+                else:
+                    self.output_folder =f"{self.snapshot_folder}/trajectory_data"
+                    if not os.path.isdir(self.output_folder):
+                        os.mkdir(self.output_folder)
+
+                ds("Pulling snapshot params")
+                self.pull_param_vals()
+                
+                # self.pull_param_vals will create these attributes on self
+                # 'uid', 'df_pkl', 'user_df_pkl', 'output_location', 'output_folder_name', 'overwrite_allowed', '
+                # abort_on_month_failure', 'min_users_per_month', 'min_posts_per_month', 'users_per_month', 'posts_per_user', 
+                # 'start_month', 'start_year', 'end_month', 'end_year', 'prune_before_start', 'prune_after_end', 
+                # 'min_user_posts', 'max_vocab_size', 'max_discount, truncate_text, max_len
+                
+                if not hasattr(self, "truncate_text"):
+                    self.truncate_text = False
+                
+                self.start_month = month_number(self.start_month)
+                self.end_month = month_number(self.end_month)
+                self.end_year = int(self.end_year)
+                self.start_year = int(self.start_year)
+                
+                self.uid = str(self.uid)
+                
+                ds("Reading score df")
+                
+                self.score_df_pfile = f"{self.snapshot_folder}/{self.subreddit_name}_scored_{self.uid}.parquet"
+                
+                score_df = load_pickle_or_parquet(self.score_df_pfile)
+                
+                with open(f"{self.snapshot_folder}/used_posts.pkl","rb") as f:
+                    all_used_posts = flatten(pickle.load(f))
+                
+                score_df = score_df[~score_df.index.isin(all_used_posts)]
+                
+                ds("Reading user_df")
+                user_df = load_pickle_or_parquet(self.user_df_pfile)
+                
+                ds("Pruning users")
+                
+                edate = pd.Timestamp(year=self.end_year, month=self.end_month, day=1)
+                self.end_date = edate.to_period('M').to_timestamp(how='end')
+                self.start_date = pd.Timestamp(year=self.start_year, month=self.start_month, day=1)
+                good_user_list = self.get_good_users(user_df)
+                self.n_good_users = len(good_user_list)
+                score_df = score_df[score_df['author'].isin(good_user_list)]
+                score_df = score_df[score_df[self.uid] != -999]
+                
+                score_df["experience"] = exp_df["experience"]
+                
+                ds("Filling stage columns")
+                self.have_ntokens = "ntokens" in score_df.columns
+                
+                for stage_kind in stage_kinds:
+                    self.process_stage_kind(stage_kind, score_df, user_df)
+
+                self.set_key_info()
+                save_to_json(self.key_info, f"{self.output_folder}/trajectory_key_info.json")
 
 if __name__ == '__main__':
     print("starting")
-    # jsonfile, subreddit, snapshot_uid, base_path)
-    Tile = ScoresToTrajectoriesExpAutoK(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    # jsonfile, subreddit, base_path, hpl
+    Tile = ScoresToTrajectoriesExpAll(sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4]))
     Tile.render_content()

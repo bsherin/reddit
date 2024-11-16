@@ -9,26 +9,18 @@ import pandas as pd
 from plot_trajectory_snippet_errors import plot_trajectory
 from utilities import html_table
 
+stage_kind_dict = {
+    "num_phases_trajectory_df": "phase",
+    "raw_post_count_trajectory_df": "posts",
+    "raw_post_count_median_trajectory_df": "posts"
+}
+
 def ds(text):
     print(text)
 
-stage_kind_dict = {
-    "num_phases": "phase",
-    "raw_post_count": "posts",
-    "time": "weeks",
-    "experience": "pseudo weeks",
-    # "ntokens_bins": "ntokens"
-}
 
-bin_key_dict = {
-    "num_phases": "num_phases",
-    "raw_post_count": "post_bin",
-    "time": "time_bin_weeks",
-    "experience": "exp_bin_size",
-    # "ntokens_bins": "ntokens_bin_size"
-}
 class BuildAverageTrajectoryReport():
-    def __init__(self, source,marker_size=6):
+    def __init__(self, source, marker_size=6):
 
         self.source = source
         self.marker_size = marker_size
@@ -85,11 +77,11 @@ class BuildAverageTrajectoryReport():
         
         for kind, x_col in stage_kind_dict.items():
             ds(f"processing kind {kind}")
-            df = source[f"{kind}_trajectory_df"]
+            df = source[kind]
             if df is None or type(df) == str or len(df) == 0:
                 continue
             
-            tstring = f"<b>score vs {x_col}</b><br>{bin_key_dict[kind]}={key_info[bin_key_dict[kind]]}"
+            tstring = f"<b>score vs {x_col}</b><br>"
             the_html += plot_trajectory(df, x_col, "score", 
                                         marker_size=self.marker_size, title_string=tstring)
             the_html += plot_trajectory(df, x_col, "score", show_errors=True, fit_curve=True,

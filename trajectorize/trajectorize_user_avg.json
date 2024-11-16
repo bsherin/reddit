@@ -1,0 +1,9 @@
+{
+  "remove_exp_duplicates": false,
+  "num_phases": 20,
+  "num_posts": 50,
+  "minimum_user_posts": 50,
+  "marker_size": 8,
+  "remove_high_posters": false,
+  "high_post_limit": 5000
+}

@@ -32,17 +32,26 @@ class BuildTrajectoryReport():
     def __init__(self, jsonfile, subreddit, snapshot_uid, base_path):
         with open(jsonfile, 'r') as file:
             config = json.load(file)
+
+        self.remove_high_posters = config["remove_high_posters"] if "remove_high_posters" in config else False
+        self.high_post_limit = config["high_post_limit"] if "high_post_limit" in config else 20000
         self.subreddit_name = subreddit
         self.working_directory = f"{base_path}/{self.subreddit_name}"
         self.uid = snapshot_uid
-        self.snaphot_folder = f"{base_path}/{subreddit}/{subreddit}_snapshots_{self.uid}"
-        self.report_file = f"{self.snaphot_folder}/{subreddit}_{self.uid}_report.html"
+        self.snapshot_folder = f"{base_path}/{subreddit}/{subreddit}_snapshots_{self.uid}"
+        
 
         self.min_posts = config["min_posts"] if "min_posts" in config else 2000
         self.marker_size = config["marker_size"] if "marker_size" in config else 8
         self.option_names = ["min_posts", "marker_size"]
-        with open(f"{self.snaphot_folder}/trajectory_key_info.json", 'r') as file:
+        with open(f"{self.snapshot_folder}/trajectory_key_info.json", 'r') as file:
             self.key_info = json.load(file)
+        if self.remove_high_posters:
+            self.traj_folder = f"{self.snapshot_folder}/trajectory_data_hpl_{self.high_post_limit}"
+            self.report_file = f"{self.traj_folder}/{subreddit}_hpl_{self.high_post_limit}_{self.uid}_report.html"
+        else:
+            self.traj_folder = self.snapshot_folder
+            self.report_file = f"{self.traj_folder}/{subreddit}_{self.uid}_report.html"
         return
 
     def display_status(self, text):
@@ -62,15 +71,7 @@ class BuildTrajectoryReport():
         from plot_trajectory_snippet import plot_trajectory
         
 
-        param_df = pd.read_csv(f"{self.snaphot_folder}/parameters.txt", sep=":\t", engine="python", names=["key", "value"], index_col="key")
-        # the_html = """
-        #     <style>
-        #         .trajectory-report td {
-        #             padding-top: 8px !important;
-        #             padding-bottom: 8px !important;
-        #         }
-        #     </style>
-        # """
+        param_df = pd.read_csv(f"{self.snapshot_folder}/parameters.txt", sep=":\t", engine="python", names=["key", "value"], index_col="key")
         with open("styles.html", 'r') as file:
             the_html = file.read()
         self.summary = f"{self.subreddit_name}_{self.uid}"
@@ -86,7 +87,7 @@ class BuildTrajectoryReport():
         for kind, x_col in stage_kind_dict.items():
             try:
                 ds(f"processing kind {kind}")
-                df = pd.read_parquet(f"{self.snaphot_folder}/{kind}_trajectory_df.parquet")
+                df = pd.read_parquet(f"{self.traj_folder}/{kind}_trajectory_df.parquet")
                 if type(df) == str or len(df) == 0:
                     continue
                 
@@ -101,7 +102,6 @@ class BuildTrajectoryReport():
                 continue
         
         self.report = the_html
-        
 
         with open(self.report_file, 'w') as file:
             file.write(the_html)
